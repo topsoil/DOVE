@@ -1,0 +1,14 @@
+models:
+  - name: llama3_ollama
+    provider: ollama
+    base_url: http://localhost:11434
+    model: llama3:8b
+    temperature: 0.0
+
+  - name: openai_compatible_example
+    provider: openai_compatible
+    base_url: https://api.example.com/v1
+    api_key_env: EXAMPLE_API_KEY
+    model: example-model
+    temperature: 0.0
+

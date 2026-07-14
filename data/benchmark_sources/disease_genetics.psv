@@ -1,0 +1,52 @@
+subdomain|condition|gene|inheritance
+Pulmonary and hematologic|Cystic fibrosis|CFTR|Autosomal recessive
+Pulmonary and hematologic|Sickle cell disease|HBB|Autosomal recessive
+Pulmonary and hematologic|Hemophilia A|F8|X-linked
+Pulmonary and hematologic|Hemophilia B|F9|X-linked
+Neuromuscular|Duchenne muscular dystrophy|DMD|X-linked
+Cardiovascular|Marfan syndrome|FBN1|Autosomal dominant
+Neurogenetics|Huntington disease|HTT|Autosomal dominant
+Neuromuscular|Spinal muscular atrophy|SMN1|Autosomal recessive
+Metabolic|Phenylketonuria|PAH|Autosomal recessive
+Metabolic|Tay-Sachs disease|HEXA|Autosomal recessive
+Metabolic|HFE-related hemochromatosis|HFE|Autosomal recessive
+Cardiovascular|LDLR-related familial hypercholesterolemia|LDLR|Autosomal dominant
+Cancer predisposition|Familial adenomatous polyposis|APC|Autosomal dominant
+Cancer predisposition|MLH1-related Lynch syndrome|MLH1|Autosomal dominant
+Cancer predisposition|BRCA1-related hereditary breast and ovarian cancer|BRCA1|Autosomal dominant
+Cancer predisposition|Heritable retinoblastoma|RB1|Autosomal dominant
+Cancer predisposition|Von Hippel-Lindau syndrome|VHL|Autosomal dominant
+Multisystem|TSC2-related tuberous sclerosis complex|TSC2|Autosomal dominant
+Multisystem|Neurofibromatosis type 1|NF1|Autosomal dominant
+Neurogenetics|MECP2-related Rett syndrome|MECP2|X-linked
+Neurogenetics|Fragile X syndrome|FMR1|X-linked
+Neurogenetics|MT-ND4-related Leber hereditary optic neuropathy|MT-ND4|Mitochondrial maternal
+Neuromuscular|Charcot-Marie-Tooth disease type 1A|PMP22|Autosomal dominant
+Metabolic|Pompe disease|GAA|Autosomal recessive
+Metabolic|Fabry disease|GLA|X-linked
+Metabolic|Gaucher disease|GBA1|Autosomal recessive
+Metabolic|Mucopolysaccharidosis type I|IDUA|Autosomal recessive
+Endocrine|21-hydroxylase-deficient congenital adrenal hyperplasia|CYP21A2|Autosomal recessive
+Metabolic|Wilson disease|ATP7B|Autosomal recessive
+Renal|PKD1-related autosomal dominant polycystic kidney disease|PKD1|Autosomal dominant
+Renal|COL4A5-related Alport syndrome|COL4A5|X-linked
+Renal|Autosomal recessive polycystic kidney disease|PKHD1|Autosomal recessive
+Skeletal|Achondroplasia|FGFR3|Autosomal dominant
+Multisystem|PTPN11-related Noonan syndrome|PTPN11|Autosomal dominant
+Cancer predisposition|Multiple endocrine neoplasia type 2|RET|Autosomal dominant
+Cancer predisposition|Multiple endocrine neoplasia type 1|MEN1|Autosomal dominant
+Neurologic and systemic|Hereditary transthyretin amyloidosis|TTR|Autosomal dominant
+Neurogenetics|Genetic prion disease|PRNP|Autosomal dominant
+Cardiovascular|Long QT syndrome type 1|KCNQ1|Autosomal dominant
+Cardiovascular|SCN5A-related Brugada syndrome|SCN5A|Autosomal dominant
+Cardiovascular|MYBPC3-related hypertrophic cardiomyopathy|MYBPC3|Autosomal dominant
+Cardiovascular|PKP2-related arrhythmogenic right ventricular cardiomyopathy|PKP2|Autosomal dominant
+Gastrointestinal|PRSS1-related hereditary pancreatitis|PRSS1|Autosomal dominant
+Cancer predisposition|Peutz-Jeghers syndrome|STK11|Autosomal dominant
+Cancer predisposition|SMAD4-related juvenile polyposis syndrome|SMAD4|Autosomal dominant
+Cancer predisposition|Li-Fraumeni syndrome|TP53|Autosomal dominant
+Cancer predisposition|CDH1-related diffuse gastric and lobular breast cancer syndrome|CDH1|Autosomal dominant
+Metabolic|Ornithine transcarbamylase deficiency|OTC|X-linked
+Metabolic|Medium-chain acyl-CoA dehydrogenase deficiency|ACADM|Autosomal recessive
+Metabolic|Biotinidase deficiency|BTD|Autosomal recessive
+

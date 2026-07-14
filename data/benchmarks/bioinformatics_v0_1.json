@@ -1,0 +1,45 @@
+[
+  {
+    "id": "bioinfo_001",
+    "domain": "bioinformatics",
+    "subdomain": "RNA-seq QC",
+    "question_type": "single_choice",
+    "question": "What should be checked before differential expression analysis across sequencing batches?",
+    "options": {
+      "A": "Run differential expression immediately",
+      "B": "Inspect QC and batch structure using PCA or similar methods",
+      "C": "Remove all genes with low p-values",
+      "D": "Normalize only case samples"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "QC and batch structure should be inspected before formal modeling.",
+    "difficulty": "basic",
+    "tags": ["RNA-seq", "QC", "batch_effect"],
+    "source": "expert_curated",
+    "review_status": "expert_reviewed",
+    "version": "0.1"
+  },
+  {
+    "id": "bioinfo_002",
+    "domain": "bioinformatics",
+    "subdomain": "variant calling",
+    "question_type": "multiple_select",
+    "question": "Which checks can help assess a germline variant call set?",
+    "options": {
+      "A": "Transition/transversion ratio",
+      "B": "Sample identity and contamination",
+      "C": "Concordance with truth sets where applicable",
+      "D": "Deleting all heterozygous variants"
+    },
+    "correct_answer": null,
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Ti/Tv, identity/contamination, and truth-set concordance are useful QC checks.",
+    "difficulty": "intermediate",
+    "tags": ["variants", "QC"],
+    "source": "expert_curated",
+    "review_status": "expert_reviewed",
+    "version": "0.1"
+  }
+]
+

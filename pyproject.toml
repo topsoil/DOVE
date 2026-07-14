@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dove-eval"
+version = "0.1.0"
+description = "Domain-Oriented AI/LLMs Validation & Evaluation"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["PyYAML>=6.0", "requests>=2.31", "pydantic>=2.5"]
+
+[project.optional-dependencies]
+app = ["streamlit>=1.32", "pandas>=2.0", "altair>=5.0"]
+pdf = ["pypdf>=4.0"]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+

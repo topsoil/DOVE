@@ -1,0 +1,17 @@
+{
+  "fastqc": "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/",
+  "multiqc": "https://docs.seqera.io/multiqc/",
+  "hts": "https://samtools.github.io/hts-specs/",
+  "gatk": "https://gatk.broadinstitute.org/hc/en-us",
+  "deseq2": "https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+  "edger": "https://bioconductor.org/packages/release/bioc/vignettes/edgeR/inst/doc/edgeRUsersGuide.pdf",
+  "vep": "https://www.ensembl.org/info/docs/tools/vep/index.html",
+  "clinvar": "https://www.ncbi.nlm.nih.gov/clinvar/docs/",
+  "seurat": "https://satijalab.org/seurat/articles/pbmc3k_tutorial.html",
+  "qiime2": "https://docs.qiime2.org/",
+  "nfcore": "https://nf-co.re/docs/usage/introduction",
+  "snakemake": "https://snakemake.readthedocs.io/",
+  "ga4gh": "https://www.ga4gh.org/genomic-data-toolkit/",
+  "batchqc": "https://bioconductor.org/packages/release/bioc/vignettes/BatchQC/inst/doc/BatchQC_Intro.html"
+}
+

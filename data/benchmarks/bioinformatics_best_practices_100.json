@@ -1,0 +1,2842 @@
+[
+  {
+    "id": "bio_bp_001",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Sequencing QC",
+    "question_type": "single_choice",
+    "question": "Before downstream analysis, what is the best first use of per-base quality profiles?",
+    "difficulty": "basic",
+    "tags": [
+      "sequencing_qc",
+      "public_seed"
+    ],
+    "source": "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Convert all reads to amino-acid sequence",
+      "B": "Infer clinical phenotype directly",
+      "C": "Replace biological replicates",
+      "D": "Identify cycles with systematic quality deterioration"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Per-base profiles reveal cycle-specific sequencing problems."
+  },
+  {
+    "id": "bio_bp_002",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Sequencing QC",
+    "question_type": "single_choice",
+    "question": "What commonly causes strong adapter content near read ends?",
+    "difficulty": "intermediate",
+    "tags": [
+      "sequencing_qc",
+      "public_seed"
+    ],
+    "source": "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Coordinate-sorted BAM indexing",
+      "B": "Biological replication",
+      "C": "Insert sizes shorter than the sequencing read length",
+      "D": "Perfectly balanced GC content"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Reads can sequence through short inserts into adapter."
+  },
+  {
+    "id": "bio_bp_003",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Sequencing QC",
+    "question_type": "single_choice",
+    "question": "Why should unexpectedly high sequence duplication be investigated?",
+    "difficulty": "advanced",
+    "tags": [
+      "sequencing_qc",
+      "public_seed"
+    ],
+    "source": "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "It changes the reference genome build",
+      "B": "It may reflect PCR amplification or low library complexity",
+      "C": "It proves every duplicated read is contamination",
+      "D": "It guarantees higher statistical power"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Duplication can be technical or biological and requires context."
+  },
+  {
+    "id": "bio_bp_004",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Sequencing QC",
+    "question_type": "single_choice",
+    "question": "What does a large fraction of ambiguous N bases most directly indicate?",
+    "difficulty": "basic",
+    "tags": [
+      "sequencing_qc",
+      "public_seed"
+    ],
+    "source": "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Base-calling uncertainty",
+      "B": "Successful duplicate marking",
+      "C": "Correct read pairing",
+      "D": "Complete adapter removal"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "N denotes an undetermined nucleotide call."
+  },
+  {
+    "id": "bio_bp_005",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Sequencing QC",
+    "question_type": "single_choice",
+    "question": "Why compare GC distributions across samples in the same experiment?",
+    "difficulty": "intermediate",
+    "tags": [
+      "sequencing_qc",
+      "public_seed"
+    ],
+    "source": "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "GC content determines patient ancestry exactly",
+      "B": "All valid libraries must have 50% GC",
+      "C": "GC plots replace read alignment",
+      "D": "Outliers may reveal contamination or library-specific bias"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Unexpected sample-level GC differences warrant investigation."
+  },
+  {
+    "id": "bio_bp_006",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Sequencing QC",
+    "question_type": "single_choice",
+    "question": "What is the main value of MultiQC in a sequencing project?",
+    "difficulty": "advanced",
+    "tags": [
+      "sequencing_qc",
+      "public_seed"
+    ],
+    "source": "https://docs.seqera.io/multiqc/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://docs.seqera.io/multiqc/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Call germline variants without alignments",
+      "B": "Encrypt raw FASTQ files",
+      "C": "Aggregate many tools and samples into one QC report",
+      "D": "Perform de novo genome assembly"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "MultiQC consolidates outputs for cross-sample review."
+  },
+  {
+    "id": "bio_bp_007",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Sequencing QC",
+    "question_type": "single_choice",
+    "question": "When should raw-read QC be repeated after trimming?",
+    "difficulty": "basic",
+    "tags": [
+      "sequencing_qc",
+      "public_seed"
+    ],
+    "source": "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Only when all reads were discarded",
+      "B": "When trimming was performed, to verify its intended effect",
+      "C": "Only after publishing the study",
+      "D": "Never, because trimming guarantees quality"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Post-trimming QC checks whether problems improved or new bias appeared."
+  },
+  {
+    "id": "bio_bp_008",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Sequencing QC",
+    "question_type": "single_choice",
+    "question": "What is the safest response to a sample with unusually few reads?",
+    "difficulty": "intermediate",
+    "tags": [
+      "sequencing_qc",
+      "public_seed"
+    ],
+    "source": "https://docs.seqera.io/multiqc/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://docs.seqera.io/multiqc/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Investigate library preparation, demultiplexing, and sequencing metrics before exclusion",
+      "B": "Duplicate its reads until depth matches",
+      "C": "Normalize by copying another sample",
+      "D": "Silently remove the sample"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Low yield requires root-cause review and documented disposition."
+  },
+  {
+    "id": "bio_bp_009",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Sequencing QC",
+    "question_type": "single_choice",
+    "question": "Why should QC thresholds be interpreted by assay type?",
+    "difficulty": "advanced",
+    "tags": [
+      "sequencing_qc",
+      "public_seed"
+    ],
+    "source": "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Quality scores have no meaning in any assay",
+      "B": "Every assay requires identical GC and duplication profiles",
+      "C": "Assay type changes the FASTQ alphabet",
+      "D": "Expected profiles differ among assays and library protocols"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Context distinguishes expected assay patterns from failures."
+  },
+  {
+    "id": "bio_bp_010",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Alignment and formats",
+    "question_type": "single_choice",
+    "question": "What is BAM relative to SAM?",
+    "difficulty": "basic",
+    "tags": [
+      "alignment_and_formats",
+      "public_seed"
+    ],
+    "source": "https://samtools.github.io/hts-specs/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://samtools.github.io/hts-specs/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "A reference-free variant caller",
+      "B": "A phenotype ontology",
+      "C": "A binary representation of alignment records",
+      "D": "A gene-expression normalization method"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "BAM is the binary equivalent of SAM."
+  },
+  {
+    "id": "bio_bp_011",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Alignment and formats",
+    "question_type": "single_choice",
+    "question": "Why coordinate-sort an alignment file before many downstream operations?",
+    "difficulty": "intermediate",
+    "tags": [
+      "alignment_and_formats",
+      "public_seed"
+    ],
+    "source": "https://samtools.github.io/hts-specs/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://samtools.github.io/hts-specs/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "It recalculates base qualities automatically",
+      "B": "It groups records by genomic position for indexing and region access",
+      "C": "It changes read sequences to the reference allele",
+      "D": "It removes all duplicate reads"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Coordinate order enables efficient locus-based processing."
+  },
+  {
+    "id": "bio_bp_012",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Alignment and formats",
+    "question_type": "single_choice",
+    "question": "What does a BAM index primarily enable?",
+    "difficulty": "advanced",
+    "tags": [
+      "alignment_and_formats",
+      "public_seed"
+    ],
+    "source": "https://samtools.github.io/hts-specs/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://samtools.github.io/hts-specs/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Rapid random access to alignments in genomic regions",
+      "B": "Lossless conversion of RNA to DNA",
+      "C": "Automatic sample de-identification",
+      "D": "Variant pathogenicity classification"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "An index maps genomic intervals to file locations."
+  },
+  {
+    "id": "bio_bp_013",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Alignment and formats",
+    "question_type": "single_choice",
+    "question": "What is CRAM designed to provide compared with BAM?",
+    "difficulty": "basic",
+    "tags": [
+      "alignment_and_formats",
+      "public_seed"
+    ],
+    "source": "https://samtools.github.io/hts-specs/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://samtools.github.io/hts-specs/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Higher sequencing depth by duplicating reads",
+      "B": "A replacement for sample metadata",
+      "C": "Only unaligned protein sequences",
+      "D": "More efficient alignment compression, often using a reference"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "CRAM is an alignment format optimized for compression."
+  },
+  {
+    "id": "bio_bp_014",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Alignment and formats",
+    "question_type": "single_choice",
+    "question": "Why must the exact reference assembly be recorded?",
+    "difficulty": "intermediate",
+    "tags": [
+      "alignment_and_formats",
+      "public_seed"
+    ],
+    "source": "https://www.ga4gh.org/genomic-data-toolkit/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ga4gh.org/genomic-data-toolkit/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "It determines the sequencer's laser power",
+      "B": "It eliminates the need for checksums",
+      "C": "Coordinates and alleles are assembly-specific",
+      "D": "All assemblies have identical coordinates"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Interpretation requires the reference build used in analysis."
+  },
+  {
+    "id": "bio_bp_015",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Alignment and formats",
+    "question_type": "single_choice",
+    "question": "In a VCF, what does a FILTER value of PASS mean?",
+    "difficulty": "advanced",
+    "tags": [
+      "alignment_and_formats",
+      "public_seed"
+    ],
+    "source": "https://samtools.github.io/hts-specs/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://samtools.github.io/hts-specs/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "The site exists in every population",
+      "B": "The record passed the filters that were applied",
+      "C": "The variant is clinically pathogenic",
+      "D": "The genotype is necessarily heterozygous"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "PASS is a technical filtering status, not clinical interpretation."
+  },
+  {
+    "id": "bio_bp_016",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Alignment and formats",
+    "question_type": "single_choice",
+    "question": "What is the purpose of read-group information in BAM records?",
+    "difficulty": "basic",
+    "tags": [
+      "alignment_and_formats",
+      "public_seed"
+    ],
+    "source": "https://gatk.broadinstitute.org/hc/en-us",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://gatk.broadinstitute.org/hc/en-us",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Track sample and library/platform provenance needed by many tools",
+      "B": "Store the disease diagnosis",
+      "C": "Replace the alignment CIGAR",
+      "D": "Define gene ontology terms"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Read groups identify technical/sample provenance."
+  },
+  {
+    "id": "bio_bp_017",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Alignment and formats",
+    "question_type": "single_choice",
+    "question": "Why validate that contig names agree among reference, BAM, and VCF?",
+    "difficulty": "intermediate",
+    "tags": [
+      "alignment_and_formats",
+      "public_seed"
+    ],
+    "source": "https://samtools.github.io/hts-specs/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://samtools.github.io/hts-specs/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Contig names determine read quality",
+      "B": "Matching names removes batch effects",
+      "C": "VCF does not contain contigs",
+      "D": "Mismatches can cause records to be skipped or tools to fail"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Consistent sequence dictionaries are required for interoperability."
+  },
+  {
+    "id": "bio_bp_018",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Alignment and formats",
+    "question_type": "single_choice",
+    "question": "What does the SAM unmapped flag communicate?",
+    "difficulty": "advanced",
+    "tags": [
+      "alignment_and_formats",
+      "public_seed"
+    ],
+    "source": "https://samtools.github.io/hts-specs/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://samtools.github.io/hts-specs/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "The read is a PCR duplicate in every case",
+      "B": "The sample has no variants",
+      "C": "The read is not aligned to a reference position",
+      "D": "The read has been clinically validated"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "SAM flags encode alignment properties including unmapped status."
+  },
+  {
+    "id": "bio_bp_019",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "RNA-seq",
+    "question_type": "single_choice",
+    "question": "What input does DESeq2 expect for its standard differential-expression workflow?",
+    "difficulty": "basic",
+    "tags": [
+      "rna-seq",
+      "public_seed"
+    ],
+    "source": "https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Raw FASTQ quality strings",
+      "B": "Unnormalized integer count data",
+      "C": "Per-gene p-values only",
+      "D": "TPM values rounded to integers"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "DESeq2 models integer counts and performs its own normalization."
+  },
+  {
+    "id": "bio_bp_020",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "RNA-seq",
+    "question_type": "single_choice",
+    "question": "Why is PCA useful before RNA-seq differential-expression testing?",
+    "difficulty": "intermediate",
+    "tags": [
+      "rna-seq",
+      "public_seed"
+    ],
+    "source": "https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "It can reveal sample structure, outliers, and batch effects",
+      "B": "It proves every gene is normally distributed",
+      "C": "It replaces the design formula",
+      "D": "It assigns clinical pathogenicity"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "PCA is an exploratory sample-level diagnostic."
+  },
+  {
+    "id": "bio_bp_021",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "RNA-seq",
+    "question_type": "single_choice",
+    "question": "How should a known batch variable usually be handled when it is not confounded with condition?",
+    "difficulty": "advanced",
+    "tags": [
+      "rna-seq",
+      "public_seed"
+    ],
+    "source": "https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Delete all genes associated with batch",
+      "B": "Normalize cases and controls separately",
+      "C": "Ignore it because normalization removes all batches",
+      "D": "Include it in the statistical design"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Modeling known covariates can separate batch from condition effects."
+  },
+  {
+    "id": "bio_bp_022",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "RNA-seq",
+    "question_type": "single_choice",
+    "question": "Why are biological replicates important for differential expression?",
+    "difficulty": "basic",
+    "tags": [
+      "rna-seq",
+      "public_seed"
+    ],
+    "source": "https://bioconductor.org/packages/release/bioc/vignettes/edgeR/inst/doc/edgeRUsersGuide.pdf",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://bioconductor.org/packages/release/bioc/vignettes/edgeR/inst/doc/edgeRUsersGuide.pdf",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "They guarantee zero false discoveries",
+      "B": "They replace independent validation",
+      "C": "They permit estimation of biological variability",
+      "D": "They make alignment unnecessary"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Inference requires replication of biological units."
+  },
+  {
+    "id": "bio_bp_023",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "RNA-seq",
+    "question_type": "single_choice",
+    "question": "What is a key problem with a design in which all cases are in one batch and all controls in another?",
+    "difficulty": "intermediate",
+    "tags": [
+      "rna-seq",
+      "public_seed"
+    ],
+    "source": "https://bioconductor.org/packages/release/bioc/vignettes/BatchQC/inst/doc/BatchQC_Intro.html",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://bioconductor.org/packages/release/bioc/vignettes/BatchQC/inst/doc/BatchQC_Intro.html",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Counts become continuous",
+      "B": "Condition and batch effects are confounded",
+      "C": "The read length becomes unknown",
+      "D": "Gene identifiers become invalid"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Perfect confounding prevents separating the two effects."
+  },
+  {
+    "id": "bio_bp_024",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "RNA-seq",
+    "question_type": "single_choice",
+    "question": "What does false-discovery-rate adjustment address?",
+    "difficulty": "advanced",
+    "tags": [
+      "rna-seq",
+      "public_seed"
+    ],
+    "source": "https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Multiple testing across many genes",
+      "B": "Read-pair orientation",
+      "C": "Reference genome compression",
+      "D": "Adapter ligation efficiency"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "FDR procedures account for testing thousands of features."
+  },
+  {
+    "id": "bio_bp_025",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "RNA-seq",
+    "question_type": "single_choice",
+    "question": "Why filter extremely low-count genes using a condition-independent rule?",
+    "difficulty": "basic",
+    "tags": [
+      "rna-seq",
+      "public_seed"
+    ],
+    "source": "https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "They are always the most biologically important",
+      "B": "Filtering changes all remaining fold changes to zero",
+      "C": "It guarantees equal library sizes",
+      "D": "They often provide little power while increasing the testing burden"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Independent low-count filtering can improve detection power."
+  },
+  {
+    "id": "bio_bp_026",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "RNA-seq",
+    "question_type": "single_choice",
+    "question": "What should accompany a reported differential-expression result besides a p-value?",
+    "difficulty": "intermediate",
+    "tags": [
+      "rna-seq",
+      "public_seed"
+    ],
+    "source": "https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Only raw read count from one sample",
+      "B": "A screenshot without methods",
+      "C": "Effect size such as log2 fold change and uncertainty/context",
+      "D": "Only the gene symbol"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Statistical significance alone does not convey magnitude or precision."
+  },
+  {
+    "id": "bio_bp_027",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "RNA-seq",
+    "question_type": "single_choice",
+    "question": "Why should gene identifiers and annotation versions be retained?",
+    "difficulty": "advanced",
+    "tags": [
+      "rna-seq",
+      "public_seed"
+    ],
+    "source": "https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Annotations eliminate batch effects",
+      "B": "Mappings and gene definitions change across annotation releases",
+      "C": "Identifiers are interchangeable across all species",
+      "D": "Versions determine FASTQ quality encoding"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Versioned annotation is necessary for reproducible interpretation."
+  },
+  {
+    "id": "bio_bp_028",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Variant calling",
+    "question_type": "single_choice",
+    "question": "What is the role of duplicate marking in common short-read variant workflows?",
+    "difficulty": "basic",
+    "tags": [
+      "variant_calling",
+      "public_seed"
+    ],
+    "source": "https://gatk.broadinstitute.org/hc/en-us",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://gatk.broadinstitute.org/hc/en-us",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Flag likely PCR/optical duplicates so evidence is not overcounted",
+      "B": "Delete every read sharing a start coordinate",
+      "C": "Annotate clinical significance",
+      "D": "Convert SNPs into indels"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Duplicate marking limits technical amplification bias."
+  },
+  {
+    "id": "bio_bp_029",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Variant calling",
+    "question_type": "single_choice",
+    "question": "Why perform joint genotyping from per-sample GVCFs in a cohort?",
+    "difficulty": "intermediate",
+    "tags": [
+      "variant_calling",
+      "public_seed"
+    ],
+    "source": "https://gatk.broadinstitute.org/hc/en-us",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://gatk.broadinstitute.org/hc/en-us",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Merge unrelated reference assemblies",
+      "B": "Replace all low-depth genotypes with reference",
+      "C": "Infer phenotypes from file names",
+      "D": "Genotype samples consistently with cohort-wide evidence"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Joint genotyping improves consistent site representation across samples."
+  },
+  {
+    "id": "bio_bp_030",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Variant calling",
+    "question_type": "single_choice",
+    "question": "What should be checked when an apparent variant occurs only near read ends?",
+    "difficulty": "advanced",
+    "tags": [
+      "variant_calling",
+      "public_seed"
+    ],
+    "source": "https://gatk.broadinstitute.org/hc/en-us",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://gatk.broadinstitute.org/hc/en-us",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "The patient's blood type",
+      "B": "Only the VCF file size",
+      "C": "Potential alignment or base-quality artifact",
+      "D": "Whether the gene has an approved drug"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "End-of-read support can be error-prone and strand/position biased."
+  },
+  {
+    "id": "bio_bp_031",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Variant calling",
+    "question_type": "single_choice",
+    "question": "Why examine depth and genotype quality rather than variant QUAL alone?",
+    "difficulty": "basic",
+    "tags": [
+      "variant_calling",
+      "public_seed"
+    ],
+    "source": "https://samtools.github.io/hts-specs/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://samtools.github.io/hts-specs/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Genotype fields are irrelevant in multi-sample VCFs",
+      "B": "Site-level and sample-level confidence answer different questions",
+      "C": "QUAL directly reports inheritance mode",
+      "D": "Depth determines pathogenicity"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "A high-quality site can still contain an uncertain sample genotype."
+  },
+  {
+    "id": "bio_bp_032",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Variant calling",
+    "question_type": "single_choice",
+    "question": "What is a common purpose of base-quality score recalibration?",
+    "difficulty": "intermediate",
+    "tags": [
+      "variant_calling",
+      "public_seed"
+    ],
+    "source": "https://gatk.broadinstitute.org/hc/en-us",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://gatk.broadinstitute.org/hc/en-us",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Model and adjust systematic errors in sequencer-reported base qualities",
+      "B": "Realign every chromosome to a different species",
+      "C": "Predict protein structure",
+      "D": "Determine disease penetrance"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "BQSR recalibrates empirical base-call error estimates."
+  },
+  {
+    "id": "bio_bp_033",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Variant calling",
+    "question_type": "single_choice",
+    "question": "Why normalize and left-align small variants before comparison?",
+    "difficulty": "advanced",
+    "tags": [
+      "variant_calling",
+      "public_seed"
+    ],
+    "source": "https://gatk.broadinstitute.org/hc/en-us",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://gatk.broadinstitute.org/hc/en-us",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "It converts somatic variants to germline",
+      "B": "It increases sequencing depth",
+      "C": "It removes the need for a reference",
+      "D": "Equivalent indel representations can otherwise appear different"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Canonical representation supports matching and deduplication."
+  },
+  {
+    "id": "bio_bp_034",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Variant calling",
+    "question_type": "single_choice",
+    "question": "What is the correct interpretation of a low variant allele fraction?",
+    "difficulty": "basic",
+    "tags": [
+      "variant_calling",
+      "public_seed"
+    ],
+    "source": "https://gatk.broadinstitute.org/hc/en-us",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://gatk.broadinstitute.org/hc/en-us",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "It always proves sequencing contamination",
+      "B": "It means the reference assembly is wrong",
+      "C": "It may reflect mosaicism, tumor purity, copy number, or artifact and needs context",
+      "D": "It always proves a germline heterozygous variant"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Allele fraction has several biological and technical determinants."
+  },
+  {
+    "id": "bio_bp_035",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Variant calling",
+    "question_type": "single_choice",
+    "question": "Why use a matched normal in somatic variant calling when available?",
+    "difficulty": "intermediate",
+    "tags": [
+      "variant_calling",
+      "public_seed"
+    ],
+    "source": "https://gatk.broadinstitute.org/hc/en-us",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://gatk.broadinstitute.org/hc/en-us",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Determine RNA expression",
+      "B": "Help distinguish tumor-acquired variants from germline and artifacts",
+      "C": "Increase tumor purity",
+      "D": "Replace panel-of-normals filtering"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "A matched normal identifies inherited variation and shared artifacts."
+  },
+  {
+    "id": "bio_bp_036",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Variant calling",
+    "question_type": "single_choice",
+    "question": "What is a panel of normals primarily used for in somatic calling?",
+    "difficulty": "advanced",
+    "tags": [
+      "variant_calling",
+      "public_seed"
+    ],
+    "source": "https://gatk.broadinstitute.org/hc/en-us",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://gatk.broadinstitute.org/hc/en-us",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Identify recurrent technical artifacts and some germline sites",
+      "B": "Provide tumor histology",
+      "C": "Generate the reference genome",
+      "D": "Measure transcript abundance"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Normals help filter recurrent non-somatic signals."
+  },
+  {
+    "id": "bio_bp_037",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Germline interpretation",
+    "question_type": "single_choice",
+    "question": "What does a ClinVar assertion represent?",
+    "difficulty": "basic",
+    "tags": [
+      "germline_interpretation",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/clinvar/docs/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/docs/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "An automatically proven causal relationship",
+      "B": "A population allele frequency",
+      "C": "A sequencing read alignment",
+      "D": "A submitted interpretation that must be considered with review status and evidence"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "ClinVar aggregates submissions and their supporting context."
+  },
+  {
+    "id": "bio_bp_038",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Germline interpretation",
+    "question_type": "single_choice",
+    "question": "Why must population frequency be considered in variant interpretation?",
+    "difficulty": "intermediate",
+    "tags": [
+      "germline_interpretation",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/clinvar/docs/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/docs/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Rare variants are always pathogenic",
+      "B": "Frequency determines the reference allele",
+      "C": "A variant too common for a rare highly penetrant disorder may be inconsistent with causality",
+      "D": "Common variants are always benign"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Frequency must be compatible with disease prevalence and penetrance."
+  },
+  {
+    "id": "bio_bp_039",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Germline interpretation",
+    "question_type": "single_choice",
+    "question": "What is the safest handling of a variant of uncertain significance?",
+    "difficulty": "advanced",
+    "tags": [
+      "germline_interpretation",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/clinvar/docs/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/docs/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Exclude it from future re-evaluation",
+      "B": "Do not treat it as definitively pathogenic or benign",
+      "C": "Use it alone for irreversible clinical decisions",
+      "D": "Report it as a positive diagnosis"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "A VUS lacks sufficient evidence for a definitive classification."
+  },
+  {
+    "id": "bio_bp_040",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Germline interpretation",
+    "question_type": "single_choice",
+    "question": "Why specify the transcript used for an HGVS consequence?",
+    "difficulty": "basic",
+    "tags": [
+      "germline_interpretation",
+      "public_seed"
+    ],
+    "source": "https://www.ensembl.org/info/docs/tools/vep/index.html",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ensembl.org/info/docs/tools/vep/index.html",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "The same genomic variant can have different transcript consequences",
+      "B": "Every gene has only one transcript",
+      "C": "HGVS replaces genomic coordinates",
+      "D": "Transcript choice determines sample identity"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Transcript context affects coding position and predicted effect."
+  },
+  {
+    "id": "bio_bp_041",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Germline interpretation",
+    "question_type": "single_choice",
+    "question": "What is the purpose of consequence annotation tools such as VEP?",
+    "difficulty": "intermediate",
+    "tags": [
+      "germline_interpretation",
+      "public_seed"
+    ],
+    "source": "https://www.ensembl.org/info/docs/tools/vep/index.html",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ensembl.org/info/docs/tools/vep/index.html",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Establish pathogenicity without evidence review",
+      "B": "Call variants directly from raw images",
+      "C": "Replace patient consent",
+      "D": "Predict and report variant effects on transcripts, proteins, and regulatory features"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Annotation supplies consequences, not a standalone clinical classification."
+  },
+  {
+    "id": "bio_bp_042",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Germline interpretation",
+    "question_type": "single_choice",
+    "question": "Why review inheritance and segregation in a family?",
+    "difficulty": "advanced",
+    "tags": [
+      "germline_interpretation",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/clinvar/docs/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/docs/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "It guarantees complete penetrance",
+      "B": "It removes sequencing artifacts automatically",
+      "C": "Co-segregation or de novo status can inform disease relevance",
+      "D": "It changes the reference allele"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Family data can strengthen or weaken a causal hypothesis."
+  },
+  {
+    "id": "bio_bp_043",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Germline interpretation",
+    "question_type": "single_choice",
+    "question": "What should be done when a negative exome result conflicts with a strong phenotype?",
+    "difficulty": "basic",
+    "tags": [
+      "germline_interpretation",
+      "public_seed"
+    ],
+    "source": "https://www.ensembl.org/info/docs/tools/vep/index.html",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ensembl.org/info/docs/tools/vep/index.html",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Assume every intronic variant is causal",
+      "B": "Consider coverage gaps, variant classes not detected, reanalysis, or other tests",
+      "C": "Conclude the phenotype is not genetic",
+      "D": "Change all reference genotypes to missing"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "A negative result may reflect assay or knowledge limitations."
+  },
+  {
+    "id": "bio_bp_044",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Germline interpretation",
+    "question_type": "single_choice",
+    "question": "Why is gene-disease validity distinct from variant pathogenicity?",
+    "difficulty": "intermediate",
+    "tags": [
+      "germline_interpretation",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/clinvar/docs/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/docs/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "A damaging variant is only clinically relevant if the gene is valid for the phenotype",
+      "B": "Every loss-of-function variant causes every disease",
+      "C": "Gene validity is determined by read depth",
+      "D": "Variant pathogenicity makes phenotype irrelevant"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Both the gene-disease relationship and variant evidence matter."
+  },
+  {
+    "id": "bio_bp_045",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Germline interpretation",
+    "question_type": "single_choice",
+    "question": "Why retain evidence dates and database versions?",
+    "difficulty": "advanced",
+    "tags": [
+      "germline_interpretation",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/clinvar/docs/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/docs/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Old evidence is always more accurate",
+      "B": "Versions encode patient identifiers",
+      "C": "Databases never update records",
+      "D": "Clinical interpretations and annotations change over time"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Reanalysis depends on knowing the evidence snapshot."
+  },
+  {
+    "id": "bio_bp_046",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Cancer genomics",
+    "question_type": "single_choice",
+    "question": "Why estimate tumor purity before interpreting somatic allele fractions?",
+    "difficulty": "basic",
+    "tags": [
+      "cancer_genomics",
+      "public_seed"
+    ],
+    "source": "https://gatk.broadinstitute.org/hc/en-us",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://gatk.broadinstitute.org/hc/en-us",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Low purity proves every call is germline",
+      "B": "Purity replaces copy-number analysis",
+      "C": "Normal-cell admixture changes expected variant allele fractions",
+      "D": "Purity determines the reference genome build"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Tumor cellularity affects observed somatic signal."
+  },
+  {
+    "id": "bio_bp_047",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Cancer genomics",
+    "question_type": "single_choice",
+    "question": "Why consider local copy number when interpreting a tumor variant's allele fraction?",
+    "difficulty": "intermediate",
+    "tags": [
+      "cancer_genomics",
+      "public_seed"
+    ],
+    "source": "https://gatk.broadinstitute.org/hc/en-us",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://gatk.broadinstitute.org/hc/en-us",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Copy number defines sequencing quality",
+      "B": "Amplification or deletion changes the expected fraction",
+      "C": "Copy number only affects RNA",
+      "D": "Every diploid locus has allele fraction exactly 0.5 in tumors"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Allelic copy state and purity jointly shape variant fractions."
+  },
+  {
+    "id": "bio_bp_048",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Cancer genomics",
+    "question_type": "single_choice",
+    "question": "What is a major risk of tumor-only variant calling?",
+    "difficulty": "advanced",
+    "tags": [
+      "cancer_genomics",
+      "public_seed"
+    ],
+    "source": "https://gatk.broadinstitute.org/hc/en-us",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://gatk.broadinstitute.org/hc/en-us",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Germline variants may be mistaken for somatic events",
+      "B": "No variants can be detected",
+      "C": "All sequencing artifacts disappear",
+      "D": "Tumor purity becomes 100%"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Without a matched normal, germline/somatic separation is harder."
+  },
+  {
+    "id": "bio_bp_049",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Cancer genomics",
+    "question_type": "single_choice",
+    "question": "Why inspect strand bias and read-position bias for somatic calls?",
+    "difficulty": "basic",
+    "tags": [
+      "cancer_genomics",
+      "public_seed"
+    ],
+    "source": "https://gatk.broadinstitute.org/hc/en-us",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://gatk.broadinstitute.org/hc/en-us",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "They determine drug dosage directly",
+      "B": "They measure tumor stage",
+      "C": "They replace manual review",
+      "D": "Strong asymmetry may indicate sequencing or alignment artifacts"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Technical biases can create false-positive low-frequency calls."
+  },
+  {
+    "id": "bio_bp_050",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Cancer genomics",
+    "question_type": "single_choice",
+    "question": "What is the purpose of contamination estimation in tumor-normal analysis?",
+    "difficulty": "intermediate",
+    "tags": [
+      "cancer_genomics",
+      "public_seed"
+    ],
+    "source": "https://gatk.broadinstitute.org/hc/en-us",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://gatk.broadinstitute.org/hc/en-us",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Measure gene expression",
+      "B": "Assign disease ontology terms",
+      "C": "Detect sample mixture that distorts allele fractions and calls",
+      "D": "Infer all copy-number states"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Cross-sample contamination can mimic or hide variation."
+  },
+  {
+    "id": "bio_bp_051",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Cancer genomics",
+    "question_type": "single_choice",
+    "question": "Why avoid equating a detected driver-gene variant with an actionable therapy?",
+    "difficulty": "advanced",
+    "tags": [
+      "cancer_genomics",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/clinvar/docs/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/docs/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "All therapies are tumor-agnostic",
+      "B": "Actionability depends on the exact variant, tumor type, evidence, and clinical context",
+      "C": "Every variant in a cancer gene is actionable",
+      "D": "Actionability depends only on read depth"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Molecular detection and clinical actionability are separate assessments."
+  },
+  {
+    "id": "bio_bp_052",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Cancer genomics",
+    "question_type": "single_choice",
+    "question": "What is clonal hematopoiesis as a confounder in blood-derived normal samples?",
+    "difficulty": "basic",
+    "tags": [
+      "cancer_genomics",
+      "public_seed"
+    ],
+    "source": "https://gatk.broadinstitute.org/hc/en-us",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://gatk.broadinstitute.org/hc/en-us",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Blood-cell clones can carry somatic variants that complicate tumor-normal comparison",
+      "B": "A method for RNA normalization",
+      "C": "A reference genome assembly",
+      "D": "An index format for VCF"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Age-related blood clones can appear in the matched normal."
+  },
+  {
+    "id": "bio_bp_053",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Cancer genomics",
+    "question_type": "single_choice",
+    "question": "Why validate sample identity between tumor and normal?",
+    "difficulty": "intermediate",
+    "tags": [
+      "cancer_genomics",
+      "public_seed"
+    ],
+    "source": "https://gatk.broadinstitute.org/hc/en-us",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://gatk.broadinstitute.org/hc/en-us",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Identity is guaranteed by file naming",
+      "B": "It increases tumor purity",
+      "C": "It changes variant annotation",
+      "D": "A swap or mismatch invalidates somatic comparison"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Paired analysis assumes both samples come from the same person."
+  },
+  {
+    "id": "bio_bp_054",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Cancer genomics",
+    "question_type": "single_choice",
+    "question": "What should a somatic pipeline record for reproducibility?",
+    "difficulty": "advanced",
+    "tags": [
+      "cancer_genomics",
+      "public_seed"
+    ],
+    "source": "https://nf-co.re/docs/usage/introduction",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://nf-co.re/docs/usage/introduction",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Only the operating-system name",
+      "B": "Only genes with therapies",
+      "C": "Reference, intervals, tool versions, parameters, filters, and sample metadata",
+      "D": "Only the final variant count"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Complete provenance is needed to reproduce calls."
+  },
+  {
+    "id": "bio_bp_055",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Single-cell genomics",
+    "question_type": "single_choice",
+    "question": "Why examine genes detected and total counts per cell?",
+    "difficulty": "basic",
+    "tags": [
+      "single-cell_genomics",
+      "public_seed"
+    ],
+    "source": "https://satijalab.org/seurat/articles/pbmc3k_tutorial.html",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://satijalab.org/seurat/articles/pbmc3k_tutorial.html",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "All valid cells have identical counts",
+      "B": "Extreme values can identify low-quality cells or multiplets",
+      "C": "They directly reveal every cell type",
+      "D": "They replace normalization"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Per-cell complexity metrics support QC decisions."
+  },
+  {
+    "id": "bio_bp_056",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Single-cell genomics",
+    "question_type": "single_choice",
+    "question": "What can an unusually high mitochondrial RNA fraction indicate?",
+    "difficulty": "intermediate",
+    "tags": [
+      "single-cell_genomics",
+      "public_seed"
+    ],
+    "source": "https://satijalab.org/seurat/articles/pbmc3k_tutorial.html",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://satijalab.org/seurat/articles/pbmc3k_tutorial.html",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Stressed, damaged, or dying cells, depending on tissue context",
+      "B": "Perfect cell viability in all tissues",
+      "C": "A germline mitochondrial diagnosis",
+      "D": "Successful doublet removal"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "High mitochondrial fraction is a common context-dependent QC flag."
+  },
+  {
+    "id": "bio_bp_057",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Single-cell genomics",
+    "question_type": "single_choice",
+    "question": "Why are doublets problematic in droplet single-cell data?",
+    "difficulty": "advanced",
+    "tags": [
+      "single-cell_genomics",
+      "public_seed"
+    ],
+    "source": "https://satijalab.org/seurat/articles/pbmc3k_tutorial.html",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://satijalab.org/seurat/articles/pbmc3k_tutorial.html",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "They eliminate ambient RNA",
+      "B": "They guarantee higher coverage",
+      "C": "They are biological replicates",
+      "D": "They can create mixed expression profiles that resemble novel cell states"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Two captured cells can masquerade as one hybrid profile."
+  },
+  {
+    "id": "bio_bp_058",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Single-cell genomics",
+    "question_type": "single_choice",
+    "question": "Why should cell-type labels be supported by multiple markers?",
+    "difficulty": "basic",
+    "tags": [
+      "single-cell_genomics",
+      "public_seed"
+    ],
+    "source": "https://satijalab.org/seurat/articles/pbmc3k_tutorial.html",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://satijalab.org/seurat/articles/pbmc3k_tutorial.html",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Markers remove batch effects",
+      "B": "Labels determine sequencing depth",
+      "C": "Single markers may be shared, noisy, or affected by state",
+      "D": "One transcript always uniquely defines a cell type"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Marker panels and context improve annotation robustness."
+  },
+  {
+    "id": "bio_bp_059",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Single-cell genomics",
+    "question_type": "single_choice",
+    "question": "What is ambient RNA contamination?",
+    "difficulty": "intermediate",
+    "tags": [
+      "single-cell_genomics",
+      "public_seed"
+    ],
+    "source": "https://satijalab.org/seurat/articles/pbmc3k_tutorial.html",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://satijalab.org/seurat/articles/pbmc3k_tutorial.html",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "A p-value correction method",
+      "B": "Free RNA captured in droplets that can create spurious low-level expression",
+      "C": "Genomic DNA used as reference",
+      "D": "A form of coordinate sorting"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Background RNA can leak signatures into unrelated droplets."
+  },
+  {
+    "id": "bio_bp_060",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Single-cell genomics",
+    "question_type": "single_choice",
+    "question": "Why inspect whether clusters are driven by batch?",
+    "difficulty": "advanced",
+    "tags": [
+      "single-cell_genomics",
+      "public_seed"
+    ],
+    "source": "https://satijalab.org/seurat/articles/pbmc3k_tutorial.html",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://satijalab.org/seurat/articles/pbmc3k_tutorial.html",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Technical separation can be mistaken for biological cell types",
+      "B": "Clusters must always be batch-specific",
+      "C": "Batch labels replace cell barcodes",
+      "D": "Integration guarantees removal of all biology"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Batch-associated clustering needs diagnosis before interpretation."
+  },
+  {
+    "id": "bio_bp_061",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Single-cell genomics",
+    "question_type": "single_choice",
+    "question": "What is a danger of over-aggressive data integration?",
+    "difficulty": "basic",
+    "tags": [
+      "single-cell_genomics",
+      "public_seed"
+    ],
+    "source": "https://satijalab.org/seurat/articles/pbmc3k_tutorial.html",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://satijalab.org/seurat/articles/pbmc3k_tutorial.html",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "It always increases sequencing errors",
+      "B": "It converts RNA to DNA",
+      "C": "It creates a new reference assembly",
+      "D": "It can remove real biological differences along with batch effects"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Correction methods can overcorrect genuine signal."
+  },
+  {
+    "id": "bio_bp_062",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Single-cell genomics",
+    "question_type": "single_choice",
+    "question": "Why set QC thresholds after examining each dataset rather than copying fixed cutoffs?",
+    "difficulty": "intermediate",
+    "tags": [
+      "single-cell_genomics",
+      "public_seed"
+    ],
+    "source": "https://satijalab.org/seurat/articles/pbmc3k_tutorial.html",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://satijalab.org/seurat/articles/pbmc3k_tutorial.html",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Every experiment has identical distributions",
+      "B": "Fixed cutoffs guarantee no doublets",
+      "C": "Expected counts and mitochondrial fractions vary by tissue and protocol",
+      "D": "Thresholds are forbidden in single-cell analysis"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "QC is assay- and tissue-dependent."
+  },
+  {
+    "id": "bio_bp_063",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Single-cell genomics",
+    "question_type": "single_choice",
+    "question": "What is pseudobulk differential expression intended to do?",
+    "difficulty": "advanced",
+    "tags": [
+      "single-cell_genomics",
+      "public_seed"
+    ],
+    "source": "https://bioconductor.org/packages/release/bioc/vignettes/edgeR/inst/doc/edgeRUsersGuide.pdf",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://bioconductor.org/packages/release/bioc/vignettes/edgeR/inst/doc/edgeRUsersGuide.pdf",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Replace cell annotation",
+      "B": "Aggregate counts by biological replicate and cell group for replicate-aware inference",
+      "C": "Treat every cell as an independent patient",
+      "D": "Remove all rare cell types"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Pseudobulk preserves the biological replicate as the inference unit."
+  },
+  {
+    "id": "bio_bp_064",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Metagenomics",
+    "question_type": "single_choice",
+    "question": "Why include negative controls in low-biomass microbiome studies?",
+    "difficulty": "basic",
+    "tags": [
+      "metagenomics",
+      "public_seed"
+    ],
+    "source": "https://docs.qiime2.org/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://docs.qiime2.org/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Detect reagent and environmental contamination",
+      "B": "Increase microbial diversity",
+      "C": "Serve as biological cases",
+      "D": "Replace taxonomic databases"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Contaminants can dominate low-biomass samples."
+  },
+  {
+    "id": "bio_bp_065",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Metagenomics",
+    "question_type": "single_choice",
+    "question": "Why is compositional treatment important for microbiome counts?",
+    "difficulty": "intermediate",
+    "tags": [
+      "metagenomics",
+      "public_seed"
+    ],
+    "source": "https://docs.qiime2.org/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://docs.qiime2.org/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Every taxon has the same genome size",
+      "B": "Counts are normally distributed by definition",
+      "C": "Taxonomic labels determine depth",
+      "D": "Library sizes differ and relative-abundance data have compositional constraints"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Unequal sampling and compositionality affect comparisons."
+  },
+  {
+    "id": "bio_bp_066",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Metagenomics",
+    "question_type": "single_choice",
+    "question": "What is the purpose of denoising amplicon reads into ASVs?",
+    "difficulty": "advanced",
+    "tags": [
+      "metagenomics",
+      "public_seed"
+    ],
+    "source": "https://docs.qiime2.org/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://docs.qiime2.org/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Assign clinical pathogenicity",
+      "B": "Align human genomes",
+      "C": "Infer error-corrected sequence variants rather than fixed-similarity OTUs",
+      "D": "Translate DNA into protein structures"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Denoising models sequencing errors to resolve exact variants."
+  },
+  {
+    "id": "bio_bp_067",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Metagenomics",
+    "question_type": "single_choice",
+    "question": "Why track the taxonomic reference database and version?",
+    "difficulty": "basic",
+    "tags": [
+      "metagenomics",
+      "public_seed"
+    ],
+    "source": "https://docs.qiime2.org/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://docs.qiime2.org/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "A database removes contamination",
+      "B": "Assignments can change with database content and taxonomy",
+      "C": "Taxonomy is identical across all databases",
+      "D": "Versions determine sequencer quality scores"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Taxonomic results depend on the reference snapshot."
+  },
+  {
+    "id": "bio_bp_068",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Metagenomics",
+    "question_type": "single_choice",
+    "question": "Why remove host reads from shotgun metagenomic data when appropriate?",
+    "difficulty": "intermediate",
+    "tags": [
+      "metagenomics",
+      "public_seed"
+    ],
+    "source": "https://docs.qiime2.org/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://docs.qiime2.org/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Protect privacy and reduce interference with microbial analysis",
+      "B": "Host reads are always microbial",
+      "C": "It increases host genome coverage",
+      "D": "It creates biological replicates"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Host depletion has analytical and privacy benefits."
+  },
+  {
+    "id": "bio_bp_069",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Metagenomics",
+    "question_type": "single_choice",
+    "question": "What is a limitation of relative abundance alone?",
+    "difficulty": "advanced",
+    "tags": [
+      "metagenomics",
+      "public_seed"
+    ],
+    "source": "https://docs.qiime2.org/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://docs.qiime2.org/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "It directly measures absolute cell count",
+      "B": "It is unaffected by library composition",
+      "C": "It proves viability",
+      "D": "One taxon's apparent increase can result from another taxon's decrease"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Compositional percentages do not provide absolute abundance."
+  },
+  {
+    "id": "bio_bp_070",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Metagenomics",
+    "question_type": "single_choice",
+    "question": "Why should extraction blanks be processed with study samples?",
+    "difficulty": "basic",
+    "tags": [
+      "metagenomics",
+      "public_seed"
+    ],
+    "source": "https://docs.qiime2.org/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://docs.qiime2.org/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "They normalize patient age",
+      "B": "They define the reference genome",
+      "C": "They capture contamination introduced during extraction",
+      "D": "They act as positive disease controls"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Controls should traverse the same laboratory workflow."
+  },
+  {
+    "id": "bio_bp_071",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Metagenomics",
+    "question_type": "single_choice",
+    "question": "What does alpha diversity summarize?",
+    "difficulty": "intermediate",
+    "tags": [
+      "metagenomics",
+      "public_seed"
+    ],
+    "source": "https://docs.qiime2.org/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://docs.qiime2.org/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Variant pathogenicity",
+      "B": "Within-sample diversity",
+      "C": "Between-sample dissimilarity only",
+      "D": "Read alignment quality"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Alpha metrics describe diversity inside a sample."
+  },
+  {
+    "id": "bio_bp_072",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Metagenomics",
+    "question_type": "single_choice",
+    "question": "What does beta diversity summarize?",
+    "difficulty": "advanced",
+    "tags": [
+      "metagenomics",
+      "public_seed"
+    ],
+    "source": "https://docs.qiime2.org/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://docs.qiime2.org/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Differences in community composition among samples",
+      "B": "Only the number of taxa in one sample",
+      "C": "Per-base sequencing quality",
+      "D": "Gene-level fold changes"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Beta metrics compare communities across samples."
+  },
+  {
+    "id": "bio_bp_073",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Reproducibility",
+    "question_type": "single_choice",
+    "question": "Why pin software and container versions in a workflow?",
+    "difficulty": "basic",
+    "tags": [
+      "reproducibility",
+      "public_seed"
+    ],
+    "source": "https://nf-co.re/docs/usage/introduction",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://nf-co.re/docs/usage/introduction",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Guarantee identical biology across cohorts",
+      "B": "Remove the need for input checksums",
+      "C": "Increase read length",
+      "D": "Prevent silent changes in tools and dependencies"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Version pinning stabilizes the computational environment."
+  },
+  {
+    "id": "bio_bp_074",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Reproducibility",
+    "question_type": "single_choice",
+    "question": "What is the value of a workflow engine such as Nextflow or Snakemake?",
+    "difficulty": "intermediate",
+    "tags": [
+      "reproducibility",
+      "public_seed"
+    ],
+    "source": "https://nf-co.re/docs/usage/introduction",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://nf-co.re/docs/usage/introduction",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Provide clinical interpretation automatically",
+      "B": "Eliminate storage requirements",
+      "C": "Encode dependencies, execution, and restartable provenance",
+      "D": "Replace all statistical models"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Workflow engines make multi-step analyses explicit and repeatable."
+  },
+  {
+    "id": "bio_bp_075",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Reproducibility",
+    "question_type": "single_choice",
+    "question": "Why record checksums for important input files?",
+    "difficulty": "advanced",
+    "tags": [
+      "reproducibility",
+      "public_seed"
+    ],
+    "source": "https://www.ga4gh.org/genomic-data-toolkit/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ga4gh.org/genomic-data-toolkit/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Compress files better than CRAM",
+      "B": "Detect content changes and verify identity",
+      "C": "Improve base quality",
+      "D": "Infer disease risk"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Checksums support integrity and provenance checks."
+  },
+  {
+    "id": "bio_bp_076",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Reproducibility",
+    "question_type": "single_choice",
+    "question": "What should happen when a pipeline step fails?",
+    "difficulty": "basic",
+    "tags": [
+      "reproducibility",
+      "public_seed"
+    ],
+    "source": "https://snakemake.readthedocs.io/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://snakemake.readthedocs.io/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Stop or mark dependent outputs invalid and preserve diagnostic logs",
+      "B": "Continue and label all outputs successful",
+      "C": "Delete all logs",
+      "D": "Replace missing output with an empty file silently"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Failures must not masquerade as valid results."
+  },
+  {
+    "id": "bio_bp_077",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Reproducibility",
+    "question_type": "single_choice",
+    "question": "Why separate parameters from workflow code?",
+    "difficulty": "intermediate",
+    "tags": [
+      "reproducibility",
+      "public_seed"
+    ],
+    "source": "https://nf-co.re/docs/usage/introduction",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://nf-co.re/docs/usage/introduction",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Parameters never affect results",
+      "B": "Code should contain API keys",
+      "C": "It prevents version control",
+      "D": "Configurations can be reviewed and reused without editing implementation logic"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Explicit configuration improves auditability and reuse."
+  },
+  {
+    "id": "bio_bp_078",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Reproducibility",
+    "question_type": "single_choice",
+    "question": "Why include a small automated test dataset?",
+    "difficulty": "advanced",
+    "tags": [
+      "reproducibility",
+      "public_seed"
+    ],
+    "source": "https://nf-co.re/docs/usage/introduction",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://nf-co.re/docs/usage/introduction",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Replace full-scale validation",
+      "B": "Guarantee all future inputs are correct",
+      "C": "Catch workflow breakage and verify core execution paths",
+      "D": "Establish clinical sensitivity for every disease"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Tests detect regressions but do not replace validation."
+  },
+  {
+    "id": "bio_bp_079",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Reproducibility",
+    "question_type": "single_choice",
+    "question": "What is the preferred place for API keys and credentials?",
+    "difficulty": "basic",
+    "tags": [
+      "reproducibility",
+      "public_seed"
+    ],
+    "source": "https://snakemake.readthedocs.io/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://snakemake.readthedocs.io/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Container image labels",
+      "B": "Environment variables or a secret manager, not source code",
+      "C": "Committed configuration files",
+      "D": "Benchmark question text"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Secrets should be separated from versioned artifacts."
+  },
+  {
+    "id": "bio_bp_080",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Reproducibility",
+    "question_type": "single_choice",
+    "question": "Why preserve logs and resource metrics?",
+    "difficulty": "intermediate",
+    "tags": [
+      "reproducibility",
+      "public_seed"
+    ],
+    "source": "https://nf-co.re/docs/usage/introduction",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://nf-co.re/docs/usage/introduction",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Support troubleshooting, auditing, and capacity planning",
+      "B": "They replace raw data",
+      "C": "They determine pathogenicity",
+      "D": "They make software versions unnecessary"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Operational records explain how a run behaved."
+  },
+  {
+    "id": "bio_bp_081",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Reproducibility",
+    "question_type": "single_choice",
+    "question": "Why use stable sample identifiers rather than row order?",
+    "difficulty": "advanced",
+    "tags": [
+      "reproducibility",
+      "public_seed"
+    ],
+    "source": "https://nf-co.re/docs/usage/introduction",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://nf-co.re/docs/usage/introduction",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Row order is a permanent identifier",
+      "B": "Identifiers eliminate consent requirements",
+      "C": "Stable IDs increase read depth",
+      "D": "Sorting or filtering must not change sample identity"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Explicit keys prevent metadata/sample misalignment."
+  },
+  {
+    "id": "bio_bp_082",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Statistics and study design",
+    "question_type": "single_choice",
+    "question": "What is the experimental unit in a study with many cells measured from each patient?",
+    "difficulty": "basic",
+    "tags": [
+      "statistics_and_study_design",
+      "public_seed"
+    ],
+    "source": "https://bioconductor.org/packages/release/bioc/vignettes/edgeR/inst/doc/edgeRUsersGuide.pdf",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://bioconductor.org/packages/release/bioc/vignettes/edgeR/inst/doc/edgeRUsersGuide.pdf",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Each sequencing cycle",
+      "B": "Each gene",
+      "C": "The patient for patient-level biological inference",
+      "D": "Each transcript molecule"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Measurements nested within a patient are not independent patients."
+  },
+  {
+    "id": "bio_bp_083",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Statistics and study design",
+    "question_type": "single_choice",
+    "question": "Why randomize samples across processing batches when possible?",
+    "difficulty": "intermediate",
+    "tags": [
+      "statistics_and_study_design",
+      "public_seed"
+    ],
+    "source": "https://bioconductor.org/packages/release/bioc/vignettes/BatchQC/inst/doc/BatchQC_Intro.html",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://bioconductor.org/packages/release/bioc/vignettes/BatchQC/inst/doc/BatchQC_Intro.html",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Increase variant allele fraction",
+      "B": "Reduce confounding between biological groups and technical effects",
+      "C": "Guarantee equal expression of every gene",
+      "D": "Remove the need for metadata"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Balanced allocation makes batch effects estimable."
+  },
+  {
+    "id": "bio_bp_084",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Statistics and study design",
+    "question_type": "single_choice",
+    "question": "What is data leakage in predictive modeling?",
+    "difficulty": "advanced",
+    "tags": [
+      "statistics_and_study_design",
+      "public_seed"
+    ],
+    "source": "https://www.ga4gh.org/genomic-data-toolkit/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ga4gh.org/genomic-data-toolkit/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Information from validation/test data influences model training or preprocessing",
+      "B": "Lossless CRAM compression",
+      "C": "Missing FASTQ quality scores",
+      "D": "A low allele fraction"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Leakage inflates apparent out-of-sample performance."
+  },
+  {
+    "id": "bio_bp_085",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Statistics and study design",
+    "question_type": "single_choice",
+    "question": "Why fit preprocessing on training data only during cross-validation?",
+    "difficulty": "basic",
+    "tags": [
+      "statistics_and_study_design",
+      "public_seed"
+    ],
+    "source": "https://www.ga4gh.org/genomic-data-toolkit/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ga4gh.org/genomic-data-toolkit/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Validation data have no features",
+      "B": "Training data cannot be normalized",
+      "C": "It ensures every model is causal",
+      "D": "Avoid transferring validation-fold information into the trained pipeline"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Preprocessing is part of the model-fitting process."
+  },
+  {
+    "id": "bio_bp_086",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Statistics and study design",
+    "question_type": "single_choice",
+    "question": "What does a confidence interval communicate?",
+    "difficulty": "intermediate",
+    "tags": [
+      "statistics_and_study_design",
+      "public_seed"
+    ],
+    "source": "https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Sequencing read depth",
+      "B": "The exact future replication outcome",
+      "C": "A range reflecting uncertainty under the analysis assumptions",
+      "D": "The probability that each individual result is true"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Intervals express estimation uncertainty, not certainty."
+  },
+  {
+    "id": "bio_bp_087",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Statistics and study design",
+    "question_type": "single_choice",
+    "question": "Why predefine a primary analysis when feasible?",
+    "difficulty": "advanced",
+    "tags": [
+      "statistics_and_study_design",
+      "public_seed"
+    ],
+    "source": "https://www.ga4gh.org/genomic-data-toolkit/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ga4gh.org/genomic-data-toolkit/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Eliminate missing data",
+      "B": "Reduce outcome-driven analytical choices and clarify interpretation",
+      "C": "Prevent any exploratory analysis",
+      "D": "Guarantee statistical significance"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Prespecification limits researcher degrees of freedom."
+  },
+  {
+    "id": "bio_bp_088",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Statistics and study design",
+    "question_type": "single_choice",
+    "question": "What is the main problem with pseudoreplication?",
+    "difficulty": "basic",
+    "tags": [
+      "statistics_and_study_design",
+      "public_seed"
+    ],
+    "source": "https://bioconductor.org/packages/release/bioc/vignettes/edgeR/inst/doc/edgeRUsersGuide.pdf",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://bioconductor.org/packages/release/bioc/vignettes/edgeR/inst/doc/edgeRUsersGuide.pdf",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Non-independent observations are treated as independent replicates",
+      "B": "Too many software containers are used",
+      "C": "The reference genome is duplicated",
+      "D": "All samples have equal depth"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Pseudoreplication understates uncertainty."
+  },
+  {
+    "id": "bio_bp_089",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Statistics and study design",
+    "question_type": "single_choice",
+    "question": "Why report effect sizes even for nonsignificant results?",
+    "difficulty": "intermediate",
+    "tags": [
+      "statistics_and_study_design",
+      "public_seed"
+    ],
+    "source": "https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "P-values already give effect direction and size",
+      "B": "Nonsignificant effects are exactly zero",
+      "C": "Effect sizes replace study design",
+      "D": "Magnitude and uncertainty remain informative"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Scientific interpretation requires more than a thresholded p-value."
+  },
+  {
+    "id": "bio_bp_090",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Statistics and study design",
+    "question_type": "single_choice",
+    "question": "What should guide sample exclusion criteria?",
+    "difficulty": "advanced",
+    "tags": [
+      "statistics_and_study_design",
+      "public_seed"
+    ],
+    "source": "https://bioconductor.org/packages/release/bioc/vignettes/BatchQC/inst/doc/BatchQC_Intro.html",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://bioconductor.org/packages/release/bioc/vignettes/BatchQC/inst/doc/BatchQC_Intro.html",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Alphabetical sample order",
+      "B": "The model's preferred answer",
+      "C": "Predefined technical or scientific rules applied transparently",
+      "D": "Whether exclusion makes the result significant"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Transparent criteria reduce biased post hoc exclusions."
+  },
+  {
+    "id": "bio_bp_091",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Sequencing QC",
+    "question_type": "multiple_select",
+    "question": "Which findings should trigger investigation before analysis?",
+    "difficulty": "intermediate",
+    "tags": [
+      "sequencing_qc",
+      "public_seed"
+    ],
+    "source": "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "A normal .fastq.gz extension",
+      "B": "Unexpected adapter content",
+      "C": "A sample-level yield outlier",
+      "D": "A strong unexplained GC shift"
+    },
+    "correct_answer": null,
+    "correct_answers": [
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "All are plausible technical warning signs; a normal file extension is not."
+  },
+  {
+    "id": "bio_bp_092",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Alignment and formats",
+    "question_type": "multiple_select",
+    "question": "Which items are needed to interpret an alignment reproducibly?",
+    "difficulty": "intermediate",
+    "tags": [
+      "alignment_and_formats",
+      "public_seed"
+    ],
+    "source": "https://samtools.github.io/hts-specs/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://samtools.github.io/hts-specs/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Reference assembly/version",
+      "B": "Read-group/sample provenance",
+      "C": "Alignment tool and parameters",
+      "D": "Only the BAM filename"
+    },
+    "correct_answer": null,
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Reference and provenance define coordinate and processing context."
+  },
+  {
+    "id": "bio_bp_093",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "RNA-seq",
+    "question_type": "multiple_select",
+    "question": "Which practices support reliable differential expression?",
+    "difficulty": "intermediate",
+    "tags": [
+      "rna-seq",
+      "public_seed"
+    ],
+    "source": "https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Model known non-confounded batches",
+      "B": "Adjust for multiple testing",
+      "C": "Normalize cases and controls independently",
+      "D": "Use biological replication"
+    },
+    "correct_answer": null,
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Replication, appropriate design, and multiplicity control are core practices."
+  },
+  {
+    "id": "bio_bp_094",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Variant calling",
+    "question_type": "multiple_select",
+    "question": "Which checks help assess a germline call set?",
+    "difficulty": "intermediate",
+    "tags": [
+      "variant_calling",
+      "public_seed"
+    ],
+    "source": "https://gatk.broadinstitute.org/hc/en-us",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://gatk.broadinstitute.org/hc/en-us",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Concordance with truth data where applicable",
+      "B": "Delete every heterozygous call",
+      "C": "Sample identity and contamination",
+      "D": "Depth/genotype-quality distributions"
+    },
+    "correct_answer": null,
+    "correct_answers": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "These are complementary call-set and sample QC checks."
+  },
+  {
+    "id": "bio_bp_095",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Germline interpretation",
+    "question_type": "multiple_select",
+    "question": "Which evidence types can inform variant classification?",
+    "difficulty": "intermediate",
+    "tags": [
+      "germline_interpretation",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/clinvar/docs/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/docs/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "The color used in a genome browser",
+      "B": "Population frequency",
+      "C": "Functional or computational evidence used appropriately",
+      "D": "Segregation and de novo evidence"
+    },
+    "correct_answer": null,
+    "correct_answers": [
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "Interpretation integrates multiple evidence categories."
+  },
+  {
+    "id": "bio_bp_096",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Cancer genomics",
+    "question_type": "multiple_select",
+    "question": "Which factors can change a somatic variant's observed allele fraction?",
+    "difficulty": "intermediate",
+    "tags": [
+      "cancer_genomics",
+      "public_seed"
+    ],
+    "source": "https://gatk.broadinstitute.org/hc/en-us",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://gatk.broadinstitute.org/hc/en-us",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Tumor purity",
+      "B": "Local copy number",
+      "C": "Subclonal cancer-cell fraction",
+      "D": "VCF filename length"
+    },
+    "correct_answer": null,
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Purity, copy state, and clonality all affect observed fraction."
+  },
+  {
+    "id": "bio_bp_097",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Single-cell genomics",
+    "question_type": "multiple_select",
+    "question": "Which checks are useful before interpreting clusters?",
+    "difficulty": "intermediate",
+    "tags": [
+      "single-cell_genomics",
+      "public_seed"
+    ],
+    "source": "https://satijalab.org/seurat/articles/pbmc3k_tutorial.html",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://satijalab.org/seurat/articles/pbmc3k_tutorial.html",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Doublet assessment",
+      "B": "Batch association of clusters",
+      "C": "Assume every cluster is a new cell type",
+      "D": "Per-cell complexity metrics"
+    },
+    "correct_answer": null,
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "These checks address quality, multiplets, and technical structure."
+  },
+  {
+    "id": "bio_bp_098",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Metagenomics",
+    "question_type": "multiple_select",
+    "question": "Which controls strengthen a low-biomass study?",
+    "difficulty": "intermediate",
+    "tags": [
+      "metagenomics",
+      "public_seed"
+    ],
+    "source": "https://docs.qiime2.org/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://docs.qiime2.org/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Positive/mock-community controls",
+      "B": "A duplicated case labeled as a blank",
+      "C": "Extraction blanks",
+      "D": "No-template PCR controls where applicable"
+    },
+    "correct_answer": null,
+    "correct_answers": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "Negative and positive controls reveal contamination and process performance."
+  },
+  {
+    "id": "bio_bp_099",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Reproducibility",
+    "question_type": "multiple_select",
+    "question": "Which artifacts should accompany a reproducible pipeline run?",
+    "difficulty": "intermediate",
+    "tags": [
+      "reproducibility",
+      "public_seed"
+    ],
+    "source": "https://nf-co.re/docs/usage/introduction",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://nf-co.re/docs/usage/introduction",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Only a screenshot of the final plot",
+      "B": "Versioned workflow/configuration",
+      "C": "Software/container versions",
+      "D": "Input identifiers/checksums and logs"
+    },
+    "correct_answer": null,
+    "correct_answers": [
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "Together these describe what ran, on what, and how."
+  },
+  {
+    "id": "bio_bp_100",
+    "domain": "bioinformatics_best_practices",
+    "subdomain": "Statistics and study design",
+    "question_type": "multiple_select",
+    "question": "Which practices reduce biased model evaluation?",
+    "difficulty": "intermediate",
+    "tags": [
+      "statistics_and_study_design",
+      "public_seed"
+    ],
+    "source": "https://www.ga4gh.org/genomic-data-toolkit/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ga4gh.org/genomic-data-toolkit/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use."
+    },
+    "options": {
+      "A": "Keep a held-out test set",
+      "B": "Fit preprocessing within training folds",
+      "C": "Predefine evaluation metrics",
+      "D": "Tune hyperparameters on the final test labels"
+    },
+    "correct_answer": null,
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Separation, fold-aware preprocessing, and prespecified metrics limit optimism."
+  }
+]

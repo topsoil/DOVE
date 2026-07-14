@@ -1,0 +1,2902 @@
+[
+  {
+    "id": "disease_gen_001",
+    "domain": "disease_genetics",
+    "subdomain": "Pulmonary and hematologic",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Cystic fibrosis?",
+    "difficulty": "basic",
+    "tags": [
+      "pulmonary_and_hematologic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Cystic fibrosis"
+    },
+    "options": {
+      "A": "SMN1",
+      "B": "MECP2",
+      "C": "PKHD1",
+      "D": "CFTR"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Cystic fibrosis is associated with disease-causing variation in CFTR."
+  },
+  {
+    "id": "disease_gen_002",
+    "domain": "disease_genetics",
+    "subdomain": "Pulmonary and hematologic",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Cystic fibrosis?",
+    "difficulty": "intermediate",
+    "tags": [
+      "pulmonary_and_hematologic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Cystic fibrosis"
+    },
+    "options": {
+      "A": "X-linked",
+      "B": "Mitochondrial maternal",
+      "C": "Autosomal recessive",
+      "D": "Autosomal dominant"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Cystic fibrosis, in the named gene context, is principally autosomal recessive."
+  },
+  {
+    "id": "disease_gen_003",
+    "domain": "disease_genetics",
+    "subdomain": "Pulmonary and hematologic",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Sickle cell disease?",
+    "difficulty": "basic",
+    "tags": [
+      "pulmonary_and_hematologic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Sickle cell disease"
+    },
+    "options": {
+      "A": "FGFR3",
+      "B": "HBB",
+      "C": "PAH",
+      "D": "FMR1"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Sickle cell disease is associated with disease-causing variation in HBB."
+  },
+  {
+    "id": "disease_gen_004",
+    "domain": "disease_genetics",
+    "subdomain": "Pulmonary and hematologic",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Sickle cell disease?",
+    "difficulty": "intermediate",
+    "tags": [
+      "pulmonary_and_hematologic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Sickle cell disease"
+    },
+    "options": {
+      "A": "Autosomal recessive",
+      "B": "Autosomal dominant",
+      "C": "X-linked",
+      "D": "Mitochondrial maternal"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Sickle cell disease, in the named gene context, is principally autosomal recessive."
+  },
+  {
+    "id": "disease_gen_005",
+    "domain": "disease_genetics",
+    "subdomain": "Pulmonary and hematologic",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Hemophilia A?",
+    "difficulty": "basic",
+    "tags": [
+      "pulmonary_and_hematologic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Hemophilia A"
+    },
+    "options": {
+      "A": "HEXA",
+      "B": "MT-ND4",
+      "C": "PTPN11",
+      "D": "F8"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Hemophilia A is associated with disease-causing variation in F8."
+  },
+  {
+    "id": "disease_gen_006",
+    "domain": "disease_genetics",
+    "subdomain": "Pulmonary and hematologic",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Hemophilia A?",
+    "difficulty": "intermediate",
+    "tags": [
+      "pulmonary_and_hematologic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Hemophilia A"
+    },
+    "options": {
+      "A": "Autosomal recessive",
+      "B": "Mitochondrial maternal",
+      "C": "X-linked",
+      "D": "Autosomal dominant"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Hemophilia A, in the named gene context, is principally x-linked."
+  },
+  {
+    "id": "disease_gen_007",
+    "domain": "disease_genetics",
+    "subdomain": "Pulmonary and hematologic",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Hemophilia B?",
+    "difficulty": "basic",
+    "tags": [
+      "pulmonary_and_hematologic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Hemophilia B"
+    },
+    "options": {
+      "A": "RET",
+      "B": "F9",
+      "C": "HFE",
+      "D": "PMP22"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Hemophilia B is associated with disease-causing variation in F9."
+  },
+  {
+    "id": "disease_gen_008",
+    "domain": "disease_genetics",
+    "subdomain": "Pulmonary and hematologic",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Hemophilia B?",
+    "difficulty": "intermediate",
+    "tags": [
+      "pulmonary_and_hematologic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Hemophilia B"
+    },
+    "options": {
+      "A": "X-linked",
+      "B": "Autosomal dominant",
+      "C": "Autosomal recessive",
+      "D": "Mitochondrial maternal"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Hemophilia B, in the named gene context, is principally x-linked."
+  },
+  {
+    "id": "disease_gen_009",
+    "domain": "disease_genetics",
+    "subdomain": "Neuromuscular",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Duchenne muscular dystrophy?",
+    "difficulty": "basic",
+    "tags": [
+      "neuromuscular",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Duchenne muscular dystrophy"
+    },
+    "options": {
+      "A": "LDLR",
+      "B": "GAA",
+      "C": "MEN1",
+      "D": "DMD"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Duchenne muscular dystrophy is associated with disease-causing variation in DMD."
+  },
+  {
+    "id": "disease_gen_010",
+    "domain": "disease_genetics",
+    "subdomain": "Neuromuscular",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Duchenne muscular dystrophy?",
+    "difficulty": "intermediate",
+    "tags": [
+      "neuromuscular",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Duchenne muscular dystrophy"
+    },
+    "options": {
+      "A": "Autosomal recessive",
+      "B": "Mitochondrial maternal",
+      "C": "X-linked",
+      "D": "Autosomal dominant"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Duchenne muscular dystrophy, in the named gene context, is principally x-linked."
+  },
+  {
+    "id": "disease_gen_011",
+    "domain": "disease_genetics",
+    "subdomain": "Cardiovascular",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Marfan syndrome?",
+    "difficulty": "basic",
+    "tags": [
+      "cardiovascular",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Marfan syndrome"
+    },
+    "options": {
+      "A": "TTR",
+      "B": "FBN1",
+      "C": "APC",
+      "D": "GLA"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Marfan syndrome is associated with disease-causing variation in FBN1."
+  },
+  {
+    "id": "disease_gen_012",
+    "domain": "disease_genetics",
+    "subdomain": "Cardiovascular",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Marfan syndrome?",
+    "difficulty": "intermediate",
+    "tags": [
+      "cardiovascular",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Marfan syndrome"
+    },
+    "options": {
+      "A": "Autosomal dominant",
+      "B": "Autosomal recessive",
+      "C": "X-linked",
+      "D": "Mitochondrial maternal"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Marfan syndrome, in the named gene context, is principally autosomal dominant."
+  },
+  {
+    "id": "disease_gen_013",
+    "domain": "disease_genetics",
+    "subdomain": "Neurogenetics",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Huntington disease?",
+    "difficulty": "basic",
+    "tags": [
+      "neurogenetics",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Huntington disease"
+    },
+    "options": {
+      "A": "MLH1",
+      "B": "GBA1",
+      "C": "PRNP",
+      "D": "HTT"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Huntington disease is associated with disease-causing variation in HTT."
+  },
+  {
+    "id": "disease_gen_014",
+    "domain": "disease_genetics",
+    "subdomain": "Neurogenetics",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Huntington disease?",
+    "difficulty": "intermediate",
+    "tags": [
+      "neurogenetics",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Huntington disease"
+    },
+    "options": {
+      "A": "X-linked",
+      "B": "Mitochondrial maternal",
+      "C": "Autosomal dominant",
+      "D": "Autosomal recessive"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Huntington disease, in the named gene context, is principally autosomal dominant."
+  },
+  {
+    "id": "disease_gen_015",
+    "domain": "disease_genetics",
+    "subdomain": "Neuromuscular",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Spinal muscular atrophy?",
+    "difficulty": "basic",
+    "tags": [
+      "neuromuscular",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Spinal muscular atrophy"
+    },
+    "options": {
+      "A": "KCNQ1",
+      "B": "SMN1",
+      "C": "BRCA1",
+      "D": "IDUA"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Spinal muscular atrophy is associated with disease-causing variation in SMN1."
+  },
+  {
+    "id": "disease_gen_016",
+    "domain": "disease_genetics",
+    "subdomain": "Neuromuscular",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Spinal muscular atrophy?",
+    "difficulty": "intermediate",
+    "tags": [
+      "neuromuscular",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Spinal muscular atrophy"
+    },
+    "options": {
+      "A": "Autosomal recessive",
+      "B": "Autosomal dominant",
+      "C": "X-linked",
+      "D": "Mitochondrial maternal"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Spinal muscular atrophy, in the named gene context, is principally autosomal recessive."
+  },
+  {
+    "id": "disease_gen_017",
+    "domain": "disease_genetics",
+    "subdomain": "Metabolic",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Phenylketonuria?",
+    "difficulty": "basic",
+    "tags": [
+      "metabolic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Phenylketonuria"
+    },
+    "options": {
+      "A": "RB1",
+      "B": "CYP21A2",
+      "C": "SCN5A",
+      "D": "PAH"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Phenylketonuria is associated with disease-causing variation in PAH."
+  },
+  {
+    "id": "disease_gen_018",
+    "domain": "disease_genetics",
+    "subdomain": "Metabolic",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Phenylketonuria?",
+    "difficulty": "intermediate",
+    "tags": [
+      "metabolic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Phenylketonuria"
+    },
+    "options": {
+      "A": "X-linked",
+      "B": "Mitochondrial maternal",
+      "C": "Autosomal recessive",
+      "D": "Autosomal dominant"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Phenylketonuria, in the named gene context, is principally autosomal recessive."
+  },
+  {
+    "id": "disease_gen_019",
+    "domain": "disease_genetics",
+    "subdomain": "Metabolic",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Tay-Sachs disease?",
+    "difficulty": "basic",
+    "tags": [
+      "metabolic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Tay-Sachs disease"
+    },
+    "options": {
+      "A": "MYBPC3",
+      "B": "HEXA",
+      "C": "VHL",
+      "D": "ATP7B"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Tay-Sachs disease is associated with disease-causing variation in HEXA."
+  },
+  {
+    "id": "disease_gen_020",
+    "domain": "disease_genetics",
+    "subdomain": "Metabolic",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Tay-Sachs disease?",
+    "difficulty": "intermediate",
+    "tags": [
+      "metabolic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Tay-Sachs disease"
+    },
+    "options": {
+      "A": "Autosomal recessive",
+      "B": "Autosomal dominant",
+      "C": "X-linked",
+      "D": "Mitochondrial maternal"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Tay-Sachs disease, in the named gene context, is principally autosomal recessive."
+  },
+  {
+    "id": "disease_gen_021",
+    "domain": "disease_genetics",
+    "subdomain": "Metabolic",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with HFE-related hemochromatosis?",
+    "difficulty": "basic",
+    "tags": [
+      "metabolic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: HFE-related hemochromatosis"
+    },
+    "options": {
+      "A": "TSC2",
+      "B": "PKD1",
+      "C": "PKP2",
+      "D": "HFE"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "HFE-related hemochromatosis is associated with disease-causing variation in HFE."
+  },
+  {
+    "id": "disease_gen_022",
+    "domain": "disease_genetics",
+    "subdomain": "Metabolic",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of HFE-related hemochromatosis?",
+    "difficulty": "intermediate",
+    "tags": [
+      "metabolic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: HFE-related hemochromatosis"
+    },
+    "options": {
+      "A": "X-linked",
+      "B": "Mitochondrial maternal",
+      "C": "Autosomal recessive",
+      "D": "Autosomal dominant"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "HFE-related hemochromatosis, in the named gene context, is principally autosomal recessive."
+  },
+  {
+    "id": "disease_gen_023",
+    "domain": "disease_genetics",
+    "subdomain": "Cardiovascular",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with LDLR-related familial hypercholesterolemia?",
+    "difficulty": "basic",
+    "tags": [
+      "cardiovascular",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: LDLR-related familial hypercholesterolemia"
+    },
+    "options": {
+      "A": "PRSS1",
+      "B": "LDLR",
+      "C": "NF1",
+      "D": "COL4A5"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "LDLR-related familial hypercholesterolemia is associated with disease-causing variation in LDLR."
+  },
+  {
+    "id": "disease_gen_024",
+    "domain": "disease_genetics",
+    "subdomain": "Cardiovascular",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of LDLR-related familial hypercholesterolemia?",
+    "difficulty": "intermediate",
+    "tags": [
+      "cardiovascular",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: LDLR-related familial hypercholesterolemia"
+    },
+    "options": {
+      "A": "Autosomal dominant",
+      "B": "Autosomal recessive",
+      "C": "X-linked",
+      "D": "Mitochondrial maternal"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "LDLR-related familial hypercholesterolemia, in the named gene context, is principally autosomal dominant."
+  },
+  {
+    "id": "disease_gen_025",
+    "domain": "disease_genetics",
+    "subdomain": "Cancer predisposition",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Familial adenomatous polyposis?",
+    "difficulty": "basic",
+    "tags": [
+      "cancer_predisposition",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Familial adenomatous polyposis"
+    },
+    "options": {
+      "A": "MECP2",
+      "B": "PKHD1",
+      "C": "STK11",
+      "D": "APC"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Familial adenomatous polyposis is associated with disease-causing variation in APC."
+  },
+  {
+    "id": "disease_gen_026",
+    "domain": "disease_genetics",
+    "subdomain": "Cancer predisposition",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Familial adenomatous polyposis?",
+    "difficulty": "intermediate",
+    "tags": [
+      "cancer_predisposition",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Familial adenomatous polyposis"
+    },
+    "options": {
+      "A": "X-linked",
+      "B": "Mitochondrial maternal",
+      "C": "Autosomal dominant",
+      "D": "Autosomal recessive"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Familial adenomatous polyposis, in the named gene context, is principally autosomal dominant."
+  },
+  {
+    "id": "disease_gen_027",
+    "domain": "disease_genetics",
+    "subdomain": "Cancer predisposition",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with MLH1-related Lynch syndrome?",
+    "difficulty": "basic",
+    "tags": [
+      "cancer_predisposition",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: MLH1-related Lynch syndrome"
+    },
+    "options": {
+      "A": "SMAD4",
+      "B": "MLH1",
+      "C": "FMR1",
+      "D": "FGFR3"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "MLH1-related Lynch syndrome is associated with disease-causing variation in MLH1."
+  },
+  {
+    "id": "disease_gen_028",
+    "domain": "disease_genetics",
+    "subdomain": "Cancer predisposition",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of MLH1-related Lynch syndrome?",
+    "difficulty": "intermediate",
+    "tags": [
+      "cancer_predisposition",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: MLH1-related Lynch syndrome"
+    },
+    "options": {
+      "A": "Autosomal dominant",
+      "B": "Autosomal recessive",
+      "C": "X-linked",
+      "D": "Mitochondrial maternal"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "MLH1-related Lynch syndrome, in the named gene context, is principally autosomal dominant."
+  },
+  {
+    "id": "disease_gen_029",
+    "domain": "disease_genetics",
+    "subdomain": "Cancer predisposition",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with BRCA1-related hereditary breast and ovarian cancer?",
+    "difficulty": "basic",
+    "tags": [
+      "cancer_predisposition",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: BRCA1-related hereditary breast and ovarian cancer"
+    },
+    "options": {
+      "A": "MT-ND4",
+      "B": "PTPN11",
+      "C": "TP53",
+      "D": "BRCA1"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "BRCA1-related hereditary breast and ovarian cancer is associated with disease-causing variation in BRCA1."
+  },
+  {
+    "id": "disease_gen_030",
+    "domain": "disease_genetics",
+    "subdomain": "Cancer predisposition",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of BRCA1-related hereditary breast and ovarian cancer?",
+    "difficulty": "intermediate",
+    "tags": [
+      "cancer_predisposition",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: BRCA1-related hereditary breast and ovarian cancer"
+    },
+    "options": {
+      "A": "X-linked",
+      "B": "Mitochondrial maternal",
+      "C": "Autosomal dominant",
+      "D": "Autosomal recessive"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "BRCA1-related hereditary breast and ovarian cancer, in the named gene context, is principally autosomal dominant."
+  },
+  {
+    "id": "disease_gen_031",
+    "domain": "disease_genetics",
+    "subdomain": "Cancer predisposition",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Heritable retinoblastoma?",
+    "difficulty": "basic",
+    "tags": [
+      "cancer_predisposition",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Heritable retinoblastoma"
+    },
+    "options": {
+      "A": "CDH1",
+      "B": "RB1",
+      "C": "PMP22",
+      "D": "RET"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Heritable retinoblastoma is associated with disease-causing variation in RB1."
+  },
+  {
+    "id": "disease_gen_032",
+    "domain": "disease_genetics",
+    "subdomain": "Cancer predisposition",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Heritable retinoblastoma?",
+    "difficulty": "intermediate",
+    "tags": [
+      "cancer_predisposition",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Heritable retinoblastoma"
+    },
+    "options": {
+      "A": "Autosomal dominant",
+      "B": "Autosomal recessive",
+      "C": "X-linked",
+      "D": "Mitochondrial maternal"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Heritable retinoblastoma, in the named gene context, is principally autosomal dominant."
+  },
+  {
+    "id": "disease_gen_033",
+    "domain": "disease_genetics",
+    "subdomain": "Cancer predisposition",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Von Hippel-Lindau syndrome?",
+    "difficulty": "basic",
+    "tags": [
+      "cancer_predisposition",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Von Hippel-Lindau syndrome"
+    },
+    "options": {
+      "A": "GAA",
+      "B": "MEN1",
+      "C": "OTC",
+      "D": "VHL"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Von Hippel-Lindau syndrome is associated with disease-causing variation in VHL."
+  },
+  {
+    "id": "disease_gen_034",
+    "domain": "disease_genetics",
+    "subdomain": "Cancer predisposition",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Von Hippel-Lindau syndrome?",
+    "difficulty": "intermediate",
+    "tags": [
+      "cancer_predisposition",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Von Hippel-Lindau syndrome"
+    },
+    "options": {
+      "A": "X-linked",
+      "B": "Mitochondrial maternal",
+      "C": "Autosomal dominant",
+      "D": "Autosomal recessive"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Von Hippel-Lindau syndrome, in the named gene context, is principally autosomal dominant."
+  },
+  {
+    "id": "disease_gen_035",
+    "domain": "disease_genetics",
+    "subdomain": "Multisystem",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with TSC2-related tuberous sclerosis complex?",
+    "difficulty": "basic",
+    "tags": [
+      "multisystem",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: TSC2-related tuberous sclerosis complex"
+    },
+    "options": {
+      "A": "ACADM",
+      "B": "TSC2",
+      "C": "GLA",
+      "D": "TTR"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "TSC2-related tuberous sclerosis complex is associated with disease-causing variation in TSC2."
+  },
+  {
+    "id": "disease_gen_036",
+    "domain": "disease_genetics",
+    "subdomain": "Multisystem",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of TSC2-related tuberous sclerosis complex?",
+    "difficulty": "intermediate",
+    "tags": [
+      "multisystem",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: TSC2-related tuberous sclerosis complex"
+    },
+    "options": {
+      "A": "Autosomal dominant",
+      "B": "Autosomal recessive",
+      "C": "X-linked",
+      "D": "Mitochondrial maternal"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "TSC2-related tuberous sclerosis complex, in the named gene context, is principally autosomal dominant."
+  },
+  {
+    "id": "disease_gen_037",
+    "domain": "disease_genetics",
+    "subdomain": "Multisystem",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Neurofibromatosis type 1?",
+    "difficulty": "basic",
+    "tags": [
+      "multisystem",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Neurofibromatosis type 1"
+    },
+    "options": {
+      "A": "GBA1",
+      "B": "PRNP",
+      "C": "BTD",
+      "D": "NF1"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Neurofibromatosis type 1 is associated with disease-causing variation in NF1."
+  },
+  {
+    "id": "disease_gen_038",
+    "domain": "disease_genetics",
+    "subdomain": "Multisystem",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Neurofibromatosis type 1?",
+    "difficulty": "intermediate",
+    "tags": [
+      "multisystem",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Neurofibromatosis type 1"
+    },
+    "options": {
+      "A": "X-linked",
+      "B": "Mitochondrial maternal",
+      "C": "Autosomal dominant",
+      "D": "Autosomal recessive"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Neurofibromatosis type 1, in the named gene context, is principally autosomal dominant."
+  },
+  {
+    "id": "disease_gen_039",
+    "domain": "disease_genetics",
+    "subdomain": "Neurogenetics",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with MECP2-related Rett syndrome?",
+    "difficulty": "basic",
+    "tags": [
+      "neurogenetics",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: MECP2-related Rett syndrome"
+    },
+    "options": {
+      "A": "CFTR",
+      "B": "MECP2",
+      "C": "IDUA",
+      "D": "KCNQ1"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "MECP2-related Rett syndrome is associated with disease-causing variation in MECP2."
+  },
+  {
+    "id": "disease_gen_040",
+    "domain": "disease_genetics",
+    "subdomain": "Neurogenetics",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of MECP2-related Rett syndrome?",
+    "difficulty": "intermediate",
+    "tags": [
+      "neurogenetics",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: MECP2-related Rett syndrome"
+    },
+    "options": {
+      "A": "X-linked",
+      "B": "Autosomal dominant",
+      "C": "Autosomal recessive",
+      "D": "Mitochondrial maternal"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "MECP2-related Rett syndrome, in the named gene context, is principally x-linked."
+  },
+  {
+    "id": "disease_gen_041",
+    "domain": "disease_genetics",
+    "subdomain": "Neurogenetics",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Fragile X syndrome?",
+    "difficulty": "basic",
+    "tags": [
+      "neurogenetics",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Fragile X syndrome"
+    },
+    "options": {
+      "A": "CYP21A2",
+      "B": "SCN5A",
+      "C": "HBB",
+      "D": "FMR1"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Fragile X syndrome is associated with disease-causing variation in FMR1."
+  },
+  {
+    "id": "disease_gen_042",
+    "domain": "disease_genetics",
+    "subdomain": "Neurogenetics",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Fragile X syndrome?",
+    "difficulty": "intermediate",
+    "tags": [
+      "neurogenetics",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Fragile X syndrome"
+    },
+    "options": {
+      "A": "Autosomal recessive",
+      "B": "Mitochondrial maternal",
+      "C": "X-linked",
+      "D": "Autosomal dominant"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Fragile X syndrome, in the named gene context, is principally x-linked."
+  },
+  {
+    "id": "disease_gen_043",
+    "domain": "disease_genetics",
+    "subdomain": "Neurogenetics",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with MT-ND4-related Leber hereditary optic neuropathy?",
+    "difficulty": "basic",
+    "tags": [
+      "neurogenetics",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: MT-ND4-related Leber hereditary optic neuropathy"
+    },
+    "options": {
+      "A": "F8",
+      "B": "MT-ND4",
+      "C": "ATP7B",
+      "D": "MYBPC3"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "MT-ND4-related Leber hereditary optic neuropathy is associated with disease-causing variation in MT-ND4."
+  },
+  {
+    "id": "disease_gen_044",
+    "domain": "disease_genetics",
+    "subdomain": "Neurogenetics",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of MT-ND4-related Leber hereditary optic neuropathy?",
+    "difficulty": "intermediate",
+    "tags": [
+      "neurogenetics",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: MT-ND4-related Leber hereditary optic neuropathy"
+    },
+    "options": {
+      "A": "Mitochondrial maternal",
+      "B": "Autosomal dominant",
+      "C": "Autosomal recessive",
+      "D": "X-linked"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "MT-ND4-related Leber hereditary optic neuropathy, in the named gene context, is principally mitochondrial maternal."
+  },
+  {
+    "id": "disease_gen_045",
+    "domain": "disease_genetics",
+    "subdomain": "Neuromuscular",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Charcot-Marie-Tooth disease type 1A?",
+    "difficulty": "basic",
+    "tags": [
+      "neuromuscular",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Charcot-Marie-Tooth disease type 1A"
+    },
+    "options": {
+      "A": "PKD1",
+      "B": "PKP2",
+      "C": "F9",
+      "D": "PMP22"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Charcot-Marie-Tooth disease type 1A is associated with disease-causing variation in PMP22."
+  },
+  {
+    "id": "disease_gen_046",
+    "domain": "disease_genetics",
+    "subdomain": "Neuromuscular",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Charcot-Marie-Tooth disease type 1A?",
+    "difficulty": "intermediate",
+    "tags": [
+      "neuromuscular",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Charcot-Marie-Tooth disease type 1A"
+    },
+    "options": {
+      "A": "X-linked",
+      "B": "Mitochondrial maternal",
+      "C": "Autosomal dominant",
+      "D": "Autosomal recessive"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Charcot-Marie-Tooth disease type 1A, in the named gene context, is principally autosomal dominant."
+  },
+  {
+    "id": "disease_gen_047",
+    "domain": "disease_genetics",
+    "subdomain": "Metabolic",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Pompe disease?",
+    "difficulty": "basic",
+    "tags": [
+      "metabolic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Pompe disease"
+    },
+    "options": {
+      "A": "DMD",
+      "B": "GAA",
+      "C": "COL4A5",
+      "D": "PRSS1"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Pompe disease is associated with disease-causing variation in GAA."
+  },
+  {
+    "id": "disease_gen_048",
+    "domain": "disease_genetics",
+    "subdomain": "Metabolic",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Pompe disease?",
+    "difficulty": "intermediate",
+    "tags": [
+      "metabolic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Pompe disease"
+    },
+    "options": {
+      "A": "Autosomal recessive",
+      "B": "Autosomal dominant",
+      "C": "X-linked",
+      "D": "Mitochondrial maternal"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Pompe disease, in the named gene context, is principally autosomal recessive."
+  },
+  {
+    "id": "disease_gen_049",
+    "domain": "disease_genetics",
+    "subdomain": "Metabolic",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Fabry disease?",
+    "difficulty": "basic",
+    "tags": [
+      "metabolic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Fabry disease"
+    },
+    "options": {
+      "A": "PKHD1",
+      "B": "STK11",
+      "C": "FBN1",
+      "D": "GLA"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Fabry disease is associated with disease-causing variation in GLA."
+  },
+  {
+    "id": "disease_gen_050",
+    "domain": "disease_genetics",
+    "subdomain": "Metabolic",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Fabry disease?",
+    "difficulty": "intermediate",
+    "tags": [
+      "metabolic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Fabry disease"
+    },
+    "options": {
+      "A": "Autosomal recessive",
+      "B": "Mitochondrial maternal",
+      "C": "X-linked",
+      "D": "Autosomal dominant"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Fabry disease, in the named gene context, is principally x-linked."
+  },
+  {
+    "id": "disease_gen_051",
+    "domain": "disease_genetics",
+    "subdomain": "Metabolic",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Gaucher disease?",
+    "difficulty": "basic",
+    "tags": [
+      "metabolic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Gaucher disease"
+    },
+    "options": {
+      "A": "HTT",
+      "B": "GBA1",
+      "C": "FGFR3",
+      "D": "SMAD4"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Gaucher disease is associated with disease-causing variation in GBA1."
+  },
+  {
+    "id": "disease_gen_052",
+    "domain": "disease_genetics",
+    "subdomain": "Metabolic",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Gaucher disease?",
+    "difficulty": "intermediate",
+    "tags": [
+      "metabolic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Gaucher disease"
+    },
+    "options": {
+      "A": "Autosomal recessive",
+      "B": "Autosomal dominant",
+      "C": "X-linked",
+      "D": "Mitochondrial maternal"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Gaucher disease, in the named gene context, is principally autosomal recessive."
+  },
+  {
+    "id": "disease_gen_053",
+    "domain": "disease_genetics",
+    "subdomain": "Metabolic",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Mucopolysaccharidosis type I?",
+    "difficulty": "basic",
+    "tags": [
+      "metabolic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Mucopolysaccharidosis type I"
+    },
+    "options": {
+      "A": "PTPN11",
+      "B": "TP53",
+      "C": "SMN1",
+      "D": "IDUA"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Mucopolysaccharidosis type I is associated with disease-causing variation in IDUA."
+  },
+  {
+    "id": "disease_gen_054",
+    "domain": "disease_genetics",
+    "subdomain": "Metabolic",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Mucopolysaccharidosis type I?",
+    "difficulty": "intermediate",
+    "tags": [
+      "metabolic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Mucopolysaccharidosis type I"
+    },
+    "options": {
+      "A": "X-linked",
+      "B": "Mitochondrial maternal",
+      "C": "Autosomal recessive",
+      "D": "Autosomal dominant"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Mucopolysaccharidosis type I, in the named gene context, is principally autosomal recessive."
+  },
+  {
+    "id": "disease_gen_055",
+    "domain": "disease_genetics",
+    "subdomain": "Endocrine",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with 21-hydroxylase-deficient congenital adrenal hyperplasia?",
+    "difficulty": "basic",
+    "tags": [
+      "endocrine",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: 21-hydroxylase-deficient congenital adrenal hyperplasia"
+    },
+    "options": {
+      "A": "PAH",
+      "B": "CYP21A2",
+      "C": "RET",
+      "D": "CDH1"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "21-hydroxylase-deficient congenital adrenal hyperplasia is associated with disease-causing variation in CYP21A2."
+  },
+  {
+    "id": "disease_gen_056",
+    "domain": "disease_genetics",
+    "subdomain": "Endocrine",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of 21-hydroxylase-deficient congenital adrenal hyperplasia?",
+    "difficulty": "intermediate",
+    "tags": [
+      "endocrine",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: 21-hydroxylase-deficient congenital adrenal hyperplasia"
+    },
+    "options": {
+      "A": "Autosomal recessive",
+      "B": "Autosomal dominant",
+      "C": "X-linked",
+      "D": "Mitochondrial maternal"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "21-hydroxylase-deficient congenital adrenal hyperplasia, in the named gene context, is principally autosomal recessive."
+  },
+  {
+    "id": "disease_gen_057",
+    "domain": "disease_genetics",
+    "subdomain": "Metabolic",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Wilson disease?",
+    "difficulty": "basic",
+    "tags": [
+      "metabolic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Wilson disease"
+    },
+    "options": {
+      "A": "MEN1",
+      "B": "OTC",
+      "C": "HEXA",
+      "D": "ATP7B"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Wilson disease is associated with disease-causing variation in ATP7B."
+  },
+  {
+    "id": "disease_gen_058",
+    "domain": "disease_genetics",
+    "subdomain": "Metabolic",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Wilson disease?",
+    "difficulty": "intermediate",
+    "tags": [
+      "metabolic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Wilson disease"
+    },
+    "options": {
+      "A": "X-linked",
+      "B": "Mitochondrial maternal",
+      "C": "Autosomal recessive",
+      "D": "Autosomal dominant"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Wilson disease, in the named gene context, is principally autosomal recessive."
+  },
+  {
+    "id": "disease_gen_059",
+    "domain": "disease_genetics",
+    "subdomain": "Renal",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with PKD1-related autosomal dominant polycystic kidney disease?",
+    "difficulty": "basic",
+    "tags": [
+      "renal",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: PKD1-related autosomal dominant polycystic kidney disease"
+    },
+    "options": {
+      "A": "HFE",
+      "B": "PKD1",
+      "C": "TTR",
+      "D": "ACADM"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "PKD1-related autosomal dominant polycystic kidney disease is associated with disease-causing variation in PKD1."
+  },
+  {
+    "id": "disease_gen_060",
+    "domain": "disease_genetics",
+    "subdomain": "Renal",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of PKD1-related autosomal dominant polycystic kidney disease?",
+    "difficulty": "intermediate",
+    "tags": [
+      "renal",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: PKD1-related autosomal dominant polycystic kidney disease"
+    },
+    "options": {
+      "A": "Autosomal dominant",
+      "B": "Autosomal recessive",
+      "C": "X-linked",
+      "D": "Mitochondrial maternal"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "PKD1-related autosomal dominant polycystic kidney disease, in the named gene context, is principally autosomal dominant."
+  },
+  {
+    "id": "disease_gen_061",
+    "domain": "disease_genetics",
+    "subdomain": "Renal",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with COL4A5-related Alport syndrome?",
+    "difficulty": "basic",
+    "tags": [
+      "renal",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: COL4A5-related Alport syndrome"
+    },
+    "options": {
+      "A": "PRNP",
+      "B": "BTD",
+      "C": "LDLR",
+      "D": "COL4A5"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "COL4A5-related Alport syndrome is associated with disease-causing variation in COL4A5."
+  },
+  {
+    "id": "disease_gen_062",
+    "domain": "disease_genetics",
+    "subdomain": "Renal",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of COL4A5-related Alport syndrome?",
+    "difficulty": "intermediate",
+    "tags": [
+      "renal",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: COL4A5-related Alport syndrome"
+    },
+    "options": {
+      "A": "Autosomal recessive",
+      "B": "Mitochondrial maternal",
+      "C": "X-linked",
+      "D": "Autosomal dominant"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "COL4A5-related Alport syndrome, in the named gene context, is principally x-linked."
+  },
+  {
+    "id": "disease_gen_063",
+    "domain": "disease_genetics",
+    "subdomain": "Renal",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Autosomal recessive polycystic kidney disease?",
+    "difficulty": "basic",
+    "tags": [
+      "renal",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Autosomal recessive polycystic kidney disease"
+    },
+    "options": {
+      "A": "APC",
+      "B": "PKHD1",
+      "C": "KCNQ1",
+      "D": "CFTR"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Autosomal recessive polycystic kidney disease is associated with disease-causing variation in PKHD1."
+  },
+  {
+    "id": "disease_gen_064",
+    "domain": "disease_genetics",
+    "subdomain": "Renal",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Autosomal recessive polycystic kidney disease?",
+    "difficulty": "intermediate",
+    "tags": [
+      "renal",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Autosomal recessive polycystic kidney disease"
+    },
+    "options": {
+      "A": "Autosomal recessive",
+      "B": "Autosomal dominant",
+      "C": "X-linked",
+      "D": "Mitochondrial maternal"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Autosomal recessive polycystic kidney disease, in the named gene context, is principally autosomal recessive."
+  },
+  {
+    "id": "disease_gen_065",
+    "domain": "disease_genetics",
+    "subdomain": "Skeletal",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Achondroplasia?",
+    "difficulty": "basic",
+    "tags": [
+      "skeletal",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Achondroplasia"
+    },
+    "options": {
+      "A": "SCN5A",
+      "B": "HBB",
+      "C": "MLH1",
+      "D": "FGFR3"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Achondroplasia is associated with disease-causing variation in FGFR3."
+  },
+  {
+    "id": "disease_gen_066",
+    "domain": "disease_genetics",
+    "subdomain": "Skeletal",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Achondroplasia?",
+    "difficulty": "intermediate",
+    "tags": [
+      "skeletal",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Achondroplasia"
+    },
+    "options": {
+      "A": "X-linked",
+      "B": "Mitochondrial maternal",
+      "C": "Autosomal dominant",
+      "D": "Autosomal recessive"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Achondroplasia, in the named gene context, is principally autosomal dominant."
+  },
+  {
+    "id": "disease_gen_067",
+    "domain": "disease_genetics",
+    "subdomain": "Multisystem",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with PTPN11-related Noonan syndrome?",
+    "difficulty": "basic",
+    "tags": [
+      "multisystem",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: PTPN11-related Noonan syndrome"
+    },
+    "options": {
+      "A": "BRCA1",
+      "B": "PTPN11",
+      "C": "MYBPC3",
+      "D": "F8"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "PTPN11-related Noonan syndrome is associated with disease-causing variation in PTPN11."
+  },
+  {
+    "id": "disease_gen_068",
+    "domain": "disease_genetics",
+    "subdomain": "Multisystem",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of PTPN11-related Noonan syndrome?",
+    "difficulty": "intermediate",
+    "tags": [
+      "multisystem",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: PTPN11-related Noonan syndrome"
+    },
+    "options": {
+      "A": "Autosomal dominant",
+      "B": "Autosomal recessive",
+      "C": "X-linked",
+      "D": "Mitochondrial maternal"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "PTPN11-related Noonan syndrome, in the named gene context, is principally autosomal dominant."
+  },
+  {
+    "id": "disease_gen_069",
+    "domain": "disease_genetics",
+    "subdomain": "Cancer predisposition",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Multiple endocrine neoplasia type 2?",
+    "difficulty": "basic",
+    "tags": [
+      "cancer_predisposition",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Multiple endocrine neoplasia type 2"
+    },
+    "options": {
+      "A": "PKP2",
+      "B": "F9",
+      "C": "RB1",
+      "D": "RET"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Multiple endocrine neoplasia type 2 is associated with disease-causing variation in RET."
+  },
+  {
+    "id": "disease_gen_070",
+    "domain": "disease_genetics",
+    "subdomain": "Cancer predisposition",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Multiple endocrine neoplasia type 2?",
+    "difficulty": "intermediate",
+    "tags": [
+      "cancer_predisposition",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Multiple endocrine neoplasia type 2"
+    },
+    "options": {
+      "A": "X-linked",
+      "B": "Mitochondrial maternal",
+      "C": "Autosomal dominant",
+      "D": "Autosomal recessive"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Multiple endocrine neoplasia type 2, in the named gene context, is principally autosomal dominant."
+  },
+  {
+    "id": "disease_gen_071",
+    "domain": "disease_genetics",
+    "subdomain": "Cancer predisposition",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Multiple endocrine neoplasia type 1?",
+    "difficulty": "basic",
+    "tags": [
+      "cancer_predisposition",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Multiple endocrine neoplasia type 1"
+    },
+    "options": {
+      "A": "VHL",
+      "B": "MEN1",
+      "C": "PRSS1",
+      "D": "DMD"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Multiple endocrine neoplasia type 1 is associated with disease-causing variation in MEN1."
+  },
+  {
+    "id": "disease_gen_072",
+    "domain": "disease_genetics",
+    "subdomain": "Cancer predisposition",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Multiple endocrine neoplasia type 1?",
+    "difficulty": "intermediate",
+    "tags": [
+      "cancer_predisposition",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Multiple endocrine neoplasia type 1"
+    },
+    "options": {
+      "A": "Autosomal dominant",
+      "B": "Autosomal recessive",
+      "C": "X-linked",
+      "D": "Mitochondrial maternal"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Multiple endocrine neoplasia type 1, in the named gene context, is principally autosomal dominant."
+  },
+  {
+    "id": "disease_gen_073",
+    "domain": "disease_genetics",
+    "subdomain": "Neurologic and systemic",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Hereditary transthyretin amyloidosis?",
+    "difficulty": "basic",
+    "tags": [
+      "neurologic_and_systemic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Hereditary transthyretin amyloidosis"
+    },
+    "options": {
+      "A": "STK11",
+      "B": "FBN1",
+      "C": "TSC2",
+      "D": "TTR"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Hereditary transthyretin amyloidosis is associated with disease-causing variation in TTR."
+  },
+  {
+    "id": "disease_gen_074",
+    "domain": "disease_genetics",
+    "subdomain": "Neurologic and systemic",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Hereditary transthyretin amyloidosis?",
+    "difficulty": "intermediate",
+    "tags": [
+      "neurologic_and_systemic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Hereditary transthyretin amyloidosis"
+    },
+    "options": {
+      "A": "X-linked",
+      "B": "Mitochondrial maternal",
+      "C": "Autosomal dominant",
+      "D": "Autosomal recessive"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Hereditary transthyretin amyloidosis, in the named gene context, is principally autosomal dominant."
+  },
+  {
+    "id": "disease_gen_075",
+    "domain": "disease_genetics",
+    "subdomain": "Neurogenetics",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Genetic prion disease?",
+    "difficulty": "basic",
+    "tags": [
+      "neurogenetics",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Genetic prion disease"
+    },
+    "options": {
+      "A": "NF1",
+      "B": "PRNP",
+      "C": "SMAD4",
+      "D": "HTT"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Genetic prion disease is associated with disease-causing variation in PRNP."
+  },
+  {
+    "id": "disease_gen_076",
+    "domain": "disease_genetics",
+    "subdomain": "Neurogenetics",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Genetic prion disease?",
+    "difficulty": "intermediate",
+    "tags": [
+      "neurogenetics",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Genetic prion disease"
+    },
+    "options": {
+      "A": "Autosomal dominant",
+      "B": "Autosomal recessive",
+      "C": "X-linked",
+      "D": "Mitochondrial maternal"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Genetic prion disease, in the named gene context, is principally autosomal dominant."
+  },
+  {
+    "id": "disease_gen_077",
+    "domain": "disease_genetics",
+    "subdomain": "Cardiovascular",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Long QT syndrome type 1?",
+    "difficulty": "basic",
+    "tags": [
+      "cardiovascular",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Long QT syndrome type 1"
+    },
+    "options": {
+      "A": "TP53",
+      "B": "SMN1",
+      "C": "MECP2",
+      "D": "KCNQ1"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Long QT syndrome type 1 is associated with disease-causing variation in KCNQ1."
+  },
+  {
+    "id": "disease_gen_078",
+    "domain": "disease_genetics",
+    "subdomain": "Cardiovascular",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Long QT syndrome type 1?",
+    "difficulty": "intermediate",
+    "tags": [
+      "cardiovascular",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Long QT syndrome type 1"
+    },
+    "options": {
+      "A": "X-linked",
+      "B": "Mitochondrial maternal",
+      "C": "Autosomal dominant",
+      "D": "Autosomal recessive"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Long QT syndrome type 1, in the named gene context, is principally autosomal dominant."
+  },
+  {
+    "id": "disease_gen_079",
+    "domain": "disease_genetics",
+    "subdomain": "Cardiovascular",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with SCN5A-related Brugada syndrome?",
+    "difficulty": "basic",
+    "tags": [
+      "cardiovascular",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: SCN5A-related Brugada syndrome"
+    },
+    "options": {
+      "A": "FMR1",
+      "B": "SCN5A",
+      "C": "CDH1",
+      "D": "PAH"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "SCN5A-related Brugada syndrome is associated with disease-causing variation in SCN5A."
+  },
+  {
+    "id": "disease_gen_080",
+    "domain": "disease_genetics",
+    "subdomain": "Cardiovascular",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of SCN5A-related Brugada syndrome?",
+    "difficulty": "intermediate",
+    "tags": [
+      "cardiovascular",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: SCN5A-related Brugada syndrome"
+    },
+    "options": {
+      "A": "Autosomal dominant",
+      "B": "Autosomal recessive",
+      "C": "X-linked",
+      "D": "Mitochondrial maternal"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "SCN5A-related Brugada syndrome, in the named gene context, is principally autosomal dominant."
+  },
+  {
+    "id": "disease_gen_081",
+    "domain": "disease_genetics",
+    "subdomain": "Cardiovascular",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with MYBPC3-related hypertrophic cardiomyopathy?",
+    "difficulty": "basic",
+    "tags": [
+      "cardiovascular",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: MYBPC3-related hypertrophic cardiomyopathy"
+    },
+    "options": {
+      "A": "OTC",
+      "B": "HEXA",
+      "C": "MT-ND4",
+      "D": "MYBPC3"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "MYBPC3-related hypertrophic cardiomyopathy is associated with disease-causing variation in MYBPC3."
+  },
+  {
+    "id": "disease_gen_082",
+    "domain": "disease_genetics",
+    "subdomain": "Cardiovascular",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of MYBPC3-related hypertrophic cardiomyopathy?",
+    "difficulty": "intermediate",
+    "tags": [
+      "cardiovascular",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: MYBPC3-related hypertrophic cardiomyopathy"
+    },
+    "options": {
+      "A": "X-linked",
+      "B": "Mitochondrial maternal",
+      "C": "Autosomal dominant",
+      "D": "Autosomal recessive"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "MYBPC3-related hypertrophic cardiomyopathy, in the named gene context, is principally autosomal dominant."
+  },
+  {
+    "id": "disease_gen_083",
+    "domain": "disease_genetics",
+    "subdomain": "Cardiovascular",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with PKP2-related arrhythmogenic right ventricular cardiomyopathy?",
+    "difficulty": "basic",
+    "tags": [
+      "cardiovascular",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: PKP2-related arrhythmogenic right ventricular cardiomyopathy"
+    },
+    "options": {
+      "A": "PMP22",
+      "B": "PKP2",
+      "C": "ACADM",
+      "D": "HFE"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "PKP2-related arrhythmogenic right ventricular cardiomyopathy is associated with disease-causing variation in PKP2."
+  },
+  {
+    "id": "disease_gen_084",
+    "domain": "disease_genetics",
+    "subdomain": "Cardiovascular",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of PKP2-related arrhythmogenic right ventricular cardiomyopathy?",
+    "difficulty": "intermediate",
+    "tags": [
+      "cardiovascular",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: PKP2-related arrhythmogenic right ventricular cardiomyopathy"
+    },
+    "options": {
+      "A": "Autosomal dominant",
+      "B": "Autosomal recessive",
+      "C": "X-linked",
+      "D": "Mitochondrial maternal"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "PKP2-related arrhythmogenic right ventricular cardiomyopathy, in the named gene context, is principally autosomal dominant."
+  },
+  {
+    "id": "disease_gen_085",
+    "domain": "disease_genetics",
+    "subdomain": "Gastrointestinal",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with PRSS1-related hereditary pancreatitis?",
+    "difficulty": "basic",
+    "tags": [
+      "gastrointestinal",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: PRSS1-related hereditary pancreatitis"
+    },
+    "options": {
+      "A": "BTD",
+      "B": "LDLR",
+      "C": "GAA",
+      "D": "PRSS1"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "PRSS1-related hereditary pancreatitis is associated with disease-causing variation in PRSS1."
+  },
+  {
+    "id": "disease_gen_086",
+    "domain": "disease_genetics",
+    "subdomain": "Gastrointestinal",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of PRSS1-related hereditary pancreatitis?",
+    "difficulty": "intermediate",
+    "tags": [
+      "gastrointestinal",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: PRSS1-related hereditary pancreatitis"
+    },
+    "options": {
+      "A": "X-linked",
+      "B": "Mitochondrial maternal",
+      "C": "Autosomal dominant",
+      "D": "Autosomal recessive"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "PRSS1-related hereditary pancreatitis, in the named gene context, is principally autosomal dominant."
+  },
+  {
+    "id": "disease_gen_087",
+    "domain": "disease_genetics",
+    "subdomain": "Cancer predisposition",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Peutz-Jeghers syndrome?",
+    "difficulty": "basic",
+    "tags": [
+      "cancer_predisposition",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Peutz-Jeghers syndrome"
+    },
+    "options": {
+      "A": "GLA",
+      "B": "STK11",
+      "C": "CFTR",
+      "D": "APC"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Peutz-Jeghers syndrome is associated with disease-causing variation in STK11."
+  },
+  {
+    "id": "disease_gen_088",
+    "domain": "disease_genetics",
+    "subdomain": "Cancer predisposition",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Peutz-Jeghers syndrome?",
+    "difficulty": "intermediate",
+    "tags": [
+      "cancer_predisposition",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Peutz-Jeghers syndrome"
+    },
+    "options": {
+      "A": "Autosomal dominant",
+      "B": "Autosomal recessive",
+      "C": "X-linked",
+      "D": "Mitochondrial maternal"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Peutz-Jeghers syndrome, in the named gene context, is principally autosomal dominant."
+  },
+  {
+    "id": "disease_gen_089",
+    "domain": "disease_genetics",
+    "subdomain": "Cancer predisposition",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with SMAD4-related juvenile polyposis syndrome?",
+    "difficulty": "basic",
+    "tags": [
+      "cancer_predisposition",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: SMAD4-related juvenile polyposis syndrome"
+    },
+    "options": {
+      "A": "HBB",
+      "B": "MLH1",
+      "C": "GBA1",
+      "D": "SMAD4"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "SMAD4-related juvenile polyposis syndrome is associated with disease-causing variation in SMAD4."
+  },
+  {
+    "id": "disease_gen_090",
+    "domain": "disease_genetics",
+    "subdomain": "Cancer predisposition",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of SMAD4-related juvenile polyposis syndrome?",
+    "difficulty": "intermediate",
+    "tags": [
+      "cancer_predisposition",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: SMAD4-related juvenile polyposis syndrome"
+    },
+    "options": {
+      "A": "X-linked",
+      "B": "Mitochondrial maternal",
+      "C": "Autosomal dominant",
+      "D": "Autosomal recessive"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "SMAD4-related juvenile polyposis syndrome, in the named gene context, is principally autosomal dominant."
+  },
+  {
+    "id": "disease_gen_091",
+    "domain": "disease_genetics",
+    "subdomain": "Cancer predisposition",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Li-Fraumeni syndrome?",
+    "difficulty": "basic",
+    "tags": [
+      "cancer_predisposition",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Li-Fraumeni syndrome"
+    },
+    "options": {
+      "A": "IDUA",
+      "B": "TP53",
+      "C": "F8",
+      "D": "BRCA1"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Li-Fraumeni syndrome is associated with disease-causing variation in TP53."
+  },
+  {
+    "id": "disease_gen_092",
+    "domain": "disease_genetics",
+    "subdomain": "Cancer predisposition",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Li-Fraumeni syndrome?",
+    "difficulty": "intermediate",
+    "tags": [
+      "cancer_predisposition",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Li-Fraumeni syndrome"
+    },
+    "options": {
+      "A": "Autosomal dominant",
+      "B": "Autosomal recessive",
+      "C": "X-linked",
+      "D": "Mitochondrial maternal"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Li-Fraumeni syndrome, in the named gene context, is principally autosomal dominant."
+  },
+  {
+    "id": "disease_gen_093",
+    "domain": "disease_genetics",
+    "subdomain": "Cancer predisposition",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with CDH1-related diffuse gastric and lobular breast cancer syndrome?",
+    "difficulty": "basic",
+    "tags": [
+      "cancer_predisposition",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: CDH1-related diffuse gastric and lobular breast cancer syndrome"
+    },
+    "options": {
+      "A": "F9",
+      "B": "RB1",
+      "C": "CYP21A2",
+      "D": "CDH1"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "CDH1-related diffuse gastric and lobular breast cancer syndrome is associated with disease-causing variation in CDH1."
+  },
+  {
+    "id": "disease_gen_094",
+    "domain": "disease_genetics",
+    "subdomain": "Cancer predisposition",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of CDH1-related diffuse gastric and lobular breast cancer syndrome?",
+    "difficulty": "intermediate",
+    "tags": [
+      "cancer_predisposition",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: CDH1-related diffuse gastric and lobular breast cancer syndrome"
+    },
+    "options": {
+      "A": "X-linked",
+      "B": "Mitochondrial maternal",
+      "C": "Autosomal dominant",
+      "D": "Autosomal recessive"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "CDH1-related diffuse gastric and lobular breast cancer syndrome, in the named gene context, is principally autosomal dominant."
+  },
+  {
+    "id": "disease_gen_095",
+    "domain": "disease_genetics",
+    "subdomain": "Metabolic",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Ornithine transcarbamylase deficiency?",
+    "difficulty": "basic",
+    "tags": [
+      "metabolic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Ornithine transcarbamylase deficiency"
+    },
+    "options": {
+      "A": "ATP7B",
+      "B": "OTC",
+      "C": "DMD",
+      "D": "VHL"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Ornithine transcarbamylase deficiency is associated with disease-causing variation in OTC."
+  },
+  {
+    "id": "disease_gen_096",
+    "domain": "disease_genetics",
+    "subdomain": "Metabolic",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Ornithine transcarbamylase deficiency?",
+    "difficulty": "intermediate",
+    "tags": [
+      "metabolic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Ornithine transcarbamylase deficiency"
+    },
+    "options": {
+      "A": "X-linked",
+      "B": "Autosomal dominant",
+      "C": "Autosomal recessive",
+      "D": "Mitochondrial maternal"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Ornithine transcarbamylase deficiency, in the named gene context, is principally x-linked."
+  },
+  {
+    "id": "disease_gen_097",
+    "domain": "disease_genetics",
+    "subdomain": "Metabolic",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Medium-chain acyl-CoA dehydrogenase deficiency?",
+    "difficulty": "basic",
+    "tags": [
+      "metabolic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Medium-chain acyl-CoA dehydrogenase deficiency"
+    },
+    "options": {
+      "A": "FBN1",
+      "B": "TSC2",
+      "C": "PKD1",
+      "D": "ACADM"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Medium-chain acyl-CoA dehydrogenase deficiency is associated with disease-causing variation in ACADM."
+  },
+  {
+    "id": "disease_gen_098",
+    "domain": "disease_genetics",
+    "subdomain": "Metabolic",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Medium-chain acyl-CoA dehydrogenase deficiency?",
+    "difficulty": "intermediate",
+    "tags": [
+      "metabolic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Medium-chain acyl-CoA dehydrogenase deficiency"
+    },
+    "options": {
+      "A": "X-linked",
+      "B": "Mitochondrial maternal",
+      "C": "Autosomal recessive",
+      "D": "Autosomal dominant"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Medium-chain acyl-CoA dehydrogenase deficiency, in the named gene context, is principally autosomal recessive."
+  },
+  {
+    "id": "disease_gen_099",
+    "domain": "disease_genetics",
+    "subdomain": "Metabolic",
+    "question_type": "single_choice",
+    "question": "Which gene is most directly associated with Biotinidase deficiency?",
+    "difficulty": "basic",
+    "tags": [
+      "metabolic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Biotinidase deficiency"
+    },
+    "options": {
+      "A": "COL4A5",
+      "B": "BTD",
+      "C": "HTT",
+      "D": "NF1"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Biotinidase deficiency is associated with disease-causing variation in BTD."
+  },
+  {
+    "id": "disease_gen_100",
+    "domain": "disease_genetics",
+    "subdomain": "Metabolic",
+    "question_type": "single_choice",
+    "question": "What is the principal inheritance pattern of Biotinidase deficiency?",
+    "difficulty": "intermediate",
+    "tags": [
+      "metabolic",
+      "public_seed"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+    "review_status": "llm_generated",
+    "version": "1.0",
+    "provenance": {
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK1116/",
+      "curation_note": "AI-drafted public seed benchmark; expert review required before high-stakes use.",
+      "source_locator": "GeneReviews index: Biotinidase deficiency"
+    },
+    "options": {
+      "A": "Autosomal recessive",
+      "B": "Autosomal dominant",
+      "C": "X-linked",
+      "D": "Mitochondrial maternal"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Biotinidase deficiency, in the named gene context, is principally autosomal recessive."
+  }
+]
