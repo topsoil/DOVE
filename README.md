@@ -1,4 +1,4 @@
-# DOVE
+# 🕊️ DOVE
 
 **DOVE — Domain-Oriented AI/LLMs Validation & Evaluation** is a lightweight
 Python framework for running and comparing domain-specific multiple-choice LLM
