@@ -203,10 +203,12 @@ Source files are never modified. Remote direct mode sends extracted document
 text to the configured endpoint; use it only when policy permits. Generated
 questions are drafts requiring human review, never final gold data. See
 [TUTORIAL.md](TUTORIAL.md) for complete commands and security guidance.
-## License
+## License and contact
 
-A project license has not yet been selected. Choose and add a license before
-treating this repository as an open-source release.
+DOVE is released under the [MIT License](LICENSE).
+
+- Copyright: © 2026 Topsoil
+- Contact: [topsoil.ustc@gmail.com](mailto:topsoil.ustc@gmail.com)
 
 ## Headless benchmark + HTML report
 
@@ -251,4 +253,5 @@ python scripts\run_benchmark_report.py --config config\headless.genetics.example
 
 This is one 400-call run and produces a single canonical JSON, CSV, and
 `disease_genetics_100_report.html`. All four Ollama models must be installed.
+
 
