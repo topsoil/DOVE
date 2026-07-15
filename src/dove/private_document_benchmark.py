@@ -37,7 +37,7 @@ def _base_log(source: Path, output: str | Path, domain: str, count: int,
         "model": {"name": model.name, "provider": model.provider, "model": model.model,
                   "base_url": model.base_url, "temperature": model.temperature,
                   "timeout_seconds": model.timeout, "context_window": model.context_window,
-                  "max_output_tokens": model.max_output_tokens,
+                  "max_output_tokens": model.max_output_tokens, "thinking": model.thinking,
                   "structured_outputs": model.structured_outputs},
         "stages": {}, "question_batches": [],
     }

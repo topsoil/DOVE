@@ -1,0 +1,3391 @@
+[
+  {
+    "id": "gyn_surg_001",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Gynecologic surgical involvement",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"A right salpingo-oophorectomy was completed; the adnexa was placed in a retrieval bag and sent to pathology.\"\n\nExtraction task: Did the actual procedure involve an ovary, fallopian tube, uterus, cervix, or pelvic/abdominal peritoneum?",
+    "options": {
+      "A": "yes",
+      "B": "no",
+      "C": "unsure"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "A fallopian tube and ovary were actually removed.",
+    "difficulty": "basic",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "gynecologic_surgical_involvement"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_002",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Gynecologic surgical involvement",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Preoperative diagnosis: ovarian carcinoma. The operative report documents only an open appendectomy for acute appendicitis; the pelvis was not entered and no gynecologic procedure was performed.\"\n\nExtraction task: Did the actual procedure involve an ovary, fallopian tube, uterus, cervix, or pelvic/abdominal peritoneum?",
+    "options": {
+      "A": "yes",
+      "B": "unsure",
+      "C": "no"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "The diagnosis alone is insufficient, and the documented appendectomy did not involve a listed gynecologic organ or pelvic/abdominal peritoneal cancer procedure.",
+    "difficulty": "advanced",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "gynecologic_surgical_involvement"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_003",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Gynecologic surgical involvement",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The uterus, cervix, both tubes, and ovaries were removed en bloc after ligation of the uterine vessels.\"\n\nExtraction task: Did the actual procedure involve an ovary, fallopian tube, uterus, cervix, or pelvic/abdominal peritoneum?",
+    "options": {
+      "A": "unsure",
+      "B": "yes",
+      "C": "no"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "The completed hysterectomy and bilateral salpingo-oophorectomy involved several gynecologic organs.",
+    "difficulty": "basic",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "gynecologic_surgical_involvement"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_004",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Gynecologic surgical involvement",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"After abdominal entry, pelvic washings and biopsies of the cul-de-sac and right pelvic peritoneum were obtained.\"\n\nExtraction task: Did the actual procedure involve an ovary, fallopian tube, uterus, cervix, or pelvic/abdominal peritoneum?",
+    "options": {
+      "A": "yes",
+      "B": "no",
+      "C": "unsure"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Pelvic peritoneal tissue was biopsied during the operation.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "gynecologic_surgical_involvement"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_005",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Gynecologic surgical involvement",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Indication: adnexal mass. Cystoscopy with bilateral ureteral stent placement was performed; the gynecologic procedure was cancelled before abdominal entry.\"\n\nExtraction task: Did the actual procedure involve an ovary, fallopian tube, uterus, cervix, or pelvic/abdominal peritoneum?",
+    "options": {
+      "A": "yes",
+      "B": "unsure",
+      "C": "no"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Only urinary-tract procedures were performed; planned gynecologic surgery did not occur.",
+    "difficulty": "advanced",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "gynecologic_surgical_involvement"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_006",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Gynecologic surgical involvement",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The available note states only, 'procedure performed as planned; specimens submitted.' The procedure name and specimen sites are absent.\"\n\nExtraction task: Did the actual procedure involve an ovary, fallopian tube, uterus, cervix, or pelvic/abdominal peritoneum?",
+    "options": {
+      "A": "no",
+      "B": "unsure",
+      "C": "yes"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "The excerpt does not identify whether a gynecologic organ or peritoneum was involved.",
+    "difficulty": "advanced",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "gynecologic_surgical_involvement"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_007",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Gynecologic surgical involvement",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"A left salpingectomy was carried out for a torsed hydrosalpinx; the ovary was preserved.\"\n\nExtraction task: Did the actual procedure involve an ovary, fallopian tube, uterus, cervix, or pelvic/abdominal peritoneum?",
+    "options": {
+      "A": "yes",
+      "B": "no",
+      "C": "unsure"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Removal of the fallopian tube constitutes gynecologic involvement.",
+    "difficulty": "basic",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "gynecologic_surgical_involvement"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_008",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Gynecologic surgical involvement",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"General surgery lysed small-bowel adhesions adjacent to the left ovary. The ovary and pelvic peritoneum were inspected but not biopsied, resected, or repaired.\"\n\nExtraction task: Did the actual procedure involve an ovary, fallopian tube, uterus, cervix, or pelvic/abdominal peritoneum?",
+    "options": {
+      "A": "yes",
+      "B": "unsure",
+      "C": "no"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Inspection and nearby adhesiolysis without a procedure on the listed organs or peritoneal tissue do not confirm involvement.",
+    "difficulty": "advanced",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "gynecologic_surgical_involvement"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_009",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Gynecologic surgical involvement",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Three implants were excised from the anterior pelvic peritoneum for frozen section.\"\n\nExtraction task: Did the actual procedure involve an ovary, fallopian tube, uterus, cervix, or pelvic/abdominal peritoneum?",
+    "options": {
+      "A": "unsure",
+      "B": "yes",
+      "C": "no"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "The operation included resection of pelvic peritoneal tissue.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "gynecologic_surgical_involvement"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_010",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Gynecologic surgical involvement",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The booking listed possible bilateral oophorectomy. At surgery, only an incisional hernia repair was completed; the pelvis was not entered.\"\n\nExtraction task: Did the actual procedure involve an ovary, fallopian tube, uterus, cervix, or pelvic/abdominal peritoneum?",
+    "options": {
+      "A": "no",
+      "B": "yes",
+      "C": "unsure"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "A planned procedure is not evidence that it was performed.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "gynecologic_surgical_involvement"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_011",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Gynecologic surgical involvement",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Repair of a dehisced vaginal cuff included reapproximation of the cuff to the residual cervical stroma.\"\n\nExtraction task: Did the actual procedure involve an ovary, fallopian tube, uterus, cervix, or pelvic/abdominal peritoneum?",
+    "options": {
+      "A": "no",
+      "B": "unsure",
+      "C": "yes"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "The repair involved cervical gynecologic tissue.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "gynecologic_surgical_involvement"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_012",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Gynecologic surgical involvement",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The surgeon records a 'pelvic procedure' but supplies no procedure name, operative steps, or specimen description.\"\n\nExtraction task: Did the actual procedure involve an ovary, fallopian tube, uterus, cervix, or pelvic/abdominal peritoneum?",
+    "options": {
+      "A": "no",
+      "B": "unsure",
+      "C": "yes"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "The wording is too nonspecific to confirm involvement of a listed structure.",
+    "difficulty": "advanced",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "gynecologic_surgical_involvement"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_013",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Laparoscopic approach",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Pneumoperitoneum was established and four robotic ports were placed. The robotic hysterectomy proceeded without conversion.\"\n\nExtraction task: Was the operation performed with, or begun using, a laparoscopic, robotic, or other minimally invasive abdominal approach?",
+    "options": {
+      "A": "yes",
+      "B": "no",
+      "C": "unsure"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Robotic port placement confirms a minimally invasive approach.",
+    "difficulty": "basic",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "laparoscopic_approach"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_014",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Laparoscopic approach",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The case began robotically with pelvic survey. Dense adhesions prevented safe progress, so the ports were removed and a midline laparotomy was made.\"\n\nExtraction task: Was the operation performed with, or begun using, a laparoscopic, robotic, or other minimally invasive abdominal approach?",
+    "options": {
+      "A": "no",
+      "B": "unsure",
+      "C": "yes"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "A minimally invasive approach was initiated even though the case converted to open.",
+    "difficulty": "advanced",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "laparoscopic_approach"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_015",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Laparoscopic approach",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"A vertical midline incision was made from the pubis to above the umbilicus, and exploration proceeded by laparotomy.\"\n\nExtraction task: Was the operation performed with, or begun using, a laparoscopic, robotic, or other minimally invasive abdominal approach?",
+    "options": {
+      "A": "unsure",
+      "B": "no",
+      "C": "yes"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Only an open approach is documented.",
+    "difficulty": "basic",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "laparoscopic_approach"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_016",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Laparoscopic approach",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Although laparoscopy had been planned, the team elected before incision to proceed directly through a midline laparotomy; no ports were inserted.\"\n\nExtraction task: Was the operation performed with, or begun using, a laparoscopic, robotic, or other minimally invasive abdominal approach?",
+    "options": {
+      "A": "no",
+      "B": "yes",
+      "C": "unsure"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Planning laparoscopy does not count when minimally invasive access never began.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "laparoscopic_approach"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_017",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Laparoscopic approach",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"A 5-mm optical trocar was introduced at Palmer's point, followed by two lower-quadrant ports.\"\n\nExtraction task: Was the operation performed with, or begun using, a laparoscopic, robotic, or other minimally invasive abdominal approach?",
+    "options": {
+      "A": "no",
+      "B": "unsure",
+      "C": "yes"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Trocar and port placement confirm laparoscopic access.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "laparoscopic_approach"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_018",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Laparoscopic approach",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"A hand-assisted laparoscopic approach was used for mobilization before specimen delivery through a small extraction incision.\"\n\nExtraction task: Was the operation performed with, or begun using, a laparoscopic, robotic, or other minimally invasive abdominal approach?",
+    "options": {
+      "A": "unsure",
+      "B": "yes",
+      "C": "no"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Hand-assisted laparoscopy remains a minimally invasive initiation.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "laparoscopic_approach"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_019",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Laparoscopic approach",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"A cystoscope was passed through the urethra to assess ureteral efflux. The abdominal operation itself was performed through an open incision.\"\n\nExtraction task: Was the operation performed with, or begun using, a laparoscopic, robotic, or other minimally invasive abdominal approach?",
+    "options": {
+      "A": "no",
+      "B": "yes",
+      "C": "unsure"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Cystoscopy is not a laparoscopic or robotic abdominal approach.",
+    "difficulty": "advanced",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "laparoscopic_approach"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_020",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Laparoscopic approach",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Diagnostic laparoscopy was initiated with an umbilical port but stopped after diffuse unresectable disease was seen.\"\n\nExtraction task: Was the operation performed with, or begun using, a laparoscopic, robotic, or other minimally invasive abdominal approach?",
+    "options": {
+      "A": "no",
+      "B": "unsure",
+      "C": "yes"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "The operation began laparoscopically even though it was stopped.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "laparoscopic_approach"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_021",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Laparoscopic approach",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Exploratory laparotomy and open omentectomy were performed. No scope, trocar, port, robotic, or minimally invasive technique is described.\"\n\nExtraction task: Was the operation performed with, or begun using, a laparoscopic, robotic, or other minimally invasive abdominal approach?",
+    "options": {
+      "A": "unsure",
+      "B": "no",
+      "C": "yes"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "The documented approach is open.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "laparoscopic_approach"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_022",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Laparoscopic approach",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"A laparoscopic survey was completed before conversion to a xiphoid-to-pubis incision for cytoreduction.\"\n\nExtraction task: Was the operation performed with, or begun using, a laparoscopic, robotic, or other minimally invasive abdominal approach?",
+    "options": {
+      "A": "yes",
+      "B": "no",
+      "C": "unsure"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "The laparoscopic survey establishes minimally invasive initiation.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "laparoscopic_approach"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_023",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Laparoscopic approach",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The operative report identifies a 'minimally invasive total hysterectomy' with robotic docking and bedside assistant ports.\"\n\nExtraction task: Was the operation performed with, or begun using, a laparoscopic, robotic, or other minimally invasive abdominal approach?",
+    "options": {
+      "A": "no",
+      "B": "unsure",
+      "C": "yes"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "The note explicitly documents minimally invasive robotic surgery.",
+    "difficulty": "basic",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "laparoscopic_approach"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_024",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Laparoscopic approach",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The procedure list names hysterectomy and staging, but the operative approach and access technique are not documented.\"\n\nExtraction task: Was the operation performed with, or begun using, a laparoscopic, robotic, or other minimally invasive abdominal approach?",
+    "options": {
+      "A": "no",
+      "B": "unsure",
+      "C": "yes"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "There is no evidence establishing open or minimally invasive access.",
+    "difficulty": "advanced",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "laparoscopic_approach"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_025",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Extensive cytoreduction",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The operation is titled 'primary cytoreductive surgery' and included hysterectomy, bilateral salpingo-oophorectomy, omentectomy, and pelvic peritonectomy.\"\n\nExtraction task: Was this a full or extensive operation intended for cytoreduction, debulking, or interval debulking?",
+    "options": {
+      "A": "yes",
+      "B": "no",
+      "C": "unsure"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "The intent and multi-site procedures establish extensive cytoreduction.",
+    "difficulty": "basic",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "extensive_cytoreduction"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_026",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Extensive cytoreduction",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"After neoadjuvant chemotherapy, interval debulking included infragastric omentectomy and stripping of bilateral diaphragmatic and pelvic peritoneum.\"\n\nExtraction task: Was this a full or extensive operation intended for cytoreduction, debulking, or interval debulking?",
+    "options": {
+      "A": "no",
+      "B": "unsure",
+      "C": "yes"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Interval debulking with omentectomy and peritoneal stripping is extensive cytoreduction.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "extensive_cytoreduction"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_027",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Extensive cytoreduction",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"A bilateral salpingo-oophorectomy was completed for an isolated adnexal mass; no omentectomy, peritoneal resection, or debulking intent was documented.\"\n\nExtraction task: Was this a full or extensive operation intended for cytoreduction, debulking, or interval debulking?",
+    "options": {
+      "A": "unsure",
+      "B": "no",
+      "C": "yes"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Adnexal removal alone does not establish a full cytoreductive operation.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "extensive_cytoreduction"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_028",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Extensive cytoreduction",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Diagnostic laparoscopy with two peritoneal biopsies was performed to assess resectability, and no tumor was removed beyond the biopsies.\"\n\nExtraction task: Was this a full or extensive operation intended for cytoreduction, debulking, or interval debulking?",
+    "options": {
+      "A": "no",
+      "B": "yes",
+      "C": "unsure"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "A diagnostic assessment is not extensive cytoreduction.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "extensive_cytoreduction"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_029",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Extensive cytoreduction",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Tumor debulking required omentectomy, rectosigmoid resection, splenectomy, and excision of diaphragmatic implants.\"\n\nExtraction task: Was this a full or extensive operation intended for cytoreduction, debulking, or interval debulking?",
+    "options": {
+      "A": "no",
+      "B": "unsure",
+      "C": "yes"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "The explicit debulking intent and multiple upper and lower abdominal resections indicate extensive surgery.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "extensive_cytoreduction"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_030",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Extensive cytoreduction",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The heading states 'possible debulking.' The body is truncated after abdominal entry and does not list completed resections.\"\n\nExtraction task: Was this a full or extensive operation intended for cytoreduction, debulking, or interval debulking?",
+    "options": {
+      "A": "no",
+      "B": "unsure",
+      "C": "yes"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Planned or possible debulking without operative details cannot confirm an extensive completed attempt.",
+    "difficulty": "advanced",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "extensive_cytoreduction"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_031",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Extensive cytoreduction",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"A staging omentectomy and pelvic washings were performed after removal of a confined ovarian tumor; no cytoreduction or gross peritoneal disease was described.\"\n\nExtraction task: Was this a full or extensive operation intended for cytoreduction, debulking, or interval debulking?",
+    "options": {
+      "A": "no",
+      "B": "yes",
+      "C": "unsure"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Staging omentectomy alone is not described as full or extensive cytoreduction.",
+    "difficulty": "advanced",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "extensive_cytoreduction"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_032",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Extensive cytoreduction",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Complete gross resection was pursued with total omentectomy, right diaphragm peritonectomy, porta hepatis nodule excision, and small-bowel mesenteric implant resection.\"\n\nExtraction task: Was this a full or extensive operation intended for cytoreduction, debulking, or interval debulking?",
+    "options": {
+      "A": "no",
+      "B": "unsure",
+      "C": "yes"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "The stated goal and multi-region resections support extensive cytoreduction.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "extensive_cytoreduction"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_033",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Extensive cytoreduction",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Fertility-sparing ovarian cystectomy was performed, with preservation of the uterus and contralateral adnexa.\"\n\nExtraction task: Was this a full or extensive operation intended for cytoreduction, debulking, or interval debulking?",
+    "options": {
+      "A": "unsure",
+      "B": "no",
+      "C": "yes"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "A limited cystectomy is not an extensive debulking operation.",
+    "difficulty": "basic",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "extensive_cytoreduction"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_034",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Extensive cytoreduction",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The surgeon documents 'optimal cytoreduction' after hysterectomy, omentectomy, pelvic peritonectomy, and resection of paracolic-gutter implants.\"\n\nExtraction task: Was this a full or extensive operation intended for cytoreduction, debulking, or interval debulking?",
+    "options": {
+      "A": "yes",
+      "B": "no",
+      "C": "unsure"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Explicit cytoreduction plus extensive multi-site resection meets the definition.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "extensive_cytoreduction"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_035",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Extensive cytoreduction",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Hysterectomy, bilateral salpingo-oophorectomy, and sentinel pelvic-node mapping were completed for apparent uterine-confined disease.\"\n\nExtraction task: Was this a full or extensive operation intended for cytoreduction, debulking, or interval debulking?",
+    "options": {
+      "A": "yes",
+      "B": "unsure",
+      "C": "no"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "This staging operation lacks debulking intent or extensive peritoneal resection.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "extensive_cytoreduction"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_036",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Surgery aborted early",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Diffuse tumor encased the mesenteric root and porta hepatis. The planned debulking was abandoned as unresectable after biopsies, and the abdomen was closed.\"\n\nExtraction task: Was the planned therapeutic operation closed or aborted early?",
+    "options": {
+      "A": "unsure",
+      "B": "yes",
+      "C": "no"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "The note explicitly says the planned debulking was abandoned because disease was unresectable.",
+    "difficulty": "basic",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "surgery_aborted_early"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_037",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Surgery aborted early",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Exploratory laparotomy resulted in an open-and-close procedure; no planned resection was attempted because of frozen pelvis and extensive carcinomatosis.\"\n\nExtraction task: Was the planned therapeutic operation closed or aborted early?",
+    "options": {
+      "A": "yes",
+      "B": "no",
+      "C": "unsure"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "An open-and-close operation due to disease extent is an early abort.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "surgery_aborted_early"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_038",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Surgery aborted early",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Hysterectomy, omentectomy, and all planned peritoneal resections were completed. Hemostasis was confirmed and the procedure was then concluded.\"\n\nExtraction task: Was the planned therapeutic operation closed or aborted early?",
+    "options": {
+      "A": "yes",
+      "B": "unsure",
+      "C": "no"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "'Concluded' describes the normal end of a completed operation.",
+    "difficulty": "advanced",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "surgery_aborted_early"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_039",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Surgery aborted early",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"After completion of the planned bilateral salpingo-oophorectomy, counts were correct and the operation was terminated without complication.\"\n\nExtraction task: Was the planned therapeutic operation closed or aborted early?",
+    "options": {
+      "A": "unsure",
+      "B": "no",
+      "C": "yes"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "'Terminated' follows documented completion and does not mean aborted.",
+    "difficulty": "advanced",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "surgery_aborted_early"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_040",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Surgery aborted early",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"During initial dissection the patient developed refractory hypotension. The resection was stopped, packing was placed, and the planned cytoreduction was not completed.\"\n\nExtraction task: Was the planned therapeutic operation closed or aborted early?",
+    "options": {
+      "A": "yes",
+      "B": "no",
+      "C": "unsure"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "The operation stopped early because of instability and the planned procedure was not completed.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "surgery_aborted_early"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_041",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Surgery aborted early",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The intent changed from cytoreduction to biopsy only after unresectable small-bowel mesenteric disease was identified.\"\n\nExtraction task: Was the planned therapeutic operation closed or aborted early?",
+    "options": {
+      "A": "no",
+      "B": "unsure",
+      "C": "yes"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Conversion from therapeutic intent to biopsy only indicates early abandonment of the planned treatment.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "surgery_aborted_early"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_042",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Surgery aborted early",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The robotic case converted to open for adhesions, after which the hysterectomy, omentectomy, and planned tumor resections were completed.\"\n\nExtraction task: Was the planned therapeutic operation closed or aborted early?",
+    "options": {
+      "A": "unsure",
+      "B": "no",
+      "C": "yes"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Conversion of approach is not abortion when the planned procedure is completed.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "surgery_aborted_early"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_043",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Surgery aborted early",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Only a peritoneal biopsy was performed. The excerpt does not state the planned procedure or why no additional surgery occurred.\"\n\nExtraction task: Was the planned therapeutic operation closed or aborted early?",
+    "options": {
+      "A": "unsure",
+      "B": "yes",
+      "C": "no"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Without the plan or a statement of abandonment, early abortion cannot be determined.",
+    "difficulty": "advanced",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "surgery_aborted_early"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_044",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Surgery aborted early",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"All planned cytoreductive steps were performed, although one implant densely adherent to the vena cava was intentionally left in place.\"\n\nExtraction task: Was the planned therapeutic operation closed or aborted early?",
+    "options": {
+      "A": "yes",
+      "B": "unsure",
+      "C": "no"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Residual disease does not by itself mean the operation was aborted early.",
+    "difficulty": "advanced",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "surgery_aborted_early"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_045",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Surgery aborted early",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Before the planned hysterectomy could begin, severe bronchospasm prompted the surgeon and anesthesiologist to abort the case and close the port sites.\"\n\nExtraction task: Was the planned therapeutic operation closed or aborted early?",
+    "options": {
+      "A": "unsure",
+      "B": "yes",
+      "C": "no"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "The note explicitly states that the case was aborted before the planned procedure.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "surgery_aborted_early"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_046",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Surgery aborted early",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The planned procedure was diagnostic laparoscopy with biopsies only. The survey and biopsies were completed, and the ports were closed.\"\n\nExtraction task: Was the planned therapeutic operation closed or aborted early?",
+    "options": {
+      "A": "no",
+      "B": "yes",
+      "C": "unsure"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "A limited diagnostic plan was completed as intended.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "surgery_aborted_early"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_047",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Residual disease",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Following cytoreduction, no visible tumor remained in the abdomen or pelvis; the surgeon records complete gross resection.\"\n\nExtraction task: What residual-disease category should be assigned at the end of this operation?",
+    "options": {
+      "A": "unspecified",
+      "B": "not_mentioned",
+      "C": "R0",
+      "D": "R0.5",
+      "E": "R1",
+      "F": "R2"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "No visible residual disease is R0.",
+    "difficulty": "basic",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "residual_disease"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_048",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Residual disease",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"At completion, scattered implants measuring up to 3 mm remained on the small-bowel serosa.\"\n\nExtraction task: What residual-disease category should be assigned at the end of this operation?",
+    "options": {
+      "A": "not_mentioned",
+      "B": "R0.5",
+      "C": "R0",
+      "D": "R1",
+      "E": "R2",
+      "F": "unspecified"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Residual nodules under 5 mm are classified R0.5.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "residual_disease"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_049",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Residual disease",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The largest residual implant was 8 mm at the mesenteric root.\"\n\nExtraction task: What residual-disease category should be assigned at the end of this operation?",
+    "options": {
+      "A": "R1",
+      "B": "R0",
+      "C": "R0.5",
+      "D": "R2",
+      "E": "unspecified",
+      "F": "not_mentioned"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Residual disease from 5 through 10 mm is R1.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "residual_disease"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_050",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Residual disease",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"A 2-cm plaque remained at the porta hepatis after debulking.\"\n\nExtraction task: What residual-disease category should be assigned at the end of this operation?",
+    "options": {
+      "A": "R0",
+      "B": "R0.5",
+      "C": "R1",
+      "D": "unspecified",
+      "E": "not_mentioned",
+      "F": "R2"
+    },
+    "correct_answer": "F",
+    "correct_answers": null,
+    "explanation": "Residual disease greater than 10 mm is R2.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "residual_disease"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_051",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Residual disease",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The surgeon states that residual tumor remained but gives no measurement or size descriptor.\"\n\nExtraction task: What residual-disease category should be assigned at the end of this operation?",
+    "options": {
+      "A": "R0.5",
+      "B": "R1",
+      "C": "R2",
+      "D": "not_mentioned",
+      "E": "unspecified",
+      "F": "R0"
+    },
+    "correct_answer": "E",
+    "correct_answers": null,
+    "explanation": "Residual disease is present, but its size is not specified.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "residual_disease"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_052",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Residual disease",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"A diagnostic ovarian cystectomy was completed. The note does not describe cytoreduction or residual tumor.\"\n\nExtraction task: What residual-disease category should be assigned at the end of this operation?",
+    "options": {
+      "A": "R1",
+      "B": "R2",
+      "C": "unspecified",
+      "D": "not_mentioned",
+      "E": "R0",
+      "F": "R0.5"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "This was not a debulking operation and no residual status was documented.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "residual_disease"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_053",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Residual disease",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Residual implants measured 4 mm on the diaphragm and 1.5 cm at the splenic hilum.\"\n\nExtraction task: What residual-disease category should be assigned at the end of this operation?",
+    "options": {
+      "A": "unspecified",
+      "B": "not_mentioned",
+      "C": "R2",
+      "D": "R0",
+      "E": "R0.5",
+      "F": "R1"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "The worst documented residual is 1.5 cm, which is greater than 10 mm.",
+    "difficulty": "advanced",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "residual_disease"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_054",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Residual disease",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"A single 6-mm mesenteric nodule could not be removed; all other visible disease was resected.\"\n\nExtraction task: What residual-disease category should be assigned at the end of this operation?",
+    "options": {
+      "A": "not_mentioned",
+      "B": "R1",
+      "C": "R0",
+      "D": "R0.5",
+      "E": "R2",
+      "F": "unspecified"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Six millimeters falls in the 5–10 mm R1 category.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "residual_disease"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_055",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Residual disease",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The largest visible residual focus was 0.4 cm on the right hemidiaphragm.\"\n\nExtraction task: What residual-disease category should be assigned at the end of this operation?",
+    "options": {
+      "A": "R0.5",
+      "B": "R0",
+      "C": "R1",
+      "D": "R2",
+      "E": "unspecified",
+      "F": "not_mentioned"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "0.4 cm equals 4 mm, which is under 5 mm.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "residual_disease"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_056",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Residual disease",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"At the end of the case, residual tumor measured 1.0 cm along the lesser curvature.\"\n\nExtraction task: What residual-disease category should be assigned at the end of this operation?",
+    "options": {
+      "A": "R0",
+      "B": "R0.5",
+      "C": "R2",
+      "D": "unspecified",
+      "E": "not_mentioned",
+      "F": "R1"
+    },
+    "correct_answer": "F",
+    "correct_answers": null,
+    "explanation": "One centimeter equals 10 mm, within the R1 range.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "residual_disease"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_057",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Residual disease",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"A 1.1-cm implant remained around the celiac axis.\"\n\nExtraction task: What residual-disease category should be assigned at the end of this operation?",
+    "options": {
+      "A": "R0.5",
+      "B": "R1",
+      "C": "unspecified",
+      "D": "not_mentioned",
+      "E": "R2",
+      "F": "R0"
+    },
+    "correct_answer": "E",
+    "correct_answers": null,
+    "explanation": "1.1 cm equals 11 mm and is therefore R2.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "residual_disease"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_058",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Residual disease",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Miliary residual implants, all less than 3 mm, remained over the bowel mesentery.\"\n\nExtraction task: What residual-disease category should be assigned at the end of this operation?",
+    "options": {
+      "A": "R2",
+      "B": "unspecified",
+      "C": "not_mentioned",
+      "D": "R0.5",
+      "E": "R0",
+      "F": "R1"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "The documented residual foci are under 5 mm.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "residual_disease"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_059",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Disease burden",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Tumor involved both ovaries and the cul-de-sac. The omentum, diaphragms, liver surface, and upper abdomen were free of disease.\"\n\nExtraction task: What is the most extensive intraoperative disease-burden category?",
+    "options": {
+      "A": "miliary_disease",
+      "B": "not_mentioned",
+      "C": "pelvic_disease",
+      "D": "lower_abdominal_disease",
+      "E": "upper_abdominal_disease"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "The documented disease is confined to pelvic structures.",
+    "difficulty": "basic",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "disease_burden"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_060",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Disease burden",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Omental caking and implants along both paracolic gutters were present, with no diaphragmatic, hepatic, splenic, gastric, or lesser-sac disease.\"\n\nExtraction task: What is the most extensive intraoperative disease-burden category?",
+    "options": {
+      "A": "not_mentioned",
+      "B": "lower_abdominal_disease",
+      "C": "pelvic_disease",
+      "D": "upper_abdominal_disease",
+      "E": "miliary_disease"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Omental and lower-abdominal involvement without upper-abdominal sites is lower abdominal disease.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "disease_burden"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_061",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Disease burden",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Multiple implants covered the right hemidiaphragm and liver capsule.\"\n\nExtraction task: What is the most extensive intraoperative disease-burden category?",
+    "options": {
+      "A": "upper_abdominal_disease",
+      "B": "pelvic_disease",
+      "C": "lower_abdominal_disease",
+      "D": "miliary_disease",
+      "E": "not_mentioned"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Diaphragm and liver-surface involvement is upper abdominal disease.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "disease_burden"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_062",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Disease burden",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The abdomen and pelvis showed diffuse miliary studding, each focus under 5 mm, without bulky masses.\"\n\nExtraction task: What is the most extensive intraoperative disease-burden category?",
+    "options": {
+      "A": "pelvic_disease",
+      "B": "lower_abdominal_disease",
+      "C": "upper_abdominal_disease",
+      "D": "not_mentioned",
+      "E": "miliary_disease"
+    },
+    "correct_answer": "E",
+    "correct_answers": null,
+    "explanation": "Diffuse subcentimeter studding without bulky disease fits the miliary category.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "disease_burden"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_063",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Disease burden",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The operative report lists the procedures but gives no description of tumor distribution at exploration.\"\n\nExtraction task: What is the most extensive intraoperative disease-burden category?",
+    "options": {
+      "A": "lower_abdominal_disease",
+      "B": "upper_abdominal_disease",
+      "C": "miliary_disease",
+      "D": "not_mentioned",
+      "E": "pelvic_disease"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Disease extent or distribution is not documented.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "disease_burden"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_064",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Disease burden",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"A bulky pelvic mass was present together with tumor nodules on the left diaphragm.\"\n\nExtraction task: What is the most extensive intraoperative disease-burden category?",
+    "options": {
+      "A": "miliary_disease",
+      "B": "not_mentioned",
+      "C": "upper_abdominal_disease",
+      "D": "pelvic_disease",
+      "E": "lower_abdominal_disease"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "The highest documented distribution includes the diaphragm, an upper-abdominal site.",
+    "difficulty": "advanced",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "disease_burden"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_065",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Disease burden",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Tumor involved the pelvis, infracolic omentum, and lower paracolic gutters; the supracolic abdomen was normal.\"\n\nExtraction task: What is the most extensive intraoperative disease-burden category?",
+    "options": {
+      "A": "not_mentioned",
+      "B": "lower_abdominal_disease",
+      "C": "pelvic_disease",
+      "D": "upper_abdominal_disease",
+      "E": "miliary_disease"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Disease extends into the lower abdomen but spares upper-abdominal structures.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "disease_burden"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_066",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Disease burden",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"A 1-cm implant was identified at the porta hepatis, with additional pelvic disease.\"\n\nExtraction task: What is the most extensive intraoperative disease-burden category?",
+    "options": {
+      "A": "upper_abdominal_disease",
+      "B": "pelvic_disease",
+      "C": "lower_abdominal_disease",
+      "D": "miliary_disease",
+      "E": "not_mentioned"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Porta hepatis involvement assigns the upper-abdominal category.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "disease_burden"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_067",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Disease burden",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Countless 2- to 4-mm implants diffusely studded the peritoneum from pelvis to upper abdomen, with no dominant bulky lesion.\"\n\nExtraction task: What is the most extensive intraoperative disease-burden category?",
+    "options": {
+      "A": "pelvic_disease",
+      "B": "lower_abdominal_disease",
+      "C": "upper_abdominal_disease",
+      "D": "not_mentioned",
+      "E": "miliary_disease"
+    },
+    "correct_answer": "E",
+    "correct_answers": null,
+    "explanation": "Diffuse small-volume peritoneal studding without bulky disease is miliary.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "disease_burden"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_068",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Disease burden",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"An adnexal tumor and bulky pelvic and paraaortic nodes were found; the omentum and upper abdomen were negative.\"\n\nExtraction task: What is the most extensive intraoperative disease-burden category?",
+    "options": {
+      "A": "upper_abdominal_disease",
+      "B": "miliary_disease",
+      "C": "not_mentioned",
+      "D": "pelvic_disease",
+      "E": "lower_abdominal_disease"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "The definition permits adnexal disease with bulky pelvic or paraaortic nodes.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "disease_burden"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_069",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Disease burden",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"A 4-cm omental cake and multiple pelvic implants were seen, but the diaphragm, liver, stomach, spleen, pancreas, and lesser sac were uninvolved.\"\n\nExtraction task: What is the most extensive intraoperative disease-burden category?",
+    "options": {
+      "A": "miliary_disease",
+      "B": "not_mentioned",
+      "C": "lower_abdominal_disease",
+      "D": "pelvic_disease",
+      "E": "upper_abdominal_disease"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Bulky omental disease without upper-abdominal involvement is lower abdominal rather than miliary disease.",
+    "difficulty": "advanced",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "disease_burden"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_070",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Estimated blood loss",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Estimated blood loss was 250 mL.\"\n\nExtraction task: What estimated blood loss should be recorded in cc?",
+    "options": {
+      "A": "75",
+      "B": "100",
+      "C": "400",
+      "D": "250"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "mL and cc are equivalent, so the value is 250 cc.",
+    "difficulty": "basic",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "estimated_blood_loss"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_071",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Estimated blood loss",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"EBL: 1.5 L.\"\n\nExtraction task: What estimated blood loss should be recorded in cc?",
+    "options": {
+      "A": "800",
+      "B": "1200",
+      "C": "1500",
+      "D": "400"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "1.5 liters converts to 1500 cc.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "estimated_blood_loss"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_072",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Estimated blood loss",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Blood loss was minimal.\"\n\nExtraction task: What estimated blood loss should be recorded in cc?",
+    "options": {
+      "A": "75",
+      "B": "0",
+      "C": "-1",
+      "D": "50"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "The specification maps 'minimal' to 0 cc.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "estimated_blood_loss"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_073",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Estimated blood loss",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"EBL was less than 50 cc.\"\n\nExtraction task: What estimated blood loss should be recorded in cc?",
+    "options": {
+      "A": "50",
+      "B": "100",
+      "C": "250",
+      "D": "400"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "The specification maps '<50' to 50 cc.",
+    "difficulty": "advanced",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "estimated_blood_loss"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_074",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Estimated blood loss",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Fluids and urine output are documented, but estimated blood loss is not listed.\"\n\nExtraction task: What estimated blood loss should be recorded in cc?",
+    "options": {
+      "A": "800",
+      "B": "1200",
+      "C": "1500",
+      "D": "-1"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Absent EBL documentation is encoded as -1.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "estimated_blood_loss"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_075",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Estimated blood loss",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Estimated blood loss: 75 cc.\"\n\nExtraction task: What estimated blood loss should be recorded in cc?",
+    "options": {
+      "A": "0",
+      "B": "50",
+      "C": "75",
+      "D": "-1"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "The documented numeric EBL is 75 cc.",
+    "difficulty": "basic",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "estimated_blood_loss"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_076",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Estimated blood loss",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The anesthesia record and operative note agree on an EBL of 0.8 L.\"\n\nExtraction task: What estimated blood loss should be recorded in cc?",
+    "options": {
+      "A": "250",
+      "B": "800",
+      "C": "75",
+      "D": "100"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "0.8 liters converts to 800 cc.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "estimated_blood_loss"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_077",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Estimated blood loss",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"EBL was 1200 mL after completion of the bowel resection.\"\n\nExtraction task: What estimated blood loss should be recorded in cc?",
+    "options": {
+      "A": "1200",
+      "B": "400",
+      "C": "800",
+      "D": "1500"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "The value is already in mL, equivalent to 1200 cc.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "estimated_blood_loss"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_078",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Estimated blood loss",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The surgeon described negligible blood loss.\"\n\nExtraction task: What estimated blood loss should be recorded in cc?",
+    "options": {
+      "A": "-1",
+      "B": "50",
+      "C": "75",
+      "D": "0"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "The specification maps 'negligible' to 0 cc.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "estimated_blood_loss"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_079",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Estimated blood loss",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The note states, 'blood loss not recorded.'\"\n\nExtraction task: What estimated blood loss should be recorded in cc?",
+    "options": {
+      "A": "250",
+      "B": "400",
+      "C": "-1",
+      "D": "100"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "An explicitly unrecorded value is treated as not mentioned and encoded -1.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "estimated_blood_loss"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_080",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Estimated blood loss",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Approximately 400 cc of blood loss was estimated for the case.\"\n\nExtraction task: What estimated blood loss should be recorded in cc?",
+    "options": {
+      "A": "1500",
+      "B": "400",
+      "C": "800",
+      "D": "1200"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "The documented estimate is 400 cc.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "estimated_blood_loss"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_081",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Hemostasis",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The pelvis was irrigated, and hemostasis was achieved before fascial closure.\"\n\nExtraction task: Was satisfactory hemostasis documented at the end of surgery?",
+    "options": {
+      "A": "not_mentioned",
+      "B": "yes",
+      "C": "no"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "The note explicitly states that hemostasis was achieved.",
+    "difficulty": "basic",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "hemostasis"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_082",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Hemostasis",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"After lowering insufflation pressure, all pedicles were inspected and hemostasis was satisfactory.\"\n\nExtraction task: Was satisfactory hemostasis documented at the end of surgery?",
+    "options": {
+      "A": "yes",
+      "B": "no",
+      "C": "not_mentioned"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Satisfactory hemostasis is explicitly documented.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "hemostasis"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_083",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Hemostasis",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"All bleeding points were controlled with cautery and suture; the operative field was dry.\"\n\nExtraction task: Was satisfactory hemostasis documented at the end of surgery?",
+    "options": {
+      "A": "no",
+      "B": "not_mentioned",
+      "C": "yes"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Control of all bleeding and a dry field establish satisfactory hemostasis.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "hemostasis"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_084",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Hemostasis",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Diffuse pelvic oozing persisted despite cautery, and the patient left the operating room with packing in place for ongoing hemorrhage control.\"\n\nExtraction task: Was satisfactory hemostasis documented at the end of surgery?",
+    "options": {
+      "A": "not_mentioned",
+      "B": "no",
+      "C": "yes"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Persistent uncontrolled oozing indicates hemostasis was not achieved.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "hemostasis"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_085",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Hemostasis",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Counts were correct and the incision was closed in layers. No statement addresses bleeding control or hemostasis.\"\n\nExtraction task: Was satisfactory hemostasis documented at the end of surgery?",
+    "options": {
+      "A": "not_mentioned",
+      "B": "yes",
+      "C": "no"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Closure and correct counts do not themselves document hemostasis.",
+    "difficulty": "advanced",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "hemostasis"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_086",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Hemostasis",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The surgeon explicitly documented that adequate hemostasis could not be obtained before transfer to interventional radiology.\"\n\nExtraction task: Was satisfactory hemostasis documented at the end of surgery?",
+    "options": {
+      "A": "yes",
+      "B": "not_mentioned",
+      "C": "no"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "The note explicitly states that hemostasis was not obtained.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "hemostasis"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_087",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Hemostasis",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"A small venous bleeder was ligated; repeat inspection confirmed good hemostasis.\"\n\nExtraction task: Was satisfactory hemostasis documented at the end of surgery?",
+    "options": {
+      "A": "not_mentioned",
+      "B": "yes",
+      "C": "no"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Good hemostasis was confirmed after treatment.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "hemostasis"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_088",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Hemostasis",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The specimen was removed and the port sites were closed. Hemostasis is not discussed.\"\n\nExtraction task: Was satisfactory hemostasis documented at the end of surgery?",
+    "options": {
+      "A": "not_mentioned",
+      "B": "yes",
+      "C": "no"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "The note contains no bleeding-control assessment.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "hemostasis"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_089",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Hemostasis",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The pelvis was packed because brisk bleeding continued from the presacral space.\"\n\nExtraction task: Was satisfactory hemostasis documented at the end of surgery?",
+    "options": {
+      "A": "yes",
+      "B": "not_mentioned",
+      "C": "no"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Continued brisk bleeding requiring packing indicates lack of satisfactory hemostasis.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "hemostasis"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_090",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Hemostasis",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Final inspection under reduced pneumoperitoneum showed a dry field with no active bleeding.\"\n\nExtraction task: Was satisfactory hemostasis documented at the end of surgery?",
+    "options": {
+      "A": "not_mentioned",
+      "B": "yes",
+      "C": "no"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "A dry field with no active bleeding documents satisfactory hemostasis.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "hemostasis"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_091",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Wound classification",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"Wound classification: Class I (clean). No hollow viscus was entered.\"\n\nExtraction task: What wound classification should be assigned?",
+    "options": {
+      "A": "ClassI",
+      "B": "ClassII",
+      "C": "ClassIII",
+      "D": "ClassIV",
+      "E": "not_mentioned"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "The explicit Class I designation controls.",
+    "difficulty": "basic",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "wound_classification"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_092",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Wound classification",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The operative note records wound class II, clean-contaminated.\"\n\nExtraction task: What wound classification should be assigned?",
+    "options": {
+      "A": "ClassI",
+      "B": "ClassIII",
+      "C": "ClassIV",
+      "D": "not_mentioned",
+      "E": "ClassII"
+    },
+    "correct_answer": "E",
+    "correct_answers": null,
+    "explanation": "The explicit Class II designation controls.",
+    "difficulty": "basic",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "wound_classification"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_093",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Wound classification",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"A planned rectosigmoid resection was completed with controlled bowel entry and no spillage.\"\n\nExtraction task: What wound classification should be assigned?",
+    "options": {
+      "A": "ClassIII",
+      "B": "ClassIV",
+      "C": "not_mentioned",
+      "D": "ClassII",
+      "E": "ClassI"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Controlled GI-tract entry without unusual contamination is Class II.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "wound_classification"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_094",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Wound classification",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"During enterotomy repair, gross fecal spillage contaminated the operative field; no explicit class was recorded.\"\n\nExtraction task: What wound classification should be assigned?",
+    "options": {
+      "A": "ClassIV",
+      "B": "not_mentioned",
+      "C": "ClassIII",
+      "D": "ClassI",
+      "E": "ClassII"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Gross GI spillage without an explicit class supports Class III.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "wound_classification"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_095",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Wound classification",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"A pelvic abscess containing frank pus was encountered and drained.\"\n\nExtraction task: What wound classification should be assigned?",
+    "options": {
+      "A": "not_mentioned",
+      "B": "ClassIV",
+      "C": "ClassI",
+      "D": "ClassII",
+      "E": "ClassIII"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Existing purulent infection is Class IV.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "wound_classification"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_096",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Wound classification",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The report contains no wound class and no description of tract entry, contamination, infection, or spillage.\"\n\nExtraction task: What wound classification should be assigned?",
+    "options": {
+      "A": "not_mentioned",
+      "B": "ClassI",
+      "C": "ClassII",
+      "D": "ClassIII",
+      "E": "ClassIV"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "There is insufficient documentation to assign a wound class.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "wound_classification"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_097",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Wound classification",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The surgeon explicitly labels the case Class II. A small amount of enteric fluid was suctioned immediately during the controlled anastomosis.\"\n\nExtraction task: What wound classification should be assigned?",
+    "options": {
+      "A": "ClassI",
+      "B": "ClassIII",
+      "C": "ClassIV",
+      "D": "not_mentioned",
+      "E": "ClassII"
+    },
+    "correct_answer": "E",
+    "correct_answers": null,
+    "explanation": "The specification directs use of the explicit classification when one is documented.",
+    "difficulty": "advanced",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "wound_classification"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_098",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Wound classification",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"A previously perforated sigmoid tumor with purulent peritonitis was resected; no explicit wound class appears.\"\n\nExtraction task: What wound classification should be assigned?",
+    "options": {
+      "A": "ClassII",
+      "B": "ClassIII",
+      "C": "not_mentioned",
+      "D": "ClassIV",
+      "E": "ClassI"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "A perforated viscus with established purulent infection is Class IV.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "wound_classification"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_099",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Wound classification",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"A major break in sterile technique occurred when a nonsterile instrument contacted the open field; the case was not explicitly classified.\"\n\nExtraction task: What wound classification should be assigned?",
+    "options": {
+      "A": "ClassIV",
+      "B": "not_mentioned",
+      "C": "ClassIII",
+      "D": "ClassI",
+      "E": "ClassII"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "A major sterile-technique break supports Class III.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "wound_classification"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  },
+  {
+    "id": "gyn_surg_100",
+    "domain": "gynecologic_surgical_note_extraction",
+    "subdomain": "Wound classification",
+    "question_type": "single_choice",
+    "question": "Synthetic operative-note excerpt:\n\"The bladder was intentionally opened and repaired under controlled conditions without infection or spillage; no explicit class was stated.\"\n\nExtraction task: What wound classification should be assigned?",
+    "options": {
+      "A": "not_mentioned",
+      "B": "ClassII",
+      "C": "ClassI",
+      "D": "ClassIII",
+      "E": "ClassIV"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Controlled GU-tract entry is clean-contaminated, Class II.",
+    "difficulty": "intermediate",
+    "tags": [
+      "clinical_nlp",
+      "synthetic_note",
+      "gynecologic_surgery",
+      "wound_classification"
+    ],
+    "source": "prompts/gyn_surgical_note_feature_extraction.md",
+    "review_status": "llm_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_specification": "prompts/gyn_surgical_note_feature_extraction.md",
+      "authoring_method": "Synthetic cases authored from the user-supplied extraction specification",
+      "synthetic": true,
+      "contains_patient_data": false,
+      "human_review_required": true,
+      "intended_use": "Evaluate clinical-curation extraction behavior; not clinical decision support"
+    }
+  }
+]

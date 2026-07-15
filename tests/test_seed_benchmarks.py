@@ -46,3 +46,48 @@ def test_dimi_pilot_has_valid_provenance_and_balanced_answers():
         "PPAR gene prioritization",
         "Serous endometrial cancer therapy",
     }
+
+
+def test_gyn_surgical_note_extraction_benchmark_is_synthetic_and_complete():
+    gyn = load_benchmark("data/benchmarks/gyn_surgical_note_extraction_100.json")
+    assert len(gyn) == 100
+    assert len({item.id for item in gyn}) == 100
+    assert len({item.question for item in gyn}) == 100
+    assert Counter(item.subdomain for item in gyn) == Counter({
+        "Gynecologic surgical involvement": 12,
+        "Laparoscopic approach": 12,
+        "Extensive cytoreduction": 11,
+        "Surgery aborted early": 11,
+        "Residual disease": 12,
+        "Disease burden": 11,
+        "Estimated blood loss": 11,
+        "Hemostasis": 10,
+        "Wound classification": 10,
+    })
+    assert {item.review_status for item in gyn} == {"llm_generated"}
+    assert all(item.question.startswith("Synthetic operative-note excerpt:") for item in gyn)
+    assert all(item.provenance.get("synthetic") is True for item in gyn)
+    assert all(item.provenance.get("contains_patient_data") is False for item in gyn)
+    assert all(item.provenance.get("human_review_required") is True for item in gyn)
+    assert all(item.source == "prompts/gyn_surgical_note_feature_extraction.md" for item in gyn)
+
+
+def test_gyn_surgical_note_options_follow_extraction_specification():
+    gyn = load_benchmark("data/benchmarks/gyn_surgical_note_extraction_100.json")
+    allowed = {
+        "Gynecologic surgical involvement": {"yes", "no", "unsure"},
+        "Laparoscopic approach": {"yes", "no", "unsure"},
+        "Extensive cytoreduction": {"yes", "no", "unsure"},
+        "Surgery aborted early": {"yes", "no", "unsure"},
+        "Residual disease": {"R0", "R0.5", "R1", "R2", "unspecified", "not_mentioned"},
+        "Disease burden": {"pelvic_disease", "lower_abdominal_disease", "upper_abdominal_disease", "miliary_disease", "not_mentioned"},
+        "Hemostasis": {"yes", "no", "not_mentioned"},
+        "Wound classification": {"ClassI", "ClassII", "ClassIII", "ClassIV", "not_mentioned"},
+    }
+    for item in gyn:
+        values = set(item.options.values())
+        if item.subdomain == "Estimated blood loss":
+            assert len(values) == 4
+            assert all(value == "-1" or int(value) >= 0 for value in values)
+        else:
+            assert values == allowed[item.subdomain]

@@ -27,9 +27,10 @@ and an optional bring-your-own-key OpenAI-compatible endpoint in the same run.
 | Bioinformatics best practices | 100 | Sequencing QC, formats, RNA-seq, variants, cancer genomics, single-cell, metagenomics, reproducibility, study design |
 | Disease genetics | 100 | Gene–disease associations and principal inheritance patterns for 50 disorders |
 | DIMI Lab published-paper pilot | 60 | PPAR gene prioritization and rucaparib/PLX038A serous endometrial cancer research |
+| Gynecologic surgical-note extraction | 100 | Synthetic operative-note curation across nine extraction targets |
 | Small bioinformatics example | 2 | Minimal single- and multiple-select demonstration |
 
-The two 100-question sets and the 60-question DIMI set are AI-assisted, source-attributed pilot benchmarks.
+The public-domain sets and the 60-question DIMI set are AI-assisted pilot benchmarks. The gynecologic surgical-note set contains only synthetic excerpts and no patient data.
 They are marked llm_generated, not expert gold. They are appropriate for
 software demonstrations and exploratory model comparisons. Domain experts
 should review them before scientific reporting, clinical use, or publication.
@@ -53,7 +54,7 @@ python -m venv .venv
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
-pip install -e ".[app,dev]"
+pip install -e ".[app,pdf,dev]"
 
 .\run_doveboard.ps1
 ~~~
@@ -69,7 +70,7 @@ cd dove
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
-pip install -e ".[app,dev]"
+pip install -e ".[app,pdf,dev]"
 
 python -m streamlit run app/streamlit_app.py --server.port 8510
 ~~~
@@ -130,36 +131,58 @@ containing sensitive prompts or responses.
 Local Ollama requests stay on the configured Ollama endpoint. Remote models
 receive benchmark question text through the configured API endpoint.
 
-## Private-document LLM Wiki benchmark generation
+## Private-document benchmark generation
 
-DOVE can turn a directory of PDF and Markdown files into a persistent,
-source-cited LLM Wiki and then generate an exact requested number of
-DOVE-compatible candidate questions. The source files are never modified.
+DOVE supports two source-grounded strategies. `direct` sends extracted source
+segments straight to the selected model and can run remote calls concurrently.
+`wiki` first builds a persistent, citable Karpathy-style LLM Wiki and then
+distributes question generation across the complete wiki. Both produce an exact
+requested number of schema-validated `corpus_generated` candidates.
 
-For a local Ollama model:
+Fast direct mode with an OpenAI-compatible configuration:
 
 ~~~powershell
 python scripts\generate_private_benchmark.py `
+  --strategy direct `
   --documents "D:\private-documents" `
-  --domain "Internal research procedures" `
-  --subdomains "sample handling,quality control,analysis" `
-  --n 50 `
-  --ollama-model llama3.1:8b `
-  --workspace data\corpora\internal_research_wiki `
-  --output data\generated_questions\internal_research_50.json
+  --domain "Internal research" `
+  --n 60 `
+  --models config\models.yaml `
+  --model openai_direct `
+  --structured-outputs `
+  --parallel 4 `
+  --output data\generated_questions\internal_direct_60.json
 ~~~
 
-The script recursively extracts supported documents, compiles citable wiki
-pages, generates unique questions in batches, validates every item with the
-DOVE schema, and refuses to save a partial benchmark if it cannot reach the
-requested count. It writes `experience_log.json` with parsing, wiki, question-batch, model, token, and elapsed-time measurements. Generated items are marked `corpus_generated`, not gold data.
-Review every answer, citation, explanation, distractor, and sensitivity concern
-before promotion. See [TUTORIAL.md](TUTORIAL.md) for model-config and security
-options.
+Full resumable wiki mode with a small local model:
 
+~~~powershell
+python scripts\generate_private_benchmark.py `
+  --strategy wiki `
+  --documents "D:\private-documents" `
+  --domain "Internal research" `
+  --n 60 `
+  --ollama-model qwen3:4b `
+  --ollama-context 8192 `
+  --max-output-tokens 1800 `
+  --wiki-chunk-chars 24000 `
+  --question-context-chars 16000 `
+  --batch-size 4 `
+  --workspace data\corpora\internal_wiki `
+  --output data\generated_questions\internal_wiki_60.json
+~~~
+
+Compatible wiki pages are cached by source content and compiler settings, so the
+same command resumes without recompiling finished pages. Every run writes
+`experience_log.json`; wiki mode also writes per-page `wiki/experience.jsonl`.
+Use `scripts/run_private_benchmark_background.ps1` and
+`scripts/status_private_benchmark.ps1` for long background runs.
+
+Source files are never modified. Remote direct mode sends extracted document
+text to the configured endpoint; use it only when policy permits. Generated
+questions are drafts requiring human review, never final gold data. See
+[TUTORIAL.md](TUTORIAL.md) for complete commands and security guidance.
 ## License
 
 A project license has not yet been selected. Choose and add a license before
 treating this repository as an open-source release.
-
-

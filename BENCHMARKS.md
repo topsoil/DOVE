@@ -27,13 +27,22 @@ DOVE benchmarks are JSON or YAML lists of multiple-choice items.
 - 30 questions on rucaparib plus PLX038A in serous endometrial cancer
 - chunk-level provenance to two published DIMI papers
 - `corpus_generated` pilot content requiring human review
+
+### data/benchmarks/gyn_surgical_note_extraction_100.json
+
+- 100 single-choice clinical-curation cases
+- synthetic operative-note excerpts only; no patient data
+- nine targets: gynecologic involvement, laparoscopic approach, extensive cytoreduction, early abortion, residual disease, disease burden, EBL, hemostasis, and wound class
+- generated from `prompts/gyn_surgical_note_feature_extraction.md`
+- `llm_generated` content requiring clinical-domain review
+
 ### data/benchmarks/bioinformatics_v0_1.json
 
 A two-question example for quick software testing.
 
 ## Review status
 
-The two 100-question sets are marked llm_generated. The DIMI set is marked corpus_generated. That status is intentional.
+The public 100-question sets and the synthetic surgical-note set are marked llm_generated. The DIMI set is marked corpus_generated. That status is intentional.
 They have automated schema checks and source attribution, but have not undergone
 documented human domain-expert review.
 
@@ -115,6 +124,7 @@ Rebuild the JSON files with:
 
 ~~~bash
 python scripts/build_seed_benchmarks.py
+python scripts/build_gyn_surgery_benchmark.py
 ~~~
 
 Tests verify question counts, IDs, schema validity, uniqueness, and balanced
@@ -130,4 +140,3 @@ A released benchmark should have:
 - a documented scoring policy
 - a retirement process for outdated or ambiguous questions
 - contamination and memorization considerations
-

@@ -63,6 +63,9 @@ Delivered in the current release:
 - Recursive PDF/Markdown ingestion with source hashes and chunk provenance.
 - Persistent Karpathy-style LLM-Wiki compilation with long-document batching.
 - A one-command, exact-count DOVE candidate benchmark generator.
+- Fast parallel direct generation and full resumable LLM-Wiki strategies.
+- Ollama context/output controls plus background launch and status scripts.
+- Cache signatures and full-wiki question coverage.
 - Schema validation, duplicate filtering, and source-page/chunk citation sanitation.
 - Basic prompt-injection separation for untrusted document content.
 - Mandatory `corpus_generated` review status for human curation.

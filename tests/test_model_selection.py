@@ -45,3 +45,38 @@ def test_byok_key_is_used_but_not_serialized(monkeypatch):
     assert "secret-value" not in str(config.model_dump())
     assert metadata["model"] == "remote"
 
+
+
+def test_ollama_runtime_limits_are_forwarded(monkeypatch):
+    captured = {}
+
+    def fake_post(url, json, timeout):
+        captured.update(url=url, json=json, timeout=timeout)
+        return FakeResponse({"message": {"content": "{}"}, "model": "qwen3:4b"})
+
+    monkeypatch.setattr("dove.model_clients.requests.post", fake_post)
+    config = ModelConfig(
+        name="local", provider="ollama", base_url="http://localhost:11434",
+        model="qwen3:4b", context_window=8192, max_output_tokens=1800, thinking=False,
+    )
+    chat(config, [{"role": "user", "content": "Test"}])
+    assert captured["json"]["options"]["num_ctx"] == 8192
+    assert captured["json"]["options"]["num_predict"] == 1800
+    assert captured["json"]["think"] is False
+
+
+def test_remote_structured_output_schema_is_forwarded(monkeypatch):
+    captured = {}
+
+    def fake_post(url, headers, json, timeout):
+        captured.update(json=json)
+        return FakeResponse({"model": "remote", "choices": [{"message": {"content": "{}"}}]})
+
+    monkeypatch.setattr("dove.model_clients.requests.post", fake_post)
+    config = ModelConfig(
+        name="remote", provider="openai_compatible", base_url="https://example.test/v1",
+        model="model-1", structured_outputs=True,
+    )
+    schema = {"type": "json_schema", "json_schema": {"name": "test", "schema": {}}}
+    chat(config, [{"role": "user", "content": "Test"}], response_format=schema)
+    assert captured["json"]["response_format"] == schema

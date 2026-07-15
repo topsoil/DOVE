@@ -25,10 +25,13 @@ def chat(
             options["num_ctx"] = config.context_window
         if config.max_output_tokens:
             options["num_predict"] = config.max_output_tokens
+        request_body: dict[str, Any] = {"model": config.model, "messages": messages, "stream": False,
+                                        "format": "json", "options": options}
+        if config.thinking is not None:
+            request_body["think"] = config.thinking
         response = requests.post(
             f"{config.base_url.rstrip('/')}/api/chat",
-            json={"model": config.model, "messages": messages, "stream": False,
-                  "format": "json", "options": options},
+            json=request_body,
             timeout=config.timeout,
         )
         response.raise_for_status()

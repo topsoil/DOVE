@@ -267,9 +267,14 @@ with run_tab:
             ROOT / "data" / "benchmarks" / "disease_genetics_100.json",
         "DIMI Lab published-paper pilot — 60 source-grounded drafts":
             ROOT / "data" / "benchmarks" / "dimi_lab_60.json",
+        "Gynecologic surgical-note extraction — 100 synthetic curation cases":
+            ROOT / "data" / "benchmarks" / "gyn_surgical_note_extraction_100.json",
         "Small bioinformatics example — 2 questions":
             ROOT / "data" / "benchmarks" / "bioinformatics_v0_1.json",
     }
+    dimi_full = ROOT / "data" / "generated_questions" / "dimi_full_120.json"
+    if dimi_full.exists():
+        builtins["DIMI-full — 120 corpus-generated drafts"] = dimi_full
     source_choice = st.radio(
         "Benchmark source", ["Included benchmark", "Upload JSON/YAML"],
         horizontal=True, label_visibility="collapsed")
@@ -507,11 +512,3 @@ with curation_tab:
         st.download_button(
             "Export approved benchmark JSON", json.dumps(approved, indent=2),
             "approved_benchmark.json", "application/json", disabled=not approved)
-
-
-
-
-
-
-
-

@@ -5,19 +5,21 @@ param(
     [string]$Documents,
     [Parameter(Mandatory = $true)]
     [string]$Domain,
+    [string]$Subdomains = "",
     [int]$Questions = 120,
     [string]$Output = "data\generated_questions\dimi_full_120.json",
     [string]$Workspace = "data\corpora\dimi_full_wiki",
     [string]$OllamaModel = "qwen3:4b",
     [string]$ModelsConfig = "",
     [string]$ModelName = "",
-    [int]$Parallel = 1,
+    [switch]$StructuredOutputs,
+    [int]$Parallel = 0,
     [int]$OllamaContext = 8192,
-    [int]$MaxOutputTokens = 900,
+    [int]$MaxOutputTokens = 1800,
     [int]$WikiChunkChars = 24000,
-    [int]$QuestionContextChars = 40000,
+    [int]$QuestionContextChars = 16000,
     [int]$SourceChunkChars = 40000,
-    [int]$BatchSize = 10,
+    [int]$BatchSize = 4,
     [int]$MaxRounds = 10,
     [string]$JobName = "dimi-full"
 )
@@ -42,6 +44,7 @@ if ($ModelsConfig -and $OllamaModel -ne "qwen3:4b") {
     throw "Specify either -ModelsConfig or -OllamaModel, not both."
 }
 
+$effectiveParallel = if ($Parallel -gt 0) { $Parallel } elseif ($Strategy -eq "direct") { 4 } else { 1 }
 $argsList = @(
     "-u", "scripts\generate_private_benchmark.py",
     "--strategy", $Strategy,
@@ -50,15 +53,16 @@ $argsList = @(
     "--n", "$Questions",
     "--output", $Output,
     "--workspace", $Workspace,
-    "--parallel", "$Parallel",
+    "--parallel", "$effectiveParallel",
     "--batch-size", "$BatchSize",
     "--max-rounds", "$MaxRounds",
     "--max-output-tokens", "$MaxOutputTokens"
 )
+if ($Subdomains) { $argsList += @("--subdomains", $Subdomains) }
 if ($ModelsConfig) {
     $argsList += @("--models", $ModelsConfig)
     if ($ModelName) { $argsList += @("--model", $ModelName) }
-    $argsList += "--structured-outputs"
+    if ($StructuredOutputs) { $argsList += "--structured-outputs" }
 } else {
     $argsList += @("--ollama-model", $OllamaModel, "--ollama-context", "$OllamaContext")
 }

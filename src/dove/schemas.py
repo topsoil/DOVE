@@ -53,6 +53,7 @@ class ModelConfig(BaseModel):
     timeout: int = 120
     context_window: int | None = None
     max_output_tokens: int | None = None
+    thinking: bool | None = None
     structured_outputs: bool = False
 
 

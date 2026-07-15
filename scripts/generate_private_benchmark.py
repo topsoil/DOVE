@@ -22,6 +22,7 @@ def _select_model(args: argparse.Namespace) -> ModelConfig:
             temperature=args.temperature, timeout=args.timeout,
             context_window=args.ollama_context,
             max_output_tokens=args.max_output_tokens,
+            thinking=args.ollama_thinking,
         )
     models = load_models(args.models)
     model = next((m for m in models if m.name == args.model), None) if args.model else models[0]
@@ -54,17 +55,19 @@ def main() -> None:
     parser.add_argument("--ollama-url", default="http://localhost:11434")
     parser.add_argument("--ollama-context", type=int, help="Ollama num_ctx; 8192 is a useful 4B default")
     parser.add_argument("--max-output-tokens", type=int, help="Cap model output tokens")
+    parser.add_argument("--ollama-thinking", action=argparse.BooleanOptionalAction, default=False,
+                        help="Enable or disable Ollama thinking; disabled by default for speed")
     parser.add_argument("--structured-outputs", action="store_true",
                         help="Request strict JSON Schema from a supporting remote model")
     parser.add_argument("--temperature", type=float, default=0.0)
     parser.add_argument("--timeout", type=int, default=900)
-    parser.add_argument("--batch-size", type=int, default=10)
+    parser.add_argument("--batch-size", type=int, default=4)
     parser.add_argument("--max-rounds", type=int, default=8)
     parser.add_argument("--parallel", type=int,
                         help="Concurrent question calls (default: direct=4, wiki=1)")
     parser.add_argument("--wiki-chunk-chars", type=int, default=24000,
                         help="Source characters per wiki compiler call")
-    parser.add_argument("--question-context-chars", type=int, default=40000,
+    parser.add_argument("--question-context-chars", type=int, default=16000,
                         help="Compiled wiki characters per question call")
     parser.add_argument("--source-chunk-chars", type=int, default=40000,
                         help="Source characters per direct-mode call")

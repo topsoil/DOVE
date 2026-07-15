@@ -13,7 +13,7 @@ python -m venv .venv
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
-pip install -e ".[app,dev]"
+pip install -e ".[app,pdf,dev]"
 ~~~
 
 ### macOS or Linux
@@ -23,7 +23,7 @@ cd <PATH-TO-DOVE>
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
-pip install -e ".[app,dev]"
+pip install -e ".[app,pdf,dev]"
 ~~~
 
 Confirm the installation:
@@ -252,56 +252,111 @@ reviewed.
 
 ## 12. Generate a benchmark from private documents
 
-Place the source PDFs and Markdown files under one directory. DOVE scans its
-subdirectories recursively. For privacy, keep the directory outside Git or
-under `data\corpora`, which this repository ignores.
+DOVE recursively extracts PDF and Markdown files and supports two strategies.
+Keep private inputs outside Git or under `data\corpora`.
 
-Start Ollama and make sure the intended chat model is installed:
+### Fast direct mode
+
+Copy the model example and set the API key in the current shell:
 
 ~~~powershell
-ollama list
+Copy-Item config\models.example.yaml config\models.yaml
+$env:OPENAI_API_KEY = "YOUR_KEY"
 ~~~
 
-Generate exactly 25 candidate questions:
+Then send extracted source segments directly to the configured model. Calls run
+in parallel, and supported endpoints can enforce a strict DOVE JSON schema:
 
 ~~~powershell
 python scripts\generate_private_benchmark.py `
+  --strategy direct `
   --documents "D:\private-documents" `
   --domain "Laboratory SOPs" `
   --subdomains "intake,processing,quality control,reporting" `
-  --n 25 `
-  --ollama-model llama3.1:8b `
-  --workspace data\corpora\laboratory_sops_wiki `
-  --output data\generated_questions\laboratory_sops_25.json
+  --n 60 `
+  --models config\models.yaml `
+  --model openai_direct `
+  --structured-outputs `
+  --parallel 4 `
+  --source-chunk-chars 40000 `
+  --workspace data\corpora\laboratory_direct_work `
+  --output data\generated_questions\laboratory_direct_60.json
 ~~~
 
-The workspace contains the extracted corpus manifest, persistent wiki pages, and an `experience_log.json` file recording document parsing, wiki compilation, each question batch, model identity, token counts, and elapsed time.
-The JSON output is directly uploadable in DOVEboard through **Upload JSON/YAML**.
-Every item has `source: karpathy_llm_wiki`, `review_status:
-corpus_generated`, and sanitized wiki/chunk provenance.
+This is fastest, but the endpoint receives extracted document text. Do not use
+remote mode for confidential, unpublished, PHI, or regulated material without
+appropriate institutional approval and data-retention controls.
 
-To use an entry from `config\models.yaml` instead of a direct Ollama name:
+### Full resumable LLM-Wiki mode
+
+Confirm Ollama and the local model are available:
+
+~~~powershell
+ollama pull qwen3:4b
+ollama list
+~~~
+
+Run in the foreground:
 
 ~~~powershell
 python scripts\generate_private_benchmark.py `
+  --strategy wiki `
   --documents "D:\private-documents" `
   --domain "Laboratory SOPs" `
-  --n 25 `
-  --models config\models.yaml `
-  --model llama3_ollama `
-  --output data\generated_questions\laboratory_sops_25.json
+  --n 60 `
+  --ollama-model qwen3:4b `
+  --ollama-context 8192 `
+  --max-output-tokens 1800 `
+  --wiki-chunk-chars 24000 `
+  --question-context-chars 16000 `
+  --batch-size 4 `
+  --parallel 1 `
+  --workspace data\corpora\laboratory_wiki `
+  --output data\generated_questions\laboratory_wiki_60.json
 ~~~
 
-A remote OpenAI-compatible entry receives private source text. Use one only
-when organizational policy permits sending those documents to that endpoint.
-Local Ollama is the privacy-preserving default. Source material is treated as
-untrusted data and embedded instructions are ignored, but human review remains
-mandatory. Image-only scanned PDFs require OCR before this script can extract
-their text.
+Wiki pages are cached using the source content, model, prompt version, context
+window, output limit, and chunk size. Re-running the identical command resumes
+from completed compatible pages. Question generation is distributed across all
+compiled wiki pages instead of only the first context window.
 
-If the model returns too few unique schema-valid questions, the command retries
-up to five rounds and then fails without saving a partial benchmark. Adjust
-`--batch-size`, `--max-rounds`, or select a stronger model when needed.
+### Background execution
+
+Use the supplied PowerShell launcher for long runs:
+
+~~~powershell
+.\scripts\run_private_benchmark_background.ps1 `
+  -Strategy wiki `
+  -Documents "D:\private-documents" `
+  -Domain "Laboratory-SOPs" `
+  -Questions 60 `
+  -Output "data\generated_questions\laboratory_wiki_60.json" `
+  -Workspace "data\corpora\laboratory_wiki" `
+  -OllamaModel "qwen3:4b" `
+  -OllamaContext 8192 `
+  -MaxOutputTokens 1800 `
+  -WikiChunkChars 24000 `
+  -QuestionContextChars 16000 `
+  -BatchSize 4 `
+  -Parallel 1 `
+  -JobName "laboratory-wiki"
+~~~
+
+Inspect progress without stopping it:
+
+~~~powershell
+.\scripts\status_private_benchmark.ps1 -JobName "laboratory-wiki" -Tail 40
+~~~
+
+The launcher records PID, stdout, and stderr under `data\results\background`.
+The workspace contains `corpus.json`, persistent wiki pages,
+`experience_log.json`, and per-page `wiki\experience.jsonl`. Completed output
+can be uploaded to DOVEboard; `dimi_full_120.json` is also discovered
+automatically when placed in `data\generated_questions`.
+
+All generated items remain `corpus_generated`. Verify citations, answers,
+explanations, distractors, sensitivity, and ambiguity before promotion. Scanned
+image-only PDFs require OCR before local text extraction.
 ## Troubleshooting
 
 ### DOVEboard opens the wrong Streamlit app
@@ -322,4 +377,3 @@ not have returned a parseable answer.
 
 Verify the base URL, model ID, API key, endpoint compatibility, and provider rate
 limits.
-
