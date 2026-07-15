@@ -1,0 +1,43 @@
+# Headless DOVE run: no Streamlit, browser, or user clicks are required.
+benchmark: data/benchmarks/bioinformatics_best_practices_100.json
+allow_unreviewed: true
+
+# Start with 5. Use null to run the complete benchmark.
+question_limit: 5
+output_dir: data/results/headless_bioinformatics
+run_filename: benchmark_run.json
+summary_filename: benchmark_summary.csv
+report_filename: bioinformatics_best_practices_100_report.html
+report_title: DOVE small-model bioinformatics comparison
+
+models:
+  - name: ollama:gemma3:1b
+    provider: ollama
+    base_url: http://localhost:11434
+    model: gemma3:1b
+    temperature: 0.0
+    timeout: 900
+    context_window: 4096
+    max_output_tokens: 256
+    thinking: false
+
+  - name: ollama:ministral-3:3b
+    provider: ollama
+    base_url: http://localhost:11434
+    model: ministral-3:3b
+    temperature: 0.0
+    timeout: 900
+    context_window: 4096
+    max_output_tokens: 256
+    thinking: false
+
+  - name: ollama:tinyllama:1.1b
+    provider: ollama
+    base_url: http://localhost:11434
+    model: tinyllama:1.1b
+    temperature: 0.0
+    timeout: 900
+    context_window: 4096
+    max_output_tokens: 256
+    thinking: false
+

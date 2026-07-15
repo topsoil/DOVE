@@ -1,0 +1,50 @@
+# Complete headless disease-genetics comparison using four local Ollama models.
+benchmark: data/benchmarks/disease_genetics_100.json
+allow_unreviewed: true
+question_limit: null
+output_dir: data/results/headless_disease_genetics_4models
+run_filename: disease_genetics_100_run.json
+summary_filename: disease_genetics_100_summary.csv
+report_filename: disease_genetics_100_report.html
+report_title: DOVE full disease-genetics benchmark — four local models
+
+models:
+  - name: ollama:gemma3:1b
+    provider: ollama
+    base_url: http://localhost:11434
+    model: gemma3:1b
+    temperature: 0.0
+    timeout: 900
+    context_window: 4096
+    max_output_tokens: 256
+    thinking: false
+
+  - name: ollama:ministral-3:3b
+    provider: ollama
+    base_url: http://localhost:11434
+    model: ministral-3:3b
+    temperature: 0.0
+    timeout: 900
+    context_window: 4096
+    max_output_tokens: 256
+    thinking: false
+
+  - name: ollama:tinyllama:1.1b
+    provider: ollama
+    base_url: http://localhost:11434
+    model: tinyllama:1.1b
+    temperature: 0.0
+    timeout: 900
+    context_window: 4096
+    max_output_tokens: 256
+    thinking: false
+
+  - name: ollama:medgemma:4b
+    provider: ollama
+    base_url: http://localhost:11434
+    model: medgemma:4b
+    temperature: 0.0
+    timeout: 900
+    context_window: 4096
+    max_output_tokens: 256
+    thinking: false

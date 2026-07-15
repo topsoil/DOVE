@@ -377,3 +377,59 @@ not have returned a parseable answer.
 
 Verify the base URL, model ID, API key, endpoint compatibility, and provider rate
 limits.
+
+## 13. Run a comparison and HTML report without the GUI
+
+Create a working configuration:
+
+~~~powershell
+Copy-Item config\headless.example.yaml config\headless.yaml
+notepad config\headless.yaml
+~~~
+
+Ensure every listed Ollama model is installed, then run:
+
+~~~powershell
+ollama list
+python scripts\run_benchmark_report.py --config config\headless.yaml
+~~~
+
+No Streamlit process or browser click is involved. The default example writes:
+
+~~~text
+data/results/headless_bioinformatics/benchmark_run.json
+data/results/headless_bioinformatics/benchmark_summary.csv
+data/results/headless_bioinformatics/benchmark_report.html
+~~~
+
+Open the HTML file after the run if you want to inspect it. For an unattended
+full run, set `question_limit: null` before starting. A failed model call is
+recorded as an item-level error and does not abort the remaining comparison.
+
+An existing result JSON can be rendered again without rerunning any model:
+
+~~~powershell
+python scripts\generate_html_report.py `
+  --results data\results\headless_bioinformatics\benchmark_run.json `
+  --output data\results\headless_bioinformatics\benchmark_report.html `
+  --summary-csv data\results\headless_bioinformatics\benchmark_summary.csv `
+  --title "DOVE bioinformatics comparison"
+~~~
+
+For complete benchmarks, the HTML report also creates one section per subdomain.
+Each section contains its own fixed-scale model plot, up to five questions all
+models answered correctly, and up to five model-disagreement, shared-incorrect,
+or call-error cases. When a category has no examples, the report prints an
+explicit empty-state message.
+
+### Complete four-model disease-genetics example
+
+A ready-to-run configuration compares Gemma 1B, Ministral 3B, TinyLlama 1.1B,
+and MedGemma 4B across all 100 disease-genetics questions:
+
+~~~powershell
+python scripts\run_benchmark_report.py --config config\headless.genetics.example.yaml
+~~~
+
+This is one 400-call run and produces a single canonical JSON, CSV, and
+`disease_genetics_100_report.html`. All four Ollama models must be installed.
