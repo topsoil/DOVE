@@ -1,0 +1,2282 @@
+[
+  {
+    "id": "dimi_lab_001",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "What is the primary task addressed by PPAR?",
+    "options": {
+      "A": "Prioritizing candidate causal genes from patient HPO phenotypes",
+      "B": "Calling structural variants from long reads",
+      "C": "Predicting drug toxicity from EHR notes",
+      "D": "Classifying pathology whole-slide images"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "PPAR ranks candidate genes using patient-derived Human Phenotype Ontology terms.",
+    "difficulty": "basic",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0001"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_002",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "What type of patient information is supplied as the principal input to PPAR?",
+    "options": {
+      "A": "Raw RNA-seq count matrices",
+      "B": "A set of HPO terms",
+      "C": "Digital pathology tiles",
+      "D": "Plasma drug concentrations"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "The method accepts a patient phenotype set represented by HPO terms.",
+    "difficulty": "basic",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0004"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_003",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "What does PPAR return for a supplied phenotype set?",
+    "options": {
+      "A": "A treatment dose schedule",
+      "B": "A reconstructed genome assembly",
+      "C": "A ranked list of genes",
+      "D": "A tumor segmentation mask"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "The static relationship matrix and graph network are used to produce a rank-ordered gene list.",
+    "difficulty": "basic",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0004"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_004",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "What are the dimensions of the reported PPAR gene-HPO relationship matrix?",
+    "options": {
+      "A": "1,133 \u00d7 229",
+      "B": "1,024 \u00d7 1,024",
+      "C": "24 \u00d7 27",
+      "D": "19,231 \u00d7 8,897"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "The matrix spans 19,231 protein-coding genes and 8,897 HPO terms.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0004"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_005",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "Which database platform was used to implement the clinical knowledge graph?",
+    "options": {
+      "A": "Neo4j",
+      "B": "PostgreSQL",
+      "C": "MongoDB",
+      "D": "Elasticsearch"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "The CKG was built and queried in Neo4j.",
+    "difficulty": "basic",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0004"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_006",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "Which pair of Neo4j plugins supported queries, visualization, and graph embeddings?",
+    "options": {
+      "A": "Spark and Hadoop",
+      "B": "APOC and Graph Data Science Library",
+      "C": "BLAST and Bowtie",
+      "D": "Seurat and Scanpy"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "APOC and the Neo4j Graph Data Science Library were installed for these functions.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0004"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_007",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "After CKG refinement, how many node types and relationship types were reported?",
+    "options": {
+      "A": "8 node and 4 relationship types",
+      "B": "229 node and 1,133 relationship types",
+      "C": "24 node and 27 relationship types",
+      "D": "1,024 node and 8 relationship types"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "The modified CKG contained 24 node types and 27 relationship types.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0005"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_008",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "Which graph-embedding algorithm was selected for PPAR?",
+    "options": {
+      "A": "BERT",
+      "B": "t-SNE",
+      "C": "UMAP",
+      "D": "FastRP"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "FastRP was selected as suitable for the size of the CKG.",
+    "difficulty": "basic",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0005"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_009",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "What embedding dimension was configured for FastRP?",
+    "options": {
+      "A": "1,024",
+      "B": "128",
+      "C": "512",
+      "D": "64"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "The authors used the maximum available embeddingDimension of 1,024.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0005"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_010",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "What was the intended effect of assigning larger FastRP iteration weights to closer neighbors?",
+    "options": {
+      "A": "To remove all indirect gene-phenotype associations",
+      "B": "To emphasize local graph structure while still incorporating extended neighborhoods",
+      "C": "To convert HPO terms into genomic coordinates",
+      "D": "To balance case and control sample counts"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "The decreasing weights emphasized closer neighbors while propagating information through up to eight neighborhoods.",
+    "difficulty": "advanced",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0005"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_011",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "Why was normalizationStrength set to -0.75 in FastRP?",
+    "options": {
+      "A": "To increase the number of HPO terms per case",
+      "B": "To force every embedding value to zero",
+      "C": "To downplay the influence of higher-degree neighboring nodes",
+      "D": "To exclude all rare phenotypes"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "The negative normalization strength reduced the influence of high-degree neighbors.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0005"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_012",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "Which set lists all four link operations evaluated for gene-HPO prediction?",
+    "options": {
+      "A": "DFS, BFS, A*, and PageRank",
+      "B": "Cosine, Pearson, Spearman, and Kendall",
+      "C": "PCA, ICA, NMF, and SVD",
+      "D": "Hadamard, Average, L1, and L2"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "The study compared Hadamard, Average, L1, and L2 operations.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0006"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_013",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "Which models were compared for gene-HPO link prediction?",
+    "options": {
+      "A": "XGBoost, Naive Bayes, Random Forest, and MLP",
+      "B": "Cox regression, Kaplan-Meier, DESeq2, and edgeR",
+      "C": "ResNet, U-Net, YOLO, and VGG",
+      "D": "BLAST, BWA, STAR, and Salmon"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "The four classifiers were XGBoost, Naive Bayes, Random Forest, and a multilayer perceptron.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0007"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_014",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "What did the 1\u00d7 through 8\u00d7 link-prediction trials vary?",
+    "options": {
+      "A": "The number of chromosomes analyzed",
+      "B": "The imbalance between linked and non-linked gene-HPO pairs",
+      "C": "The embedding dimension",
+      "D": "The number of clinical sites"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Increasing dilutions added progressively more non-linked pairs to approximate graph imbalance.",
+    "difficulty": "advanced",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0006"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_015",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "How was the link-prediction data initially divided?",
+    "options": {
+      "A": "90% training and 10% testing without validation",
+      "B": "50% training and 50% testing only",
+      "C": "80% training and 20% validation, with validation further split for testing",
+      "D": "Leave-one-gene-out cross-validation"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "The paper reports an 80:20 training-validation split, followed by a 50:50 split of validation to form the test set.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0007"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_016",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "Why was AUCPR an important evaluation metric in this study?",
+    "options": {
+      "A": "Only survival times were analyzed",
+      "B": "All outcomes were continuous",
+      "C": "No ground-truth links existed",
+      "D": "The linked versus non-linked pairs were imbalanced"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "AUCPR was used alongside accuracy because the CKG link data were imbalanced.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0011"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_017",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "Which combination achieved the highest reported mean link-prediction accuracy?",
+    "options": {
+      "A": "Hadamard with MLP",
+      "B": "L1 with Naive Bayes",
+      "C": "L2 with Random Forest",
+      "D": "Average with XGBoost"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Hadamard link operations with MLP probabilities achieved a mean accuracy of 0.88.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0011"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_018",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "Which combination achieved the highest reported mean AUCPR?",
+    "options": {
+      "A": "Hadamard with MLP",
+      "B": "L1 with Naive Bayes",
+      "C": "Average with Random Forest",
+      "D": "L2 with XGBoost"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "L1 with Naive Bayes reached mean AUCPR 0.75; Hadamard with MLP reached 0.73.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0011"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_019",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "Why did the authors select Hadamard plus MLP for PPAR despite another combination having slightly higher AUCPR?",
+    "options": {
+      "A": "It was the only unsupervised method",
+      "B": "It required no phenotype data",
+      "C": "It had the best mean accuracy and still competitive AUCPR",
+      "D": "It eliminated the need for a CKG"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "The selected combination paired the highest mean accuracy, 0.88, with competitive mean AUCPR, 0.73.",
+    "difficulty": "advanced",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0011"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_020",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "What similarity measure was applied between gene and HPO embeddings?",
+    "options": {
+      "A": "Dynamic time warping",
+      "B": "Jaccard distance",
+      "C": "Mutual information",
+      "D": "Cosine similarity"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Cosine similarity quantified similarity in the embedding space.",
+    "difficulty": "basic",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0007"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_021",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "What is the purpose of information-content weighting in PPAR?",
+    "options": {
+      "A": "To give greater importance to less-connected, more specific phenotypes",
+      "B": "To favor the most common genes regardless of phenotype",
+      "C": "To remove all parent HPO terms",
+      "D": "To convert probabilities into sequencing reads"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Information content gives greater weight to HPO terms with fewer gene connections.",
+    "difficulty": "advanced",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0008"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_022",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "How many genetically diagnosed cases were in the internal MCRD cohort?",
+    "options": {
+      "A": "1,133",
+      "B": "229",
+      "C": "8,897",
+      "D": "19,231"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "The internal Mayo Clinic Rare Disease cohort contained 229 cases.",
+    "difficulty": "basic",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0009"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_023",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "What was the average number of HPO terms per MCRD case?",
+    "options": {
+      "A": "2",
+      "B": "22",
+      "C": "8",
+      "D": "81"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "MCRD cases had an average of eight HPO terms.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0009"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_024",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "How large was the DDD validation dataset described in the paper?",
+    "options": {
+      "A": "229 cases",
+      "B": "550 cases",
+      "C": "19,231 cases",
+      "D": "1,133 cases"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "The Developmental Disorders genotype-to-phenotype dataset contained 1,133 cases.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0010"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_025",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "What was the reported average number of HPO terms per DDD case?",
+    "options": {
+      "A": "22",
+      "B": "8",
+      "C": "5",
+      "D": "42"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "The DDD cases averaged 22 HPO terms.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0010"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_026",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "Which structure contributes parent-gene evidence to PPAR?",
+    "options": {
+      "A": "A directed graph containing only patients",
+      "B": "An undirected graph of genes, HPO terms, and GO terms",
+      "C": "A matrix containing only drug-drug interactions",
+      "D": "A phylogenetic tree of tumor samples"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Parent-gene scoring uses an undirected network connecting genes, HPO terms, and GO terms from OBO-derived information.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0007"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_027",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "What operational advantage comes from PPAR using a precomputed static matrix?",
+    "options": {
+      "A": "Elimination of all preprocessing",
+      "B": "Automatic incorporation of every newly published association",
+      "C": "Fast result generation without requiring a GPU at inference time",
+      "D": "Direct variant calling from FASTQ files"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Precomputed static embeddings support efficient ranking without GPU computation during use.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0015"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_028",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "What is a stated maintenance limitation of PPAR?",
+    "options": {
+      "A": "It only represents mitochondrial genes",
+      "B": "It cannot accept more than one HPO term",
+      "C": "It requires patient VCF upload to a commercial API",
+      "D": "Updating the CKG requires regenerating embeddings and retraining the model"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Adding new database information requires expensive FastRP regeneration and PPAR retraining.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0015"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_029",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "Why might PPAR miss newly discovered gene-phenotype associations?",
+    "options": {
+      "A": "Its underlying CKG resources may be incomplete or not recently updated",
+      "B": "Cosine similarity cannot be computed for genes",
+      "C": "The model excludes all protein-coding genes",
+      "D": "HPO contains no phenotype hierarchy"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "The authors note incomplete novel HPO coverage and aging source data in the CKG.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0015"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_030",
+    "domain": "DIMI Lab Research",
+    "subdomain": "PPAR gene prioritization",
+    "question_type": "single_choice",
+    "question": "What breadth of knowledge resources is summarized for PPAR?",
+    "options": {
+      "A": "2 databases and 1 ontology",
+      "B": "24 biological databases and 10 ontology databases",
+      "C": "229 databases and 8 ontologies",
+      "D": "1,133 databases and 22 ontologies"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "The conclusion describes integration of 24 biological databases and 10 ontology databases.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s12859-025-06096-2",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions.pdf",
+      "doi": "10.1186/s12859-025-06096-2",
+      "chunk_ids": [
+        "c6a1e1ac9d8f_0015"
+      ],
+      "source_pages": [
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-001.md",
+        "wiki/sources/a-clinical-knowledge-graph-based-framework-to-prioritize-candidate-genes-for-fac-c6a1e1ac9d8f-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_031",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "What clinical problem motivated the rucaparib/PLX038A study?",
+    "options": {
+      "A": "Excess efficacy of PARP monotherapy",
+      "B": "Lack of sequencing methods for bacteria",
+      "C": "Poor outcomes and limited therapies for serous endometrial cancer",
+      "D": "Inability to establish any endometrial cancer models"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Serous endometrial cancer has poor survival and limited effective treatment options.",
+    "difficulty": "basic",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0001"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_032",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "Which preclinical model was central to the study?",
+    "options": {
+      "A": "Cell-free synthetic chromosomes",
+      "B": "Zebrafish models of leukemia",
+      "C": "Organoids derived only from normal endometrium",
+      "D": "Patient-derived xenografts of serous and serous-like endometrial cancer"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "The study developed and tested serous and serous-like EC PDXs in vitro, ex vivo, and in vivo.",
+    "difficulty": "basic",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0001"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_033",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "Which two agents formed the focal in-vivo combination?",
+    "options": {
+      "A": "Rucaparib and PLX038A",
+      "B": "Olaparib and trastuzumab",
+      "C": "Pembrolizumab and lenvatinib",
+      "D": "Cisplatin and paclitaxel"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "The evaluated combination paired the PARP inhibitor rucaparib with pegylated SN-38, PLX038A.",
+    "difficulty": "basic",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0001"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_034",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "What is PLX038A?",
+    "options": {
+      "A": "A monoclonal antibody against HER2",
+      "B": "A pegylated formulation of SN-38",
+      "C": "A RAD51 imaging probe",
+      "D": "A Neo4j graph plugin"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "PLX038A is a pegylated SN-38 construct developed as a TOP1-inhibitor formulation.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0003"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_035",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "Which mechanism helps explain synergy between PARP and TOP1 inhibition?",
+    "options": {
+      "A": "PARP inhibition eliminates drug delivery",
+      "B": "TOP1 inhibition restores every BRCA reversion",
+      "C": "PARP trapping impairs repair of TOP1 inhibitor-induced damage",
+      "D": "Both agents directly amplify HER2"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "PARP trapping can inhibit repair of TOP1 inhibitor-induced DNA damage; altered TDP1 recruitment is another proposed mechanism.",
+    "difficulty": "advanced",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0003"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_036",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "How many endometrial cancer PDX models were established overall?",
+    "options": {
+      "A": "10",
+      "B": "20",
+      "C": "42",
+      "D": "30"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "The developed collection comprised 30 EC PDX models across several histologies.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0008"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_037",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "What was the median time to initial PDX engraftment?",
+    "options": {
+      "A": "7.5 months",
+      "B": "7.5 weeks",
+      "C": "7.5 days",
+      "D": "15 months"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "The median time from transplantation to initial engraftment was 7.5 months.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0008"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_038",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "What happened to engraftment after the first PDX passage?",
+    "options": {
+      "A": "All models permanently failed to engraft",
+      "B": "The subsequent engraftment rate was 100% and growth was faster",
+      "C": "The engraftment rate fell to 17%",
+      "D": "Only subcutaneous tumors could grow"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "After the first passage, subsequent engraftment was 100% and time to morbidity shortened.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0008"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_039",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "What fraction of PDX lines showed ascites in at least one animal?",
+    "options": {
+      "A": "8%",
+      "B": "17%",
+      "C": "27%",
+      "D": "55%"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Ascites in one or more animals was observed in 27% of PDX lines.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0008"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_040",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "Which features were combined in the low-coverage WGS genomic instability score?",
+    "options": {
+      "A": "Age, stage, and histologic grade",
+      "B": "Mutation burden, MSI, and HER2 expression",
+      "C": "RAD51, p53, and Ki-67 staining",
+      "D": "Telomeric allelic imbalance, large-state transitions, and loss of heterozygosity"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "The GIS combined TAI, LST, and LOH measures derived from low-coverage whole-genome sequencing.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0008"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_041",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "How many of the 30 EC PDX tumors had a GIS of at least 42?",
+    "options": {
+      "A": "8",
+      "B": "5",
+      "C": "2",
+      "D": "20"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Eight of 30 PDX tumors, 26.6%, met or exceeded the ovarian-cancer GIS threshold of 42.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0008"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_042",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "Among serous PDXs, how many had GIS at least 42?",
+    "options": {
+      "A": "1 of 8",
+      "B": "5 of 8",
+      "C": "3 of 8",
+      "D": "8 of 8"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Five of eight serous PDX models met the GIS threshold.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0008"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_043",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "What did the comparison of GIS with radiation-induced RAD51 foci show?",
+    "options": {
+      "A": "Every low-GIS tumor was HR deficient",
+      "B": "Every high-GIS tumor lacked RAD51 foci",
+      "C": "High GIS and functional HR loss did not consistently agree",
+      "D": "GIS perfectly predicted rucaparib regression"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Several high-GIS tumors still formed RAD51 foci, while a low-GIS tumor lacked induced foci.",
+    "difficulty": "advanced",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0010"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_044",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "How was aberrant p53 staining characterized in the studied tumors?",
+    "options": {
+      "A": "Nuclear staining restricted to lymphocytes",
+      "B": "Only weak stromal staining",
+      "C": "Uniform membrane staining",
+      "D": "Complete absence or strong diffuse epithelial staining"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Aberrant patterns included either complete absence or strong diffuse staining in carcinoma cells.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0010"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_045",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "Why was PARP-inhibitor monotherapy expected to have limited activity in the SEC PDXs?",
+    "options": {
+      "A": "Functional HR deficiency was inconsistent despite high GIS values",
+      "B": "All tumors lacked TP53 alterations",
+      "C": "Rucaparib cannot enter tumor cells",
+      "D": "Every tumor was HER2 amplified"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "The mismatch between GIS and functional RAD51 results suggested many tumors retained HR capacity.",
+    "difficulty": "advanced",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0010"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_046",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "How were the ten serous or serous-like PDX tumors tested ex vivo?",
+    "options": {
+      "A": "As purified DNA in PCR tubes",
+      "B": "As small aggregates in low-binding three-dimensional culture",
+      "C": "Only as formalin-fixed slides",
+      "D": "Through population-level registry linkage"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Tumors were dissociated into aggregates and cultured on low-binding plates to support 3D growth.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0013"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_047",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "What did the ex-vivo experiments suggest about GIS and drug synergy?",
+    "options": {
+      "A": "All low-GIS tumors were resistant to both drugs",
+      "B": "Synergy occurred only at GIS exactly 42",
+      "C": "Synergy could occur across both high- and low-GIS tumors",
+      "D": "GIS was not measured in any model"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Synergy was seen in genomically different models, including PH537 with GIS 81 and PH658 with GIS 32.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0013"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_048",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "What did increased phospho-H2A.X foci indicate after treatment?",
+    "options": {
+      "A": "Activation of HER2 signaling",
+      "B": "Restoration of mismatch repair",
+      "C": "Loss of all tumor cells before treatment",
+      "D": "Induction of DNA double-strand breaks"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Phospho-H2A.X foci were used as a marker of treatment-induced DNA double-strand damage.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0013"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_049",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "How many PDX models were evaluated in the in-vivo combination study?",
+    "options": {
+      "A": "5",
+      "B": "3",
+      "C": "10",
+      "D": "30"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Five PDXs spanning GIS values from 28 to 81 were treated in vivo.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0014"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_050",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "Which in-vivo treatment schedule matches the study?",
+    "options": {
+      "A": "Rucaparib weekly and PLX038A hourly",
+      "B": "Rucaparib 150 mg/kg daily and PLX038A 15 \u00b5mol/kg every two weeks",
+      "C": "Both drugs as a single dose only",
+      "D": "PLX038A daily and rucaparib every two months"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Mice received daily rucaparib and PLX038A every two weeks for eight weeks.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0015"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_051",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "How was tumor size followed longitudinally in the mice?",
+    "options": {
+      "A": "Serum CA-125 only",
+      "B": "Daily PET-MRI under anesthesia",
+      "C": "Weekly transabdominal ultrasonography",
+      "D": "End-point caliper measurement only"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Weekly transabdominal ultrasound measured tumor-size changes over time.",
+    "difficulty": "basic",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0015"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_052",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "What was the observed effect of rucaparib monotherapy on tumor regression?",
+    "options": {
+      "A": "Regression was not evaluated",
+      "B": "All five PDX models completely regressed",
+      "C": "Only low-GIS models regressed",
+      "D": "None of the five PDX models regressed"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "Rucaparib alone slowed growth in selected models but caused no tumor regression.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0015"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_053",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "Which two PDXs showed significant growth inhibition with rucaparib monotherapy?",
+    "options": {
+      "A": "PH537 and PH658",
+      "B": "PH456 and U1561.019",
+      "C": "UT002 and UT015",
+      "D": "PEO1 and PEO4"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "PH537 and PH658 showed significant slowing relative to controls.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0015"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_054",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "Which pathogenic DNA-repair alteration was found in PH537?",
+    "options": {
+      "A": "A germline HER2 amplification",
+      "B": "A PRKDC deletion",
+      "C": "A RAD51C fusion",
+      "D": "A TP53 wild-type reversion"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Whole-genome sequencing identified a pathogenic PRKDC c.6151_6176del alteration in PH537.",
+    "difficulty": "advanced",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0015"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_055",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "How did PLX038A monotherapy perform across the five in-vivo PDXs?",
+    "options": {
+      "A": "It cured all models",
+      "B": "It had no measurable activity in any model",
+      "C": "It significantly slowed growth in all five, with shrinkage in one",
+      "D": "It was evaluated only ex vivo"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "At the tested low dose, PLX038A slowed growth in all five models and shrank one.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0015"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_056",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "In which PDXs was the combination superior to PLX038A monotherapy?",
+    "options": {
+      "A": "All 30 established PDXs",
+      "B": "Only U1561.019",
+      "C": "PEO1 and PEO4",
+      "D": "PH537, PH658, and UT002"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "The combination was significantly superior to all other groups in PH537, PH658, and UT002.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0016"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_057",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "How many mice lacked measurable disease at week 9 in the two markedly sensitive models?",
+    "options": {
+      "A": "PH537: 4/8; PH658: 6/8",
+      "B": "PH537: 1/8; PH658: 1/8",
+      "C": "PH537: 8/8; PH658: 8/8",
+      "D": "PH537: 0/8; PH658: 0/8"
+    },
+    "correct_answer": "A",
+    "correct_answers": null,
+    "explanation": "Ultrasound found no measurable disease in 4 of 8 PH537 and 6 of 8 PH658 mice.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0016"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_058",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "What proportion of the 20 primary tumor samples showed ex-vivo synergy at 0.5 fraction affected?",
+    "options": {
+      "A": "17%",
+      "B": "55%",
+      "C": "40%",
+      "D": "26.6%"
+    },
+    "correct_answer": "B",
+    "correct_answers": null,
+    "explanation": "Eleven of 20 primary samples, or 55%, had a combination index below 1.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0016"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_059",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "What key limitation did the study identify for GIS as a biomarker in SEC?",
+    "options": {
+      "A": "GIS was identical in every tumor",
+      "B": "GIS could not be calculated from sequencing data",
+      "C": "High GIS did not reliably indicate functional HR loss or PARP-inhibitor sensitivity",
+      "D": "Low GIS always predicted complete response"
+    },
+    "correct_answer": "C",
+    "correct_answers": null,
+    "explanation": "Historical genomic scars can persist after HR restoration, and high GIS did not correlate well with RAD51 loss or rucaparib regression.",
+    "difficulty": "advanced",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0017"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  },
+  {
+    "id": "dimi_lab_060",
+    "domain": "DIMI Lab Research",
+    "subdomain": "Serous endometrial cancer therapy",
+    "question_type": "single_choice",
+    "question": "What development direction was supported by the study conclusion?",
+    "options": {
+      "A": "Restricting the combination only to HER2-amplified disease",
+      "B": "Abandoning all TOP1 inhibitors in endometrial cancer",
+      "C": "Using GIS alone to prescribe PARP monotherapy",
+      "D": "Further evaluation of PLX038A plus rucaparib in endometrial cancer"
+    },
+    "correct_answer": "D",
+    "correct_answers": null,
+    "explanation": "The findings support further preclinical and possible clinical development of the combination, while cautioning that PARP monotherapy may be insufficient.",
+    "difficulty": "intermediate",
+    "tags": [
+      "DIMI",
+      "published-paper",
+      "human-review-required"
+    ],
+    "source": "https://doi.org/10.1186/s13046-025-03406-7",
+    "review_status": "corpus_generated",
+    "version": "0.1",
+    "provenance": {
+      "source_document": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma.pdf",
+      "doi": "10.1186/s13046-025-03406-7",
+      "chunk_ids": [
+        "a5b16cd40354_0018"
+      ],
+      "source_pages": [
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-001.md",
+        "wiki/sources/antitumor-activity-of-rucaparib-plus-plx038a-in-serous-endometrial-carcinoma-pdf-a5b16cd40354-part-002.md"
+      ],
+      "authoring_method": "ChatGPT-assisted from DOVE-extracted PDF text",
+      "human_review_required": true
+    }
+  }
+]

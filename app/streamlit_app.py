@@ -265,6 +265,8 @@ with run_tab:
             ROOT / "data" / "benchmarks" / "bioinformatics_best_practices_100.json",
         "Disease genetics — 100 source-attributed drafts":
             ROOT / "data" / "benchmarks" / "disease_genetics_100.json",
+        "DIMI Lab published-paper pilot — 60 source-grounded drafts":
+            ROOT / "data" / "benchmarks" / "dimi_lab_60.json",
         "Small bioinformatics example — 2 questions":
             ROOT / "data" / "benchmarks" / "bioinformatics_v0_1.json",
     }

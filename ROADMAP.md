@@ -56,20 +56,25 @@ features. Priorities may change based on user feedback.
 - Support for additional provider APIs.
 - Batch API integration for large evaluations.
 
-## Experimental private-document track
+## Private-document track
 
-The current corpus ingestion and question-generation code is a scaffold.
+Delivered in the current release:
+
+- Recursive PDF/Markdown ingestion with source hashes and chunk provenance.
+- Persistent Karpathy-style LLM-Wiki compilation with long-document batching.
+- A one-command, exact-count DOVE candidate benchmark generator.
+- Schema validation, duplicate filtering, and source-page/chunk citation sanitation.
+- Basic prompt-injection separation for untrusted document content.
+- Mandatory `corpus_generated` review status for human curation.
 
 Future work may include:
 
-- Persistent Karpathy-style LLM-Wiki compilation.
 - Incremental source updates and contradiction tracking.
-- Full-text and vector retrieval.
-- Source-page and chunk-level citation validation.
-- Prompt-injection defenses for untrusted documents.
+- Full-text and vector retrieval for very large wiki collections.
+- Semantic citation entailment checks beyond identifier validation.
 - PII and PHI detection/redaction hooks.
 - Encryption, access control, retention, and audit policy.
-- Human approval before generated questions enter a benchmark.
+- Human approval workflows inside DOVEboard.
 - Wiki versus raw-RAG ablation studies.
 
 ## Long term

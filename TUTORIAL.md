@@ -250,6 +250,58 @@ correct_answer to null, and supply correct_answers such as ["A", "C"].
 See [BENCHMARKS.md](BENCHMARKS.md) before distributing a benchmark as expert
 reviewed.
 
+## 12. Generate a benchmark from private documents
+
+Place the source PDFs and Markdown files under one directory. DOVE scans its
+subdirectories recursively. For privacy, keep the directory outside Git or
+under `data\corpora`, which this repository ignores.
+
+Start Ollama and make sure the intended chat model is installed:
+
+~~~powershell
+ollama list
+~~~
+
+Generate exactly 25 candidate questions:
+
+~~~powershell
+python scripts\generate_private_benchmark.py `
+  --documents "D:\private-documents" `
+  --domain "Laboratory SOPs" `
+  --subdomains "intake,processing,quality control,reporting" `
+  --n 25 `
+  --ollama-model llama3.1:8b `
+  --workspace data\corpora\laboratory_sops_wiki `
+  --output data\generated_questions\laboratory_sops_25.json
+~~~
+
+The workspace contains the extracted corpus manifest, persistent wiki pages, and an `experience_log.json` file recording document parsing, wiki compilation, each question batch, model identity, token counts, and elapsed time.
+The JSON output is directly uploadable in DOVEboard through **Upload JSON/YAML**.
+Every item has `source: karpathy_llm_wiki`, `review_status:
+corpus_generated`, and sanitized wiki/chunk provenance.
+
+To use an entry from `config\models.yaml` instead of a direct Ollama name:
+
+~~~powershell
+python scripts\generate_private_benchmark.py `
+  --documents "D:\private-documents" `
+  --domain "Laboratory SOPs" `
+  --n 25 `
+  --models config\models.yaml `
+  --model llama3_ollama `
+  --output data\generated_questions\laboratory_sops_25.json
+~~~
+
+A remote OpenAI-compatible entry receives private source text. Use one only
+when organizational policy permits sending those documents to that endpoint.
+Local Ollama is the privacy-preserving default. Source material is treated as
+untrusted data and embedded instructions are ignored, but human review remains
+mandatory. Image-only scanned PDFs require OCR before this script can extract
+their text.
+
+If the model returns too few unique schema-valid questions, the command retries
+up to five rounds and then fails without saving a partial benchmark. Adjust
+`--batch-size`, `--max-rounds`, or select a stronger model when needed.
 ## Troubleshooting
 
 ### DOVEboard opens the wrong Streamlit app

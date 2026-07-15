@@ -26,9 +26,10 @@ and an optional bring-your-own-key OpenAI-compatible endpoint in the same run.
 |---|---:|---|
 | Bioinformatics best practices | 100 | Sequencing QC, formats, RNA-seq, variants, cancer genomics, single-cell, metagenomics, reproducibility, study design |
 | Disease genetics | 100 | Gene–disease associations and principal inheritance patterns for 50 disorders |
+| DIMI Lab published-paper pilot | 60 | PPAR gene prioritization and rucaparib/PLX038A serous endometrial cancer research |
 | Small bioinformatics example | 2 | Minimal single- and multiple-select demonstration |
 
-The two 100-question sets are AI-drafted, source-attributed pilot benchmarks.
+The two 100-question sets and the 60-question DIMI set are AI-assisted, source-attributed pilot benchmarks.
 They are marked llm_generated, not expert gold. They are appropriate for
 software demonstrations and exploratory model comparisons. Domain experts
 should review them before scientific reporting, clinical use, or publication.
@@ -129,11 +130,32 @@ containing sensitive prompts or responses.
 Local Ollama requests stay on the configured Ollama endpoint. Remote models
 receive benchmark question text through the configured API endpoint.
 
-## Experimental private-document work
+## Private-document LLM Wiki benchmark generation
 
-Corpus ingestion and private-document question-generation scaffolding is
-included for experimentation, but the persistent LLM-Wiki workflow is deferred
-to a later phase. Treat generated questions as drafts requiring human review.
+DOVE can turn a directory of PDF and Markdown files into a persistent,
+source-cited LLM Wiki and then generate an exact requested number of
+DOVE-compatible candidate questions. The source files are never modified.
+
+For a local Ollama model:
+
+~~~powershell
+python scripts\generate_private_benchmark.py `
+  --documents "D:\private-documents" `
+  --domain "Internal research procedures" `
+  --subdomains "sample handling,quality control,analysis" `
+  --n 50 `
+  --ollama-model llama3.1:8b `
+  --workspace data\corpora\internal_research_wiki `
+  --output data\generated_questions\internal_research_50.json
+~~~
+
+The script recursively extracts supported documents, compiles citable wiki
+pages, generates unique questions in batches, validates every item with the
+DOVE schema, and refuses to save a partial benchmark if it cannot reach the
+requested count. It writes `experience_log.json` with parsing, wiki, question-batch, model, token, and elapsed-time measurements. Generated items are marked `corpus_generated`, not gold data.
+Review every answer, citation, explanation, distractor, and sensitivity concern
+before promotion. See [TUTORIAL.md](TUTORIAL.md) for model-config and security
+options.
 
 ## License
 

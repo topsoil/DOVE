@@ -1,9 +1,22 @@
 models:
-  - name: llama3_ollama
+  - name: qwen3_4b_local
     provider: ollama
     base_url: http://localhost:11434
-    model: llama3:8b
+    model: qwen3:4b
     temperature: 0.0
+    timeout: 900
+    context_window: 8192
+    max_output_tokens: 900
+
+  - name: openai_direct
+    provider: openai_compatible
+    base_url: https://api.openai.com/v1
+    api_key_env: OPENAI_API_KEY
+    model: gpt-5.4-mini
+    temperature: 0.0
+    timeout: 600
+    max_output_tokens: 5000
+    structured_outputs: true
 
   - name: openai_compatible_example
     provider: openai_compatible
@@ -11,4 +24,4 @@ models:
     api_key_env: EXAMPLE_API_KEY
     model: example-model
     temperature: 0.0
-
+    structured_outputs: false

@@ -31,3 +31,18 @@ def test_seed_questions_are_unique():
     questions = [item.question for item in bio + disease]
     assert len(questions) == len(set(questions))
 
+
+
+def test_dimi_pilot_has_valid_provenance_and_balanced_answers():
+    dimi = load_benchmark("data/benchmarks/dimi_lab_60.json")
+    assert len(dimi) == 60
+    assert len({item.id for item in dimi}) == 60
+    assert Counter(item.correct_answer for item in dimi) == Counter(
+        {"A": 15, "B": 15, "C": 15, "D": 15}
+    )
+    assert {item.review_status for item in dimi} == {"corpus_generated"}
+    assert all(item.provenance.get("chunk_ids") for item in dimi)
+    assert {item.subdomain for item in dimi} == {
+        "PPAR gene prioritization",
+        "Serous endometrial cancer therapy",
+    }

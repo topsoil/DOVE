@@ -51,6 +51,9 @@ class ModelConfig(BaseModel):
     api_key: SecretStr | None = Field(default=None, exclude=True, repr=False)
     temperature: float = 0.0
     timeout: int = 120
+    context_window: int | None = None
+    max_output_tokens: int | None = None
+    structured_outputs: bool = False
 
 
 class ItemResult(BaseModel):

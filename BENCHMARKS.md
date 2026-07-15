@@ -20,13 +20,20 @@ DOVE benchmarks are JSON or YAML lists of multiple-choice items.
 - 12 subdomains
 - source-attributed pilot content
 
+### data/benchmarks/dimi_lab_60.json
+
+- 60 single-choice questions
+- 30 questions on the PPAR clinical knowledge-graph gene-prioritization paper
+- 30 questions on rucaparib plus PLX038A in serous endometrial cancer
+- chunk-level provenance to two published DIMI papers
+- `corpus_generated` pilot content requiring human review
 ### data/benchmarks/bioinformatics_v0_1.json
 
 A two-question example for quick software testing.
 
 ## Review status
 
-The two 100-question sets are marked llm_generated. That status is intentional.
+The two 100-question sets are marked llm_generated. The DIMI set is marked corpus_generated. That status is intentional.
 They have automated schema checks and source attribution, but have not undergone
 documented human domain-expert review.
 

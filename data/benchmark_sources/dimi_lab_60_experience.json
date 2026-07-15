@@ -1,0 +1,46 @@
+{
+  "format": "dove_model_experience_v1",
+  "benchmark": "data/benchmarks/dimi_lab_60.json",
+  "scope": {
+    "selected_documents": 2,
+    "questions": 60,
+    "questions_per_document": 30,
+    "review_status": "corpus_generated",
+    "human_review_required": true
+  },
+  "sources": [
+    {
+      "title": "A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions",
+      "doi": "10.1186/s12859-025-06096-2",
+      "wiki_pages": 2
+    },
+    {
+      "title": "Antitumor activity of rucaparib plus PLX038A in serous endometrial carcinoma",
+      "doi": "10.1186/s13046-025-03406-7",
+      "wiki_pages": 2
+    }
+  ],
+  "observed_timings": {
+    "pdf_parsing_all_23_documents_seconds": 37.9,
+    "qwen3_5_9b_compile_selected_2_documents_seconds": 1824.675,
+    "qwen3_5_9b_compiled_wiki_pages": 4,
+    "benchmark_materialization_and_schema_validation_seconds": 0.003,
+    "interactive_chatgpt_authoring_seconds": null,
+    "interactive_timing_note": "Interactive authoring was not instrumented; no duration is fabricated."
+  },
+  "local_model_observations": {
+    "wiki_compiler": "qwen3.5:9b",
+    "ollama_context": 32768,
+    "observed_processor_split": "approximately 27% GPU / 73% CPU",
+    "experience": "Long-context synthesis was accurate and cited, but slow on the observed CPU-offloaded configuration.",
+    "qwen3_4b_attempt": "Stopped after switching to interactive ChatGPT authoring; no qwen3:4b questions were retained."
+  },
+  "quality_checks": {
+    "schema_valid_questions": 60,
+    "unique_ids": 60,
+    "chunk_provenance_present": 60,
+    "wiki_page_provenance_present": 60,
+    "answer_positions": {"A": 15, "B": 15, "C": 15, "D": 15},
+    "automated_tests_passed": 15
+  }
+}
