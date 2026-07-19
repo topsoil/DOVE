@@ -32,6 +32,7 @@ expandable question-level results.
 | Bioinformatics best practices | 100 | 3 local models | [Open/download report](examples/reports/bioinformatics_best_practices_100_report.html) |
 | Disease genetics | 100 | 4 local models, including MedGemma 4B | [Open/download report](examples/reports/disease_genetics_100_report.html) |
 | Gynecologic surgical-note extraction | 100 | 3 local models | [Open/download report](examples/reports/gyn_surgical_note_extraction_100_report.html) |
+| Biomedical/bioinformatics virtual interview | 140 | 7 local models | [Interactive HTML](examples/reports/biomedical_bioinformatics_virtual_interview_7models_report.html) · [Technical report DOCX](examples/reports/DOVE_7Model_Biomedical_Bioinformatics_Technical_Report.docx) · [Large-model answer records](examples/results/virtual_interview/README.md) |
 
 Reproduce the four-model genetics example:
 
@@ -122,6 +123,40 @@ The explicit --allow-unreviewed flag is required for the included pilot
 benchmarks. Curated benchmarks marked expert_reviewed or consensus_reviewed do
 not require it.
 
+## Virtual scientist interview
+
+The seven-level biomedical and bioinformatics interview contains 140
+source-grounded prompts spanning foundations, best-practice reasoning,
+real-world scenarios, evidence interpretation, hallucination resistance,
+senior-scientist planning, and adversarial reliability. Long local runs use a
+per-answer checkpoint so they can resume without repeating completed calls.
+
+Run the two large-model extension:
+
+~~~powershell
+python scripts\run_virtual_interview_incremental.py --config config\virtual_interview.large_local.yaml
+~~~
+
+Merge it with the five-model baseline after both large models complete:
+
+~~~powershell
+python scripts\merge_interview_runs.py `
+  data\results\virtual_interview\biomedical_bioinformatics_virtual_interview_run.json `
+  data\results\virtual_interview_large_models\biomedical_bioinformatics_large_models_run.json `
+  --output data\results\virtual_interview\biomedical_bioinformatics_virtual_interview_7models_run.json `
+  --suite-name "DOVE Biomedical & Bioinformatics Virtual Scientist Interview — Seven Local Models"
+~~~
+
+The reusable reporting workflow lives in
+[skills/dove-technical-report/SKILL.md](skills/dove-technical-report/SKILL.md). It requires metric recomputation from
+the final run, traceable positive and negative examples, explicit scorer
+limitations, and a verified DOCX handoff.
+
+For reproducibility and independent review, the complete 140-answer records for
+[GPT-OSS 20B](examples/results/virtual_interview/gpt-oss-20b_140_answers.json)
+and [Nemotron 3 33B](examples/results/virtual_interview/nemotron3-33b_140_answers.json)
+are included with checksums and run notes in the
+[large-model answer manifest](examples/results/virtual_interview/README.md).
 ## Project structure
 
 ~~~text
@@ -135,6 +170,7 @@ data/
   results/                   Run outputs; ignored by Git
 prompts/                     Question-generation prompt contracts
 scripts/                     CLI tools and benchmark builder
+skills/                      Reusable DOVE reporting workflow
 src/dove/                    Python package
 tests/                       Automated tests
 TUTORIAL.md                  End-to-end walkthrough
@@ -253,5 +289,3 @@ python scripts\run_benchmark_report.py --config config\headless.genetics.example
 
 This is one 400-call run and produces a single canonical JSON, CSV, and
 `disease_genetics_100_report.html`. All four Ollama models must be installed.
-
-

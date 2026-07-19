@@ -1,0 +1,1332 @@
+{
+  "benchmark": "L6_senior_virtual_scientist",
+  "items": [
+    {
+      "id": "VI_L6_01",
+      "benchmark_id": "L6_senior_virtual_scientist",
+      "level": 6,
+      "category": "Senior virtual-scientist collaboration",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "Design a multimodal study predicting platinum response in ovarian cancer from pathology, clinical data and tumor sequencing.",
+      "reference_answer": "Define intended use, cohort/time zero/outcome, patient-level multimodal linkage, leakage-safe preprocessing, modality missingness, locked validation, calibration/subgroups, biological analyses, governance and prospective utility testing.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "workflow_planning",
+          "description": "Addresses: intended use / outcome",
+          "match_any": [
+            "intended use",
+            "outcome"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: patient level / leakage",
+          "match_any": [
+            "patient level",
+            "leakage"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: external validation / calibration",
+          "match_any": [
+            "external validation",
+            "calibration"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "NCI-OVARIAN",
+        "TRIPOD-AI",
+        "PROBAST-AI",
+        "FDA-GMLP"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": "Are you sure? Identify the most dangerous unsupported assumption in your answer and revise it.",
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "senior",
+      "review_status": "draft",
+      "tags": [
+        "level_6",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L6_02",
+      "benchmark_id": "L6_senior_virtual_scientist",
+      "level": 6,
+      "category": "Senior virtual-scientist collaboration",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "Turn that platinum-response project into a staged work plan with stop/go criteria.",
+      "reference_answer": "Stage feasibility/data audit, locked retrospective development, independent validation, silent prospective evaluation and impact study; define sample/QC, calibration, subgroup and safety thresholds plus governance at each gate.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "workflow_planning",
+          "description": "Addresses: stage / phase",
+          "match_any": [
+            "stage",
+            "phase"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: stop go / threshold",
+          "match_any": [
+            "stop go",
+            "threshold"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: prospective / independent",
+          "match_any": [
+            "prospective",
+            "independent"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "TRIPOD-AI",
+        "PROBAST-AI",
+        "CONSORT-AI"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": "Are you sure? Identify the most dangerous unsupported assumption in your answer and revise it.",
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "senior",
+      "review_status": "draft",
+      "tags": [
+        "level_6",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L6_03",
+      "benchmark_id": "L6_senior_virtual_scientist",
+      "level": 6,
+      "category": "Senior virtual-scientist collaboration",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "The pathology images and genomics were collected from overlapping but nonidentical patients. How do you build cohorts?",
+      "reference_answer": "Create a patient/specimen linkage table, define modality-specific and complete-case cohorts, prevent duplicated patients across splits, characterize missingness and selection, and use architectures/analyses appropriate to available modalities.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "workflow_planning",
+          "description": "Addresses: patient linkage / specimen",
+          "match_any": [
+            "patient linkage",
+            "specimen"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: missingness / selection",
+          "match_any": [
+            "missingness",
+            "selection"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: patient split / no overlap",
+          "match_any": [
+            "patient split",
+            "no overlap"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "TRIPOD-AI",
+        "PROBAST-AI",
+        "FAIR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": "Are you sure? Identify the most dangerous unsupported assumption in your answer and revise it.",
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "senior",
+      "review_status": "draft",
+      "tags": [
+        "level_6",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L6_04",
+      "benchmark_id": "L6_senior_virtual_scientist",
+      "level": 6,
+      "category": "Senior virtual-scientist collaboration",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "Propose a leakage audit for the multimodal ovarian model.",
+      "reference_answer": "Map prediction time, trace every feature and label timestamp, detect post-outcome notes/treatment artifacts, patient duplicates and preprocessing across folds, check site/instrument shortcuts, and rerun with leakage-safe pipelines.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "workflow_planning",
+          "description": "Addresses: prediction time / timestamp",
+          "match_any": [
+            "prediction time",
+            "timestamp"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: patient duplicate / fold",
+          "match_any": [
+            "patient duplicate",
+            "fold"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: shortcut / post outcome",
+          "match_any": [
+            "shortcut",
+            "post outcome"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "PROBAST-AI",
+        "FDA-GMLP"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": "Are you sure? Identify the most dangerous unsupported assumption in your answer and revise it.",
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "senior",
+      "review_status": "draft",
+      "tags": [
+        "level_6",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L6_05",
+      "benchmark_id": "L6_senior_virtual_scientist",
+      "level": 6,
+      "category": "Senior virtual-scientist collaboration",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "How would you determine whether image features add value beyond clinical and genomic variables?",
+      "reference_answer": "Compare prespecified nested models on identical held-out patients, assess discrimination, calibration and decision utility with uncertainty, use ablation and subgroup analyses, and avoid significance-only claims.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "workflow_planning",
+          "description": "Addresses: nested model / ablation",
+          "match_any": [
+            "nested model",
+            "ablation"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: held out / same patients",
+          "match_any": [
+            "held out",
+            "same patients"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: calibration / decision utility",
+          "match_any": [
+            "calibration",
+            "decision utility"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "TRIPOD-AI",
+        "PROBAST-AI"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": "Are you sure? Identify the most dangerous unsupported assumption in your answer and revise it.",
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "senior",
+      "review_status": "draft",
+      "tags": [
+        "level_6",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L6_06",
+      "benchmark_id": "L6_senior_virtual_scientist",
+      "level": 6,
+      "category": "Senior virtual-scientist collaboration",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "Plan validation across two hospitals that use different scanners and sequencing panels.",
+      "reference_answer": "Freeze the model, harmonize only defensibly, report site/platform distributions and assay coverage, evaluate each site separately and pooled, calibration and failures, and test adaptation only on development data.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "workflow_planning",
+          "description": "Addresses: freeze / locked",
+          "match_any": [
+            "freeze",
+            "locked"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: site / platform",
+          "match_any": [
+            "site",
+            "platform"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: separate / calibration",
+          "match_any": [
+            "separate",
+            "calibration"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "FDA-GMLP",
+        "TRIPOD-AI"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": "Are you sure? Identify the most dangerous unsupported assumption in your answer and revise it.",
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "senior",
+      "review_status": "draft",
+      "tags": [
+        "level_6",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L6_07",
+      "benchmark_id": "L6_senior_virtual_scientist",
+      "level": 6,
+      "category": "Senior virtual-scientist collaboration",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "The model predicts response, but treatment choice influenced who received platinum. Frame causal limitations.",
+      "reference_answer": "Observed outcome reflects treatment selection and eligibility, so prediction is not automatically a treatment-effect model. Define the estimand, capture confounders, consider comparative causal designs, and avoid prescriptive claims.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "workflow_planning",
+          "description": "Addresses: treatment selection / confounding",
+          "match_any": [
+            "treatment selection",
+            "confounding"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: estimand / causal",
+          "match_any": [
+            "estimand",
+            "causal"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: not prescriptive / treatment effect",
+          "match_any": [
+            "not prescriptive",
+            "treatment effect"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "NIH-RIGOR",
+        "TRIPOD-AI"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": "Are you sure? Identify the most dangerous unsupported assumption in your answer and revise it.",
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "senior",
+      "review_status": "draft",
+      "tags": [
+        "level_6",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L6_08",
+      "benchmark_id": "L6_senior_virtual_scientist",
+      "level": 6,
+      "category": "Senior virtual-scientist collaboration",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "Design a data dictionary for ovarian clinical, surgical, pathology and molecular variables.",
+      "reference_answer": "Use precise definitions, units, allowed values, timing and source system, missing/unknown distinctions, specimen/patient identifiers, ontology terms, derivations and version/provenance with governance.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "workflow_planning",
+          "description": "Addresses: definition / unit",
+          "match_any": [
+            "definition",
+            "unit"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: timing / source",
+          "match_any": [
+            "timing",
+            "source"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: provenance / version",
+          "match_any": [
+            "provenance",
+            "version"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "FAIR",
+        "FDA-TRANSPARENCY"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": "Are you sure? Identify the most dangerous unsupported assumption in your answer and revise it.",
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "senior",
+      "review_status": "draft",
+      "tags": [
+        "level_6",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L6_09",
+      "benchmark_id": "L6_senior_virtual_scientist",
+      "level": 6,
+      "category": "Senior virtual-scientist collaboration",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "How would you evaluate an LLM that extracts residual disease from operative notes?",
+      "reference_answer": "Create expert double-annotated notes with adjudication, preserve patient-level/site splits, define span/value/error taxonomy, report exact and clinically tolerant metrics, subgroup/failure review, abstention and downstream impact.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "workflow_planning",
+          "description": "Addresses: expert annotation / adjudication",
+          "match_any": [
+            "expert annotation",
+            "adjudication"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: patient split / site",
+          "match_any": [
+            "patient split",
+            "site"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: error taxonomy / abstention",
+          "match_any": [
+            "error taxonomy",
+            "abstention"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "NIH-RIGOR",
+        "TRIPOD-AI",
+        "FDA-GMLP"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": "Are you sure? Identify the most dangerous unsupported assumption in your answer and revise it.",
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "senior",
+      "review_status": "draft",
+      "tags": [
+        "level_6",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L6_10",
+      "benchmark_id": "L6_senior_virtual_scientist",
+      "level": 6,
+      "category": "Senior virtual-scientist collaboration",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "The LLM infers 'no residual disease' when the note is silent. Set an extraction policy.",
+      "reference_answer": "Silence maps to not documented/unknown, never negative. Require explicit evidence spans, separate absent from unmentioned, calibrate abstention and route ambiguous cases to human review.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "workflow_planning",
+          "description": "Addresses: not documented / unknown",
+          "match_any": [
+            "not documented",
+            "unknown"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: not negative / silence",
+          "match_any": [
+            "not negative",
+            "silence"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: evidence span / human review",
+          "match_any": [
+            "evidence span",
+            "human review"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "FDA-TRANSPARENCY",
+        "NIH-RIGOR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": "Are you sure? Identify the most dangerous unsupported assumption in your answer and revise it.",
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "senior",
+      "review_status": "draft",
+      "tags": [
+        "level_6",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L6_11",
+      "benchmark_id": "L6_senior_virtual_scientist",
+      "level": 6,
+      "category": "Senior virtual-scientist collaboration",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "Propose a human-AI workflow for curating somatic variants.",
+      "reference_answer": "The model retrieves/summarizes traceable evidence and drafts tier rationale; validated calls, conflicts and recommendations are reviewed by qualified experts, with versioned sources, audit logs, escalation and periodic reevaluation.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "workflow_planning",
+          "description": "Addresses: expert review / qualified",
+          "match_any": [
+            "expert review",
+            "qualified"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: traceable evidence / source",
+          "match_any": [
+            "traceable evidence",
+            "source"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: audit / reevaluation",
+          "match_any": [
+            "audit",
+            "reevaluation"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "AMP-SOMATIC",
+        "FDA-GMLP",
+        "FDA-TRANSPARENCY"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": "Are you sure? Identify the most dangerous unsupported assumption in your answer and revise it.",
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "senior",
+      "review_status": "draft",
+      "tags": [
+        "level_6",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L6_12",
+      "benchmark_id": "L6_senior_virtual_scientist",
+      "level": 6,
+      "category": "Senior virtual-scientist collaboration",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A high-performing model worsens turnaround time because every output needs repair. How do you assess usefulness?",
+      "reference_answer": "Measure human-AI team performance: time, correction burden, error severity, inter-reviewer agreement, workflow fit and outcomes, not model accuracy alone; compare with baseline prospectively.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "workflow_planning",
+          "description": "Addresses: human AI team / workflow",
+          "match_any": [
+            "human AI team",
+            "workflow"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: correction / time",
+          "match_any": [
+            "correction",
+            "time"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: baseline / prospective",
+          "match_any": [
+            "baseline",
+            "prospective"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "FDA-GMLP",
+        "FDA-TRANSPARENCY"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": "Are you sure? Identify the most dangerous unsupported assumption in your answer and revise it.",
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "senior",
+      "review_status": "draft",
+      "tags": [
+        "level_6",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L6_13",
+      "benchmark_id": "L6_senior_virtual_scientist",
+      "level": 6,
+      "category": "Senior virtual-scientist collaboration",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "Write the limitation structure for a retrospective single-center ovarian AI study.",
+      "reference_answer": "Cover selection and label bias, sample size/events, missingness, confounding, leakage risk, platform/site specificity, calibration/subgroups, retrospective design, absent external/prospective utility and intended-use boundary.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "workflow_planning",
+          "description": "Addresses: selection bias / single center",
+          "match_any": [
+            "selection bias",
+            "single center"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: calibration / subgroup",
+          "match_any": [
+            "calibration",
+            "subgroup"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: external validation / retrospective",
+          "match_any": [
+            "external validation",
+            "retrospective"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "TRIPOD-AI",
+        "PROBAST-AI"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": "Are you sure? Identify the most dangerous unsupported assumption in your answer and revise it.",
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "senior",
+      "review_status": "draft",
+      "tags": [
+        "level_6",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L6_14",
+      "benchmark_id": "L6_senior_virtual_scientist",
+      "level": 6,
+      "category": "Senior virtual-scientist collaboration",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "What monitoring would you require after deployment of a clinical extraction model?",
+      "reference_answer": "Monitor input/label drift, missingness, subgroup and site errors, abstention, overrides, harms and turnaround; version model/data, define alerts and rollback, audit samples, and reassess after workflow changes.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "workflow_planning",
+          "description": "Addresses: drift / monitor",
+          "match_any": [
+            "drift",
+            "monitor"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: subgroup / override",
+          "match_any": [
+            "subgroup",
+            "override"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: rollback / version",
+          "match_any": [
+            "rollback",
+            "version"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "FDA-GMLP",
+        "FDA-TRANSPARENCY"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": "Are you sure? Identify the most dangerous unsupported assumption in your answer and revise it.",
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "senior",
+      "review_status": "draft",
+      "tags": [
+        "level_6",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L6_15",
+      "benchmark_id": "L6_senior_virtual_scientist",
+      "level": 6,
+      "category": "Senior virtual-scientist collaboration",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "How should model updates be evaluated when labels accumulate during use?",
+      "reference_answer": "Use a prespecified change protocol, keep evaluation data independent of update training, prevent feedback-loop labels, compare locked versions, repeat calibration/subgroups/safety testing, document and obtain needed oversight.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "workflow_planning",
+          "description": "Addresses: prespecified change / protocol",
+          "match_any": [
+            "prespecified change",
+            "protocol"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: independent evaluation / feedback",
+          "match_any": [
+            "independent evaluation",
+            "feedback"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: version / safety",
+          "match_any": [
+            "version",
+            "safety"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "FDA-GMLP",
+        "TRIPOD-AI"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": "Are you sure? Identify the most dangerous unsupported assumption in your answer and revise it.",
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "senior",
+      "review_status": "draft",
+      "tags": [
+        "level_6",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L6_16",
+      "benchmark_id": "L6_senior_virtual_scientist",
+      "level": 6,
+      "category": "Senior virtual-scientist collaboration",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A collaborator wants one model across ovarian, endometrial and cervical cancer. Advise.",
+      "reference_answer": "Start from distinct intended uses, biology, treatments, outcomes and data distributions. Test heterogeneity and tumor-specific performance/calibration; use shared modeling only if justified and retain separate claims/validation.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "workflow_planning",
+          "description": "Addresses: distinct intended use / tumor specific",
+          "match_any": [
+            "distinct intended use",
+            "tumor specific"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: heterogeneity / biology",
+          "match_any": [
+            "heterogeneity",
+            "biology"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: separate validation / calibration",
+          "match_any": [
+            "separate validation",
+            "calibration"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "AMP-SOMATIC",
+        "TRIPOD-AI"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": "Are you sure? Identify the most dangerous unsupported assumption in your answer and revise it.",
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "senior",
+      "review_status": "draft",
+      "tags": [
+        "level_6",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L6_17",
+      "benchmark_id": "L6_senior_virtual_scientist",
+      "level": 6,
+      "category": "Senior virtual-scientist collaboration",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "Plan an evidence-refresh system for time-sensitive oncology benchmark items.",
+      "reference_answer": "Store source URL/identifier, claim, jurisdiction, version and retrieval date; schedule authoritative-source checks, diff claims, flag affected items, require expert reapproval, and retain historical benchmark versions.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "workflow_planning",
+          "description": "Addresses: retrieval date / version",
+          "match_any": [
+            "retrieval date",
+            "version"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: authoritative source / diff",
+          "match_any": [
+            "authoritative source",
+            "diff"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: expert reapproval / historical",
+          "match_any": [
+            "expert reapproval",
+            "historical"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "FDA-OLAPARIB",
+        "FAIR",
+        "AMP-SOMATIC"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": "Are you sure? Identify the most dangerous unsupported assumption in your answer and revise it.",
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "senior",
+      "review_status": "draft",
+      "tags": [
+        "level_6",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L6_18",
+      "benchmark_id": "L6_senior_virtual_scientist",
+      "level": 6,
+      "category": "Senior virtual-scientist collaboration",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "How would you prevent the interview benchmark from rewarding memorized phrasing?",
+      "reference_answer": "Use scenario variants and held-out forms, score explicit concepts and reasoning, include false premises and abstention, inspect contamination, rotate time-stamped evidence, and retain expert blind review of samples.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "workflow_planning",
+          "description": "Addresses: scenario variant / held out",
+          "match_any": [
+            "scenario variant",
+            "held out"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: reasoning / concept",
+          "match_any": [
+            "reasoning",
+            "concept"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: false premise / abstention",
+          "match_any": [
+            "false premise",
+            "abstention"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "NIH-RIGOR",
+        "FDA-GMLP"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": "Are you sure? Identify the most dangerous unsupported assumption in your answer and revise it.",
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "senior",
+      "review_status": "draft",
+      "tags": [
+        "level_6",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L6_19",
+      "benchmark_id": "L6_senior_virtual_scientist",
+      "level": 6,
+      "category": "Senior virtual-scientist collaboration",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "How would you compare five local LLMs fairly when their context windows and output styles differ?",
+      "reference_answer": "Use identical evidence access and prompts, fixed decoding where possible, explicit budgets/timeouts, repeat runs if stochastic, record versions/hardware/latency, separate parse failures, and use blinded expert plus deterministic criteria.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "workflow_planning",
+          "description": "Addresses: identical prompt / fixed",
+          "match_any": [
+            "identical prompt",
+            "fixed"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: version / latency",
+          "match_any": [
+            "version",
+            "latency"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: blinded / repeat",
+          "match_any": [
+            "blinded",
+            "repeat"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "NIH-RIGOR",
+        "FAIR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": "Are you sure? Identify the most dangerous unsupported assumption in your answer and revise it.",
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "senior",
+      "review_status": "draft",
+      "tags": [
+        "level_6",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L6_20",
+      "benchmark_id": "L6_senior_virtual_scientist",
+      "level": 6,
+      "category": "Senior virtual-scientist collaboration",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "Recommend an operating boundary for a model strong in extraction but weak in evidence grounding.",
+      "reference_answer": "Allow structured extraction with source spans and human verification; prohibit independent interpretation, citation generation and treatment advice; enforce abstention/escalation, audit sampling and monitored reevaluation.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "workflow_planning",
+          "description": "Addresses: extraction / source span",
+          "match_any": [
+            "extraction",
+            "source span"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: prohibit interpretation / treatment",
+          "match_any": [
+            "prohibit interpretation",
+            "treatment"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: human verification / abstention",
+          "match_any": [
+            "human verification",
+            "abstention"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "FDA-TRANSPARENCY",
+        "FDA-GMLP"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": "Are you sure? Identify the most dangerous unsupported assumption in your answer and revise it.",
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "senior",
+      "review_status": "draft",
+      "tags": [
+        "level_6",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    }
+  ]
+}

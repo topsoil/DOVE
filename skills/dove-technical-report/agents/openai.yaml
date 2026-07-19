@@ -1,0 +1,4 @@
+interface:
+  display_name: "DOVE Technical Report"
+  short_description: "Build evidence-grounded DOVE evaluation reports"
+  default_prompt: "Use $dove-technical-report to create a complete DOVE benchmark technical report from run artifacts."

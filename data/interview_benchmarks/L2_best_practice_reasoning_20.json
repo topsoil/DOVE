@@ -1,0 +1,1316 @@
+{
+  "benchmark": "L2_best_practice_reasoning",
+  "items": [
+    {
+      "id": "VI_L2_01",
+      "benchmark_id": "L2_best_practice_reasoning",
+      "level": 2,
+      "category": "Best-practice workflow reasoning",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "Design the first-pass QC sequence for a new paired-end RNA-seq cohort before differential expression.",
+      "reference_answer": "Verify sample sheet and checksums, inspect raw-read QC and contamination, assess alignment/quantification metrics, sample identity and outliers, then model design and count distributions before inference.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "best_practice_awareness",
+          "description": "Addresses: metadata / sample sheet",
+          "match_any": [
+            "metadata",
+            "sample sheet"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: raw read QC / FastQC",
+          "match_any": [
+            "raw read QC",
+            "FastQC"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: sample identity / outlier",
+          "match_any": [
+            "sample identity",
+            "outlier"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "FASTQC",
+        "DESEQ2",
+        "NIH-RIGOR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "intermediate",
+      "review_status": "draft",
+      "tags": [
+        "level_2",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L2_02",
+      "benchmark_id": "L2_best_practice_reasoning",
+      "level": 2,
+      "category": "Best-practice workflow reasoning",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "FastQC shows adapter content near read ends. Decide whether and how to trim without creating an automatic rule.",
+      "reference_answer": "Confirm library design and read-through, quantify impact, trim known adapters with recorded parameters if warranted, rerun QC, and assess downstream alignment; do not trim solely because of a generic flag.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "best_practice_awareness",
+          "description": "Addresses: library design / assay context",
+          "match_any": [
+            "library design",
+            "assay context"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: known adapter / trim adapter",
+          "match_any": [
+            "known adapter",
+            "trim adapter"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: rerun QC / post trim",
+          "match_any": [
+            "rerun QC",
+            "post trim"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "FASTQC"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "intermediate",
+      "review_status": "draft",
+      "tags": [
+        "level_2",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L2_03",
+      "benchmark_id": "L2_best_practice_reasoning",
+      "level": 2,
+      "category": "Best-practice workflow reasoning",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "You receive 40 tumor BAMs with no manifest. What must be reconstructed before variant analysis?",
+      "reference_answer": "Recover specimen/patient identity, tumor-normal pairing, consent/use constraints, reference and alignment pipeline versions, read groups, assay design, QC, and chain of custody; stop if identity cannot be established.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "best_practice_awareness",
+          "description": "Addresses: sample identity / patient identity",
+          "match_any": [
+            "sample identity",
+            "patient identity"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: reference / genome build",
+          "match_any": [
+            "reference",
+            "genome build"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: provenance / pipeline version",
+          "match_any": [
+            "provenance",
+            "pipeline version"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "HTS-SPECS",
+        "FAIR",
+        "AMP-SOMATIC"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "intermediate",
+      "review_status": "draft",
+      "tags": [
+        "level_2",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L2_04",
+      "benchmark_id": "L2_best_practice_reasoning",
+      "level": 2,
+      "category": "Best-practice workflow reasoning",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "Plan a germline cohort workflow that allows samples to arrive over six months without recalling every sample from raw reads.",
+      "reference_answer": "Process each sample to a gVCF under a locked workflow, version references and intervals, consolidate gVCFs, then joint genotype the cohort and preserve QC/provenance for incremental updates.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "best_practice_awareness",
+          "description": "Addresses: gVCF",
+          "match_any": [
+            "gVCF"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: joint genotype / joint calling",
+          "match_any": [
+            "joint genotype",
+            "joint calling"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: version / provenance",
+          "match_any": [
+            "version",
+            "provenance"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "GATK-BP",
+        "FAIR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "intermediate",
+      "review_status": "draft",
+      "tags": [
+        "level_2",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L2_05",
+      "benchmark_id": "L2_best_practice_reasoning",
+      "level": 2,
+      "category": "Best-practice workflow reasoning",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "An RNA-seq design has treatment perfectly confounded with sequencing batch. What analysis is defensible?",
+      "reference_answer": "The treatment effect is not identifiable separately from batch. Do not claim a treatment effect; redesign/collect bridging samples or report the confounding and limit conclusions.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "best_practice_awareness",
+          "description": "Addresses: confounded / not identifiable",
+          "match_any": [
+            "confounded",
+            "not identifiable"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: cannot separate / no treatment effect",
+          "match_any": [
+            "cannot separate",
+            "no treatment effect"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: redesign / new samples",
+          "match_any": [
+            "redesign",
+            "new samples"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "DESEQ2",
+        "NIH-RIGOR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "intermediate",
+      "review_status": "draft",
+      "tags": [
+        "level_2",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L2_06",
+      "benchmark_id": "L2_best_practice_reasoning",
+      "level": 2,
+      "category": "Best-practice workflow reasoning",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "How would you construct a DESeq2 design for paired pre/post samples measured across batches?",
+      "reference_answer": "Use patient as a blocking factor and include batch if estimable, then test the condition coefficient; verify the design matrix is full rank and inspect interactions if scientifically justified.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "best_practice_awareness",
+          "description": "Addresses: patient / subject",
+          "match_any": [
+            "patient",
+            "subject"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: blocking / paired",
+          "match_any": [
+            "blocking",
+            "paired"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: full rank / design matrix",
+          "match_any": [
+            "full rank",
+            "design matrix"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "DESEQ2"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "intermediate",
+      "review_status": "draft",
+      "tags": [
+        "level_2",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L2_07",
+      "benchmark_id": "L2_best_practice_reasoning",
+      "level": 2,
+      "category": "Best-practice workflow reasoning",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A collaborator wants to filter RNA-seq genes by fold change before statistical testing. Explain a safer sequence.",
+      "reference_answer": "Use independent low-count filtering consistent with the method, fit the prespecified model, control false discovery rate, and report shrunken effect sizes/uncertainty; avoid outcome-driven fold-change preselection.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "best_practice_awareness",
+          "description": "Addresses: low count / independent filtering",
+          "match_any": [
+            "low count",
+            "independent filtering"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: false discovery / FDR",
+          "match_any": [
+            "false discovery",
+            "FDR"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: effect size / fold change shrink",
+          "match_any": [
+            "effect size",
+            "fold change shrink"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "DESEQ2"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "intermediate",
+      "review_status": "draft",
+      "tags": [
+        "level_2",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L2_08",
+      "benchmark_id": "L2_best_practice_reasoning",
+      "level": 2,
+      "category": "Best-practice workflow reasoning",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "What artifacts and records make a bioinformatics analysis rerunnable one year later?",
+      "reference_answer": "Versioned code/workflow, environment/container, immutable inputs/checksums, references, parameters, metadata, seeds, logs, outputs, and provenance with licenses/access rules.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "best_practice_awareness",
+          "description": "Addresses: versioned code / workflow",
+          "match_any": [
+            "versioned code",
+            "workflow"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: container / environment",
+          "match_any": [
+            "container",
+            "environment"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: checksum / provenance",
+          "match_any": [
+            "checksum",
+            "provenance"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "FAIR",
+        "NIH-RIGOR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "intermediate",
+      "review_status": "draft",
+      "tags": [
+        "level_2",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L2_09",
+      "benchmark_id": "L2_best_practice_reasoning",
+      "level": 2,
+      "category": "Best-practice workflow reasoning",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "How should duplicate reads be handled in germline DNA, tumor DNA, and RNA-seq rather than by one universal rule?",
+      "reference_answer": "Interpret duplicates by assay and library design; mark/handle PCR or optical duplicates in DNA as appropriate, consider UMIs, and avoid assuming RNA duplicates are artifacts because expression creates genuine duplication.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "best_practice_awareness",
+          "description": "Addresses: assay specific / library design",
+          "match_any": [
+            "assay specific",
+            "library design"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: PCR duplicate / optical duplicate",
+          "match_any": [
+            "PCR duplicate",
+            "optical duplicate"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: RNA expression / genuine duplication",
+          "match_any": [
+            "RNA expression",
+            "genuine duplication"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "FASTQC",
+        "NIH-RIGOR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "intermediate",
+      "review_status": "draft",
+      "tags": [
+        "level_2",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L2_10",
+      "benchmark_id": "L2_best_practice_reasoning",
+      "level": 2,
+      "category": "Best-practice workflow reasoning",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "Plan contamination checks for a human sequencing cohort.",
+      "reference_answer": "Use sequence-level screens plus sample-relatedness/sex/genotype concordance where allowed, compare expected metadata, inspect mixture estimates, document thresholds, and investigate rather than silently dropping samples.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "best_practice_awareness",
+          "description": "Addresses: contamination screen / mixture",
+          "match_any": [
+            "contamination screen",
+            "mixture"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: genotype concordance / sample identity",
+          "match_any": [
+            "genotype concordance",
+            "sample identity"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: investigate / document threshold",
+          "match_any": [
+            "investigate",
+            "document threshold"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "FASTQC",
+        "NIH-RIGOR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "intermediate",
+      "review_status": "draft",
+      "tags": [
+        "level_2",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L2_11",
+      "benchmark_id": "L2_best_practice_reasoning",
+      "level": 2,
+      "category": "Best-practice workflow reasoning",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "How would you validate a VCF transformation that normalizes multiallelic records?",
+      "reference_answer": "Use a pinned specification/tool/reference, retain provenance, compare allele/genotype semantics before and after, test edge cases and round trips, validate headers, and quantify any intentional representation changes.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "best_practice_awareness",
+          "description": "Addresses: specification / VCF",
+          "match_any": [
+            "specification",
+            "VCF"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: genotype / allele",
+          "match_any": [
+            "genotype",
+            "allele"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: edge case / round trip",
+          "match_any": [
+            "edge case",
+            "round trip"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "HTS-SPECS",
+        "FAIR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "intermediate",
+      "review_status": "draft",
+      "tags": [
+        "level_2",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L2_12",
+      "benchmark_id": "L2_best_practice_reasoning",
+      "level": 2,
+      "category": "Best-practice workflow reasoning",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "Define an evidence workflow for classifying a rare germline missense variant.",
+      "reference_answer": "Confirm the call and transcript, establish gene-disease validity, collect population, segregation, functional and computational evidence, apply disease-specific ACMG/AMP criteria, resolve conflicts, and document dates/sources.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "best_practice_awareness",
+          "description": "Addresses: population evidence / allele frequency",
+          "match_any": [
+            "population evidence",
+            "allele frequency"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: segregation / functional",
+          "match_any": [
+            "segregation",
+            "functional"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: ACMG / criteria",
+          "match_any": [
+            "ACMG",
+            "criteria"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "ACMG-AMP",
+        "CLINGEN-GDV"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "intermediate",
+      "review_status": "draft",
+      "tags": [
+        "level_2",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L2_13",
+      "benchmark_id": "L2_best_practice_reasoning",
+      "level": 2,
+      "category": "Best-practice workflow reasoning",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A pharmacogenomic genotype is available. What should happen before a prescribing recommendation is generated?",
+      "reference_answer": "Translate genotype to phenotype using the relevant current guideline, confirm allele definition and test limitations, map to the specific drug/context, grade the recommendation, and require clinician review.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "best_practice_awareness",
+          "description": "Addresses: genotype to phenotype / phenotype",
+          "match_any": [
+            "genotype to phenotype",
+            "phenotype"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: drug guideline / CPIC",
+          "match_any": [
+            "drug guideline",
+            "CPIC"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: clinician review / clinical context",
+          "match_any": [
+            "clinician review",
+            "clinical context"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "CPIC"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "intermediate",
+      "review_status": "draft",
+      "tags": [
+        "level_2",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L2_14",
+      "benchmark_id": "L2_best_practice_reasoning",
+      "level": 2,
+      "category": "Best-practice workflow reasoning",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "How should a somatic variant report separate evidence from recommendation?",
+      "reference_answer": "Report validated variant and assay limitations, tier evidence by tumor type/indication, distinguish diagnostic/prognostic/predictive claims, cite current evidence, and avoid turning a biological hypothesis into therapy advice.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "best_practice_awareness",
+          "description": "Addresses: assay limitation",
+          "match_any": [
+            "assay limitation"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: tier / clinical significance",
+          "match_any": [
+            "tier",
+            "clinical significance"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: diagnostic prognostic predictive",
+          "match_any": [
+            "diagnostic prognostic predictive"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "AMP-SOMATIC"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "intermediate",
+      "review_status": "draft",
+      "tags": [
+        "level_2",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L2_15",
+      "benchmark_id": "L2_best_practice_reasoning",
+      "level": 2,
+      "category": "Best-practice workflow reasoning",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "Plan external validation for a clinical prediction model developed at one hospital.",
+      "reference_answer": "Freeze model and preprocessing, evaluate in a clinically relevant independent setting/time/population, preserve the intended-use cohort and outcome definition, report discrimination and calibration with uncertainty and subgroup performance.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "best_practice_awareness",
+          "description": "Addresses: freeze model / locked model",
+          "match_any": [
+            "freeze model",
+            "locked model"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: independent / external",
+          "match_any": [
+            "independent",
+            "external"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: calibration / discrimination",
+          "match_any": [
+            "calibration",
+            "discrimination"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "TRIPOD-AI",
+        "PROBAST-AI"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "intermediate",
+      "review_status": "draft",
+      "tags": [
+        "level_2",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L2_16",
+      "benchmark_id": "L2_best_practice_reasoning",
+      "level": 2,
+      "category": "Best-practice workflow reasoning",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "Why should train/test splitting occur at the patient rather than image, note, or specimen level?",
+      "reference_answer": "Patient-level splitting prevents correlated records from the same person leaking identity or outcome signals across sets and inflating performance.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "best_practice_awareness",
+          "description": "Addresses: patient level",
+          "match_any": [
+            "patient level"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: leakage",
+          "match_any": [
+            "leakage"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: inflated performance / optimistic",
+          "match_any": [
+            "inflated performance",
+            "optimistic"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "PROBAST-AI",
+        "FDA-GMLP"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "intermediate",
+      "review_status": "draft",
+      "tags": [
+        "level_2",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L2_17",
+      "benchmark_id": "L2_best_practice_reasoning",
+      "level": 2,
+      "category": "Best-practice workflow reasoning",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "Design subgroup performance reporting for a biomedical AI model without treating fairness as one number.",
+      "reference_answer": "Prespecify relevant groups, report sample sizes, uncertainty, discrimination/calibration and error consequences, examine intersectional and missing-data patterns, and avoid declaring equity from nonsignificant differences.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "best_practice_awareness",
+          "description": "Addresses: subgroup / group",
+          "match_any": [
+            "subgroup",
+            "group"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: sample size / uncertainty",
+          "match_any": [
+            "sample size",
+            "uncertainty"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: calibration / error",
+          "match_any": [
+            "calibration",
+            "error"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "PROBAST-AI",
+        "FDA-TRANSPARENCY"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "intermediate",
+      "review_status": "draft",
+      "tags": [
+        "level_2",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L2_18",
+      "benchmark_id": "L2_best_practice_reasoning",
+      "level": 2,
+      "category": "Best-practice workflow reasoning",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A biomarker threshold was chosen after inspecting the outcome data. How should evaluation proceed?",
+      "reference_answer": "Treat threshold selection as model fitting, perform it only in development data/cross-validation, lock it, then evaluate on untouched data and disclose the optimization to avoid optimistic bias.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "best_practice_awareness",
+          "description": "Addresses: threshold selection / model fitting",
+          "match_any": [
+            "threshold selection",
+            "model fitting"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: lock / prespecify",
+          "match_any": [
+            "lock",
+            "prespecify"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: untouched / independent test",
+          "match_any": [
+            "untouched",
+            "independent test"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "TRIPOD-AI",
+        "PROBAST-AI"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "intermediate",
+      "review_status": "draft",
+      "tags": [
+        "level_2",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L2_19",
+      "benchmark_id": "L2_best_practice_reasoning",
+      "level": 2,
+      "category": "Best-practice workflow reasoning",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "What should a model card or deployment note communicate to a clinical user?",
+      "reference_answer": "Intended use and users, inputs/outputs, population and exclusions, performance and uncertainty, limitations/bias, human oversight, failure handling, update/version status, and monitoring.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "best_practice_awareness",
+          "description": "Addresses: intended use",
+          "match_any": [
+            "intended use"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: limitations / bias",
+          "match_any": [
+            "limitations",
+            "bias"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: monitoring / human oversight",
+          "match_any": [
+            "monitoring",
+            "human oversight"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "FDA-TRANSPARENCY",
+        "FDA-GMLP"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "intermediate",
+      "review_status": "draft",
+      "tags": [
+        "level_2",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L2_20",
+      "benchmark_id": "L2_best_practice_reasoning",
+      "level": 2,
+      "category": "Best-practice workflow reasoning",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "How do you choose between a simple and complex model for a small biomedical dataset?",
+      "reference_answer": "Base the choice on sample size, events, signal, intended use, validation and calibration\u2014not novelty. Prefer the least complex model that meets prespecified performance and utility with robust validation.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "best_practice_awareness",
+          "description": "Addresses: sample size / events",
+          "match_any": [
+            "sample size",
+            "events"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: validation / calibration",
+          "match_any": [
+            "validation",
+            "calibration"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: simple / complexity",
+          "match_any": [
+            "simple",
+            "complexity"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "PROBAST-AI",
+        "TRIPOD-AI"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "intermediate",
+      "review_status": "draft",
+      "tags": [
+        "level_2",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    }
+  ]
+}

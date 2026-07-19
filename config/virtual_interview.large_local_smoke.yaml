@@ -1,0 +1,34 @@
+suite_name: DOVE Large Local Model Smoke Test
+source_catalog: data/interview_sources/authoritative_sources.json
+benchmarks:
+  - data/interview_benchmarks/L1_foundations_20.json
+questions_per_benchmark: 1
+run_followups: false
+allow_unreviewed: true
+max_consecutive_errors: 1
+max_model_errors: 1
+output_dir: data/results/virtual_interview_large_models_smoke_nothink
+run_filename: large_models_smoke_nothink_run.json
+report_filename: large_models_smoke_nothink_report.html
+models:
+  - name: ollama:gpt-oss-20b
+    provider: ollama
+    model: gpt-oss:20b
+    base_url: http://localhost:11434
+    temperature: 0.0
+    context_window: 8192
+    thinking: low
+    timeout: 900
+    max_output_tokens: 700
+  - name: ollama:nemotron3-33b
+    provider: ollama
+    model: nemotron3:33b
+    base_url: http://localhost:11434
+    temperature: 0.0
+    context_window: 8192
+    thinking: false
+    timeout: 900
+    max_output_tokens: 700
+
+
+

@@ -53,7 +53,7 @@ class ModelConfig(BaseModel):
     timeout: int = 120
     context_window: int | None = None
     max_output_tokens: int | None = None
-    thinking: bool | None = None
+    thinking: bool | Literal["low", "medium", "high"] | None = None
     structured_outputs: bool = False
 
 
@@ -76,4 +76,3 @@ class BenchmarkRun(BaseModel):
     models: list[dict]
     questions: list[dict]
     results: list[ItemResult]
-

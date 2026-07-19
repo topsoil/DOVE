@@ -1,0 +1,1317 @@
+{
+  "benchmark": "L4_evidence_interpretation",
+  "items": [
+    {
+      "id": "VI_L4_01",
+      "benchmark_id": "L4_evidence_interpretation",
+      "level": 4,
+      "category": "Biomedical evidence interpretation",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A study associates a gene with ovarian-cancer survival in 48 patients. What evidence is needed before calling it prognostic?",
+      "reference_answer": "Require a prespecified endpoint and model, effect size and uncertainty, control of confounding and multiplicity, independent validation, assay validity, and comparison with established factors.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: independent validation",
+          "match_any": [
+            "independent validation"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: confounder / multiplicity",
+          "match_any": [
+            "confounder",
+            "multiplicity"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: effect size / uncertainty",
+          "match_any": [
+            "effect size",
+            "uncertainty"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "TRIPOD-AI",
+        "NIH-RIGOR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "advanced",
+      "review_status": "draft",
+      "tags": [
+        "level_4",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L4_02",
+      "benchmark_id": "L4_evidence_interpretation",
+      "level": 4,
+      "category": "Biomedical evidence interpretation",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A tumor is reported 'BRCA positive.' Resolve the ambiguities before interpreting therapy relevance.",
+      "reference_answer": "Resolve the gene, exact variant and classification, germline versus somatic origin, biallelic status, assay/specimen, tumor type, current indication, HRD context, and regulatory evidence.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: germline or somatic",
+          "match_any": [
+            "germline or somatic"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: exact variant / classification",
+          "match_any": [
+            "exact variant",
+            "classification"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: indication / tumor type",
+          "match_any": [
+            "indication",
+            "tumor type"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "NCI-BRCA",
+        "NCI-OVARIAN",
+        "FDA-OLAPARIB"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "advanced",
+      "review_status": "draft",
+      "tags": [
+        "level_4",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L4_03",
+      "benchmark_id": "L4_evidence_interpretation",
+      "level": 4,
+      "category": "Biomedical evidence interpretation",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "Explain why homologous-recombination deficiency is related to, but not identical with, a BRCA1/2 pathogenic variant.",
+      "reference_answer": "HRD is a functional genomic state with multiple causes; BRCA loss is one cause. A variant may not cause biallelic loss, and HRD can arise through other mechanisms.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: multiple causes / other genes",
+          "match_any": [
+            "multiple causes",
+            "other genes"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: functional state / repair deficiency",
+          "match_any": [
+            "functional state",
+            "repair deficiency"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: not identical / biallelic",
+          "match_any": [
+            "not identical",
+            "biallelic"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "NCI-OVARIAN",
+        "NCI-BRCA"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "advanced",
+      "review_status": "draft",
+      "tags": [
+        "level_4",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L4_04",
+      "benchmark_id": "L4_evidence_interpretation",
+      "level": 4,
+      "category": "Biomedical evidence interpretation",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "An observational study finds PARP inhibitor users live longer. Why does this not establish a drug effect?",
+      "reference_answer": "Treatment selection, eligibility, disease state, prior response and time-related biases can confound the association. Comparative or randomized evidence with appropriate endpoints is needed.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: confounding / selection",
+          "match_any": [
+            "confounding",
+            "selection"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: randomized / comparative",
+          "match_any": [
+            "randomized",
+            "comparative"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: cannot establish / causal",
+          "match_any": [
+            "cannot establish",
+            "causal"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "NCI-OVARIAN",
+        "NIH-RIGOR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "advanced",
+      "review_status": "draft",
+      "tags": [
+        "level_4",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L4_05",
+      "benchmark_id": "L4_evidence_interpretation",
+      "level": 4,
+      "category": "Biomedical evidence interpretation",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A variant is absent from a population database. How much pathogenic evidence is that?",
+      "reference_answer": "Absence supports rarity only when coverage, ancestry, prevalence, penetrance and inheritance are compatible. It is not sufficient alone for pathogenic classification.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: rarity / population",
+          "match_any": [
+            "rarity",
+            "population"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: coverage / ancestry",
+          "match_any": [
+            "coverage",
+            "ancestry"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: not sufficient / alone",
+          "match_any": [
+            "not sufficient",
+            "alone"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "ACMG-AMP"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "advanced",
+      "review_status": "draft",
+      "tags": [
+        "level_4",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L4_06",
+      "benchmark_id": "L4_evidence_interpretation",
+      "level": 4,
+      "category": "Biomedical evidence interpretation",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A functional assay shows reduced protein activity. What determines its variant-classification weight?",
+      "reference_answer": "Assess relevance to disease mechanism, validation and controls, reproducibility, calibration with known variants, and specificity to the variant; an assay is not automatically strong evidence.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: assay validation / controls",
+          "match_any": [
+            "assay validation",
+            "controls"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: disease mechanism / relevance",
+          "match_any": [
+            "disease mechanism",
+            "relevance"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: reproducibility / known variants",
+          "match_any": [
+            "reproducibility",
+            "known variants"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "ACMG-AMP",
+        "NIH-RIGOR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "advanced",
+      "review_status": "draft",
+      "tags": [
+        "level_4",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L4_07",
+      "benchmark_id": "L4_evidence_interpretation",
+      "level": 4,
+      "category": "Biomedical evidence interpretation",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A database says pathogenic but ClinGen gene-disease validity is limited. Reconcile the evidence types.",
+      "reference_answer": "Variant assertion and gene-disease validity are different questions. Review evidence, date, expertise and conflicts, establish the relationship, then apply variant criteria rather than importing a label as truth.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: different questions / separate",
+          "match_any": [
+            "different questions",
+            "separate"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: review evidence / conflict",
+          "match_any": [
+            "review evidence",
+            "conflict"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: not truth / do not import",
+          "match_any": [
+            "not truth",
+            "do not import"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "CLINGEN-GDV",
+        "ACMG-AMP"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "advanced",
+      "review_status": "draft",
+      "tags": [
+        "level_4",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L4_08",
+      "benchmark_id": "L4_evidence_interpretation",
+      "level": 4,
+      "category": "Biomedical evidence interpretation",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "What makes a biomarker predictive rather than merely prognostic?",
+      "reference_answer": "A prognostic marker relates to outcome regardless of treatment; predictive evidence shows differential treatment benefit, ideally through a biomarker-by-treatment interaction in a comparative design.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: regardless of treatment / prognostic",
+          "match_any": [
+            "regardless of treatment",
+            "prognostic"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: treatment benefit / predictive",
+          "match_any": [
+            "treatment benefit",
+            "predictive"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: interaction / comparative",
+          "match_any": [
+            "interaction",
+            "comparative"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "TRIPOD-AI",
+        "NIH-RIGOR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "advanced",
+      "review_status": "draft",
+      "tags": [
+        "level_4",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L4_09",
+      "benchmark_id": "L4_evidence_interpretation",
+      "level": 4,
+      "category": "Biomedical evidence interpretation",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A hazard ratio is 0.70 with 95% CI 0.45\u20131.10. Give a defensible interpretation.",
+      "reference_answer": "The estimate suggests lower hazard but is imprecise and compatible with benefit, little effect, or some harm. Do not declare significance or no effect; consider model assumptions.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: imprecise / confidence interval",
+          "match_any": [
+            "imprecise",
+            "confidence interval"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: compatible / uncertain",
+          "match_any": [
+            "compatible",
+            "uncertain"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: not significant / do not declare",
+          "match_any": [
+            "not significant",
+            "do not declare"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "NIH-RIGOR",
+        "NCI-OVARIAN"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "advanced",
+      "review_status": "draft",
+      "tags": [
+        "level_4",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L4_10",
+      "benchmark_id": "L4_evidence_interpretation",
+      "level": 4,
+      "category": "Biomedical evidence interpretation",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A trial improves progression-free survival but not overall survival. Discuss clinical value.",
+      "reference_answer": "Report both endpoints, follow-up and uncertainty, subsequent therapies, toxicity and quality of life. PFS benefit does not automatically imply overall-survival or net clinical benefit.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: progression free / PFS",
+          "match_any": [
+            "progression free",
+            "PFS"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: overall survival / OS",
+          "match_any": [
+            "overall survival",
+            "OS"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: toxicity / quality of life",
+          "match_any": [
+            "toxicity",
+            "quality of life"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "NCI-OVARIAN",
+        "NIH-RIGOR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "advanced",
+      "review_status": "draft",
+      "tags": [
+        "level_4",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L4_11",
+      "benchmark_id": "L4_evidence_interpretation",
+      "level": 4,
+      "category": "Biomedical evidence interpretation",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A diagnostic model has excellent AUROC but poor calibration. Can it guide treatment thresholds?",
+      "reference_answer": "Not safely without recalibration and validation. AUROC ranks risk, while threshold decisions require accurate probabilities, relevant prevalence and consequences.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: recalibration / poor calibration",
+          "match_any": [
+            "recalibration",
+            "poor calibration"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: probability / threshold",
+          "match_any": [
+            "probability",
+            "threshold"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: local validation / prospective",
+          "match_any": [
+            "local validation",
+            "prospective"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "TRIPOD-AI",
+        "PROBAST-AI"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "advanced",
+      "review_status": "draft",
+      "tags": [
+        "level_4",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L4_12",
+      "benchmark_id": "L4_evidence_interpretation",
+      "level": 4,
+      "category": "Biomedical evidence interpretation",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A subgroup benefit has p=0.04 but the overall trial is negative. What checks come first?",
+      "reference_answer": "Check whether subgroup and interaction were prespecified, multiplicity, sample size/events, related evidence and plausibility. A within-subgroup p value alone is not differential-effect evidence.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: prespecified",
+          "match_any": [
+            "prespecified"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: interaction",
+          "match_any": [
+            "interaction"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: multiplicity / sample size",
+          "match_any": [
+            "multiplicity",
+            "sample size"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "NIH-RIGOR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "advanced",
+      "review_status": "draft",
+      "tags": [
+        "level_4",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L4_13",
+      "benchmark_id": "L4_evidence_interpretation",
+      "level": 4,
+      "category": "Biomedical evidence interpretation",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "What evidence hierarchy would you use for a tumor-therapy claim?",
+      "reference_answer": "Prioritize current regulatory label/indication, high-quality randomized or prospective evidence and professional guidance, then observational and functional evidence; match tumor, biomarker and line of therapy.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: regulatory label / FDA",
+          "match_any": [
+            "regulatory label",
+            "FDA"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: randomized / prospective",
+          "match_any": [
+            "randomized",
+            "prospective"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: tumor type / line of therapy",
+          "match_any": [
+            "tumor type",
+            "line of therapy"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "FDA-OLAPARIB",
+        "AMP-SOMATIC",
+        "NCI-OVARIAN"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "advanced",
+      "review_status": "draft",
+      "tags": [
+        "level_4",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L4_14",
+      "benchmark_id": "L4_evidence_interpretation",
+      "level": 4,
+      "category": "Biomedical evidence interpretation",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A pathogenic germline variant is in a definitive disease gene with low penetrance. Explain counseling implications.",
+      "reference_answer": "Pathogenicity does not give an individual certainty of disease. Communicate penetrance, age/sex/family context, management evidence, uncertainty and familial implications with genetics professionals.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: penetrance",
+          "match_any": [
+            "penetrance"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: not certainty / risk",
+          "match_any": [
+            "not certainty",
+            "risk"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: genetic counseling / family",
+          "match_any": [
+            "genetic counseling",
+            "family"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "ACMG-AMP",
+        "CLINGEN-GDV"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "advanced",
+      "review_status": "draft",
+      "tags": [
+        "level_4",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L4_15",
+      "benchmark_id": "L4_evidence_interpretation",
+      "level": 4,
+      "category": "Biomedical evidence interpretation",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A pharmacogenomic association is replicated, but CPIC has no recommendation. What should the report do?",
+      "reference_answer": "Describe the association and limitations without inventing dosing. Verify current guidance and labeling and route decisions to clinical pharmacology; lack of recommendation is meaningful uncertainty.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: no dosing / do not invent",
+          "match_any": [
+            "no dosing",
+            "do not invent"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: verify guideline / label",
+          "match_any": [
+            "verify guideline",
+            "label"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: uncertainty / association",
+          "match_any": [
+            "uncertainty",
+            "association"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "CPIC"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "advanced",
+      "review_status": "draft",
+      "tags": [
+        "level_4",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L4_16",
+      "benchmark_id": "L4_evidence_interpretation",
+      "level": 4,
+      "category": "Biomedical evidence interpretation",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A tumor variant has only in-vitro drug-sensitivity evidence. How should it be tiered?",
+      "reference_answer": "Functional evidence supports plausibility but usually not patient benefit. Apply the somatic framework by tumor/indication and label it preclinical unless stronger clinical evidence exists.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: preclinical / in vitro",
+          "match_any": [
+            "preclinical",
+            "in vitro"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: not patient benefit / not clinical",
+          "match_any": [
+            "not patient benefit",
+            "not clinical"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: tier / tumor type",
+          "match_any": [
+            "tier",
+            "tumor type"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "AMP-SOMATIC"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "advanced",
+      "review_status": "draft",
+      "tags": [
+        "level_4",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L4_17",
+      "benchmark_id": "L4_evidence_interpretation",
+      "level": 4,
+      "category": "Biomedical evidence interpretation",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "Why can a treatment label change the answer to a benchmark over time?",
+      "reference_answer": "Indications and safety evolve. Time-stamp sources, use the current label for current decisions, preserve historical versions, and retire or revise stale items.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: indication change / evolve",
+          "match_any": [
+            "indication change",
+            "evolve"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: time stamp / version",
+          "match_any": [
+            "time stamp",
+            "version"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: current label / revise",
+          "match_any": [
+            "current label",
+            "revise"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "FDA-OLAPARIB",
+        "FAIR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "advanced",
+      "review_status": "draft",
+      "tags": [
+        "level_4",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L4_18",
+      "benchmark_id": "L4_evidence_interpretation",
+      "level": 4,
+      "category": "Biomedical evidence interpretation",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A polygenic score works in one ancestry and poorly in another. What claim is justified?",
+      "reference_answer": "Claim performance only in validated populations; examine allele frequency, LD, phenotype, environment and calibration. Do not extrapolate utility without evaluation.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: ancestry / population",
+          "match_any": [
+            "ancestry",
+            "population"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: calibration / performance",
+          "match_any": [
+            "calibration",
+            "performance"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: do not extrapolate / validated",
+          "match_any": [
+            "do not extrapolate",
+            "validated"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "TRIPOD-AI",
+        "PROBAST-AI"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "advanced",
+      "review_status": "draft",
+      "tags": [
+        "level_4",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L4_19",
+      "benchmark_id": "L4_evidence_interpretation",
+      "level": 4,
+      "category": "Biomedical evidence interpretation",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A gene-expression signature predicts response in training data. What separates discovery from a deployable assay?",
+      "reference_answer": "Lock genes, preprocessing and threshold; establish analytical validity, independent clinical validity and utility; assess platform transportability and define intended use and failures.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: lock / preprocessing",
+          "match_any": [
+            "lock",
+            "preprocessing"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: analytical validity / clinical validity",
+          "match_any": [
+            "analytical validity",
+            "clinical validity"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: independent / transportability",
+          "match_any": [
+            "independent",
+            "transportability"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "TRIPOD-AI",
+        "FDA-GMLP"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "advanced",
+      "review_status": "draft",
+      "tags": [
+        "level_4",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L4_20",
+      "benchmark_id": "L4_evidence_interpretation",
+      "level": 4,
+      "category": "Biomedical evidence interpretation",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A paper concludes equivalence because p>0.05. Correct the reasoning.",
+      "reference_answer": "Failure to reject a difference is not proof of equivalence. Equivalence needs prespecified margins, adequate design and precision, and confidence intervals within those margins.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: not proof / failure to reject",
+          "match_any": [
+            "not proof",
+            "failure to reject"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "evidence_grounding",
+          "description": "Addresses: equivalence margin / prespecified margin",
+          "match_any": [
+            "equivalence margin",
+            "prespecified margin"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: confidence interval / precision",
+          "match_any": [
+            "confidence interval",
+            "precision"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "NIH-RIGOR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "advanced",
+      "review_status": "draft",
+      "tags": [
+        "level_4",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    }
+  ]
+}

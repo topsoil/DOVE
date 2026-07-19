@@ -1,0 +1,31 @@
+suite_name: DOVE Biomedical & Bioinformatics Virtual Scientist Interview — GPT comparison
+base_run: data/results/virtual_interview/biomedical_bioinformatics_virtual_interview_run.json
+output_dir: data/results/virtual_interview/openai_comparison
+output_run: gpt41mini_answer_gpt41_judged_run.json
+output_report: gpt41mini_answer_gpt41_judged_report.html
+
+answer_model:
+  name: openai:gpt-4.1-mini-2025-04-14
+  provider: openai_compatible
+  model: gpt-4.1-mini-2025-04-14
+  base_url: https://api.openai.com/v1
+  api_key_env: OPENAI_API_KEY
+  temperature: 0.0
+  timeout: 180
+  max_output_tokens: 700
+  structured_outputs: true
+
+judge_model:
+  name: judge:gpt-4.1-2025-04-14
+  provider: openai_compatible
+  model: gpt-4.1-2025-04-14
+  base_url: https://api.openai.com/v1
+  api_key_env: OPENAI_API_KEY
+  temperature: 0.0
+  timeout: 180
+  max_output_tokens: 500
+  structured_outputs: true
+
+# answer_model = 140 judge calls; all = 840 judge calls across GPT + five local models.
+judge_scope: answer_model
+checkpoint_every: 10

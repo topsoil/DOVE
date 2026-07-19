@@ -1,0 +1,39 @@
+suite_name: DOVE Biomedical & Bioinformatics Virtual Scientist Interview — Large Local Models
+source_catalog: data/interview_sources/authoritative_sources.json
+benchmarks:
+  - data/interview_benchmarks/L1_foundations_20.json
+  - data/interview_benchmarks/L2_best_practice_reasoning_20.json
+  - data/interview_benchmarks/L3_real_world_scenarios_20.json
+  - data/interview_benchmarks/L4_evidence_interpretation_20.json
+  - data/interview_benchmarks/L5_grounding_hallucination_20.json
+  - data/interview_benchmarks/L6_senior_virtual_scientist_20.json
+  - data/interview_benchmarks/L7_adversarial_reliability_20.json
+questions_per_benchmark: null
+run_followups: false
+allow_unreviewed: true
+max_consecutive_errors: 3
+max_model_errors: 10
+output_dir: data/results/virtual_interview_large_models
+run_filename: biomedical_bioinformatics_large_models_run.json
+report_filename: biomedical_bioinformatics_large_models_report.html
+models:
+  - name: ollama:gpt-oss-20b
+    provider: ollama
+    model: gpt-oss:20b
+    base_url: http://localhost:11434
+    temperature: 0.0
+    context_window: 8192
+    thinking: low
+    timeout: 900
+    max_output_tokens: 700
+  - name: ollama:nemotron3-33b
+    provider: ollama
+    model: nemotron3:33b
+    base_url: http://localhost:11434
+    temperature: 0.0
+    context_window: 8192
+    thinking: false
+    timeout: 900
+    max_output_tokens: 700
+
+

@@ -1,0 +1,44 @@
+[
+  {
+    "level": 1,
+    "benchmark": "L1_foundations",
+    "questions": 20,
+    "path": "data/interview_benchmarks/L1_foundations_20.json"
+  },
+  {
+    "level": 2,
+    "benchmark": "L2_best_practice_reasoning",
+    "questions": 20,
+    "path": "data/interview_benchmarks/L2_best_practice_reasoning_20.json"
+  },
+  {
+    "level": 3,
+    "benchmark": "L3_real_world_scenarios",
+    "questions": 20,
+    "path": "data/interview_benchmarks/L3_real_world_scenarios_20.json"
+  },
+  {
+    "level": 4,
+    "benchmark": "L4_evidence_interpretation",
+    "questions": 20,
+    "path": "data/interview_benchmarks/L4_evidence_interpretation_20.json"
+  },
+  {
+    "level": 5,
+    "benchmark": "L5_grounding_hallucination",
+    "questions": 20,
+    "path": "data/interview_benchmarks/L5_grounding_hallucination_20.json"
+  },
+  {
+    "level": 6,
+    "benchmark": "L6_senior_virtual_scientist",
+    "questions": 20,
+    "path": "data/interview_benchmarks/L6_senior_virtual_scientist_20.json"
+  },
+  {
+    "level": 7,
+    "benchmark": "L7_adversarial_reliability",
+    "questions": 20,
+    "path": "data/interview_benchmarks/L7_adversarial_reliability_20.json"
+  }
+]

@@ -1,0 +1,59 @@
+suite_name: DOVE Biomedical & Bioinformatics Virtual Scientist Interview
+source_catalog: data/interview_sources/authoritative_sources.json
+benchmarks:
+  - data/interview_benchmarks/L1_foundations_20.json
+  - data/interview_benchmarks/L2_best_practice_reasoning_20.json
+  - data/interview_benchmarks/L3_real_world_scenarios_20.json
+  - data/interview_benchmarks/L4_evidence_interpretation_20.json
+  - data/interview_benchmarks/L5_grounding_hallucination_20.json
+  - data/interview_benchmarks/L6_senior_virtual_scientist_20.json
+  - data/interview_benchmarks/L7_adversarial_reliability_20.json
+
+# Set to 1 or 2 for a fast smoke test. Remove/null runs all 140 questions.
+questions_per_benchmark: null
+run_followups: false
+allow_unreviewed: true
+
+output_dir: data/results/virtual_interview
+run_filename: biomedical_bioinformatics_virtual_interview_run.json
+report_filename: biomedical_bioinformatics_virtual_interview_report.html
+
+models:
+  - name: ollama:llama3.2
+    provider: ollama
+    model: llama3.2:latest
+    base_url: http://localhost:11434
+    temperature: 0.0
+    timeout: 300
+    max_output_tokens: 700
+    thinking: false
+  - name: ollama:tinyllama
+    provider: ollama
+    model: tinyllama:1.1b
+    base_url: http://localhost:11434
+    temperature: 0.0
+    timeout: 300
+    max_output_tokens: 700
+  - name: ollama:qwen2.5-3b
+    provider: ollama
+    model: qwen2.5:3b
+    base_url: http://localhost:11434
+    temperature: 0.0
+    timeout: 300
+    max_output_tokens: 700
+  - name: ollama:ministral-3-3b
+    provider: ollama
+    model: ministral-3:3b
+    base_url: http://localhost:11434
+    temperature: 0.0
+    timeout: 300
+    max_output_tokens: 700
+  - name: ollama:glm-4.7-flash
+    provider: ollama
+    model: glm-4.7-flash:latest
+    base_url: http://localhost:11434
+    temperature: 0.0
+    timeout: 600
+    max_output_tokens: 700
+    thinking: false
+

@@ -1,0 +1,1320 @@
+{
+  "benchmark": "L3_real_world_scenarios",
+  "items": [
+    {
+      "id": "VI_L3_01",
+      "benchmark_id": "L3_real_world_scenarios",
+      "level": 3,
+      "category": "Real-world scientific problem solving",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "Two analysts get different variant counts from the same FASTQs. Lead the discrepancy investigation.",
+      "reference_answer": "Freeze inputs/checksums, compare reference/build, tools, versions, parameters, intervals and filtering, reproduce minimal stages, classify representational versus biological differences, and document resolution.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: checksum / same input",
+          "match_any": [
+            "checksum",
+            "same input"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: reference / version",
+          "match_any": [
+            "reference",
+            "version"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: parameter / filter",
+          "match_any": [
+            "parameter",
+            "filter"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "HTS-SPECS",
+        "FAIR",
+        "NIH-RIGOR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "skilled",
+      "review_status": "draft",
+      "tags": [
+        "level_3",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L3_02",
+      "benchmark_id": "L3_real_world_scenarios",
+      "level": 3,
+      "category": "Real-world scientific problem solving",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A PCA plot separates RNA-seq samples by processing date, which overlaps partly with disease. What do you do next?",
+      "reference_answer": "Verify metadata and identity, quantify confounding, inspect QC and cell composition, model batch only if estimable, perform sensitivity analyses, and avoid claiming disease biology where batch cannot be separated.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: metadata / sample identity",
+          "match_any": [
+            "metadata",
+            "sample identity"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: confounding / batch",
+          "match_any": [
+            "confounding",
+            "batch"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: sensitivity analysis / cannot separate",
+          "match_any": [
+            "sensitivity analysis",
+            "cannot separate"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "DESEQ2",
+        "NIH-RIGOR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "skilled",
+      "review_status": "draft",
+      "tags": [
+        "level_3",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L3_03",
+      "benchmark_id": "L3_real_world_scenarios",
+      "level": 3,
+      "category": "Real-world scientific problem solving",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "One sample has ten times fewer reads than its peers but clusters normally. Decide whether to exclude it.",
+      "reference_answer": "Do not exclude by a single threshold. Check cause, assay-specific power/coverage, mapping and complexity, influence on estimates, prespecified criteria, and sensitivity with/without the sample; document the decision.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: investigate cause / QC",
+          "match_any": [
+            "investigate cause",
+            "QC"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: prespecified / exclusion criteria",
+          "match_any": [
+            "prespecified",
+            "exclusion criteria"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: sensitivity / with and without",
+          "match_any": [
+            "sensitivity",
+            "with and without"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "FASTQC",
+        "NIH-RIGOR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "skilled",
+      "review_status": "draft",
+      "tags": [
+        "level_3",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L3_04",
+      "benchmark_id": "L3_real_world_scenarios",
+      "level": 3,
+      "category": "Real-world scientific problem solving",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A tumor-only panel finds a pathogenic BRCA1 variant. Draft the interpretation boundary.",
+      "reference_answer": "It may be somatic or germline and must be interpreted in tumor/indication context. Do not infer inherited risk; recommend confirmatory germline evaluation/counseling when appropriate and state assay/VAF/purity limitations.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: somatic or germline",
+          "match_any": [
+            "somatic or germline"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: confirmatory germline / genetic counseling",
+          "match_any": [
+            "confirmatory germline",
+            "genetic counseling"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: do not infer inherited",
+          "match_any": [
+            "do not infer inherited"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "AMP-SOMATIC",
+        "NCI-BRCA",
+        "ACMG-AMP"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "skilled",
+      "review_status": "draft",
+      "tags": [
+        "level_3",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L3_05",
+      "benchmark_id": "L3_real_world_scenarios",
+      "level": 3,
+      "category": "Real-world scientific problem solving",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A model's AUROC is 0.91 internally and 0.68 at a second hospital. Frame the next investigation.",
+      "reference_answer": "Treat the external drop as evidence of limited transportability; compare case mix, acquisition, labels, missingness and calibration, audit leakage, quantify uncertainty/subgroups, and do not deploy before local validation or revision.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: transportability / external",
+          "match_any": [
+            "transportability",
+            "external"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: case mix / dataset shift",
+          "match_any": [
+            "case mix",
+            "dataset shift"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: do not deploy / local validation",
+          "match_any": [
+            "do not deploy",
+            "local validation"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "TRIPOD-AI",
+        "PROBAST-AI"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "skilled",
+      "review_status": "draft",
+      "tags": [
+        "level_3",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L3_06",
+      "benchmark_id": "L3_real_world_scenarios",
+      "level": 3,
+      "category": "Real-world scientific problem solving",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "The label for mortality was extracted from notes written after the prediction time. Explain and repair the problem.",
+      "reference_answer": "This is temporal/target leakage. Rebuild features using only information available at the decision time, enforce timestamp cutoffs, repeat patient-level validation, and report the invalidated prior estimate.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: temporal leakage / target leakage",
+          "match_any": [
+            "temporal leakage",
+            "target leakage"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: prediction time / timestamp",
+          "match_any": [
+            "prediction time",
+            "timestamp"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: repeat validation / invalidate",
+          "match_any": [
+            "repeat validation",
+            "invalidate"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "PROBAST-AI",
+        "TRIPOD-AI"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "skilled",
+      "review_status": "draft",
+      "tags": [
+        "level_3",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L3_07",
+      "benchmark_id": "L3_real_world_scenarios",
+      "level": 3,
+      "category": "Real-world scientific problem solving",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A pathway analysis is significant only after trying six gene-set databases and three ranking choices. How should it be reported?",
+      "reference_answer": "Disclose the analytic multiplicity and exploratory nature, control or contextualize false discovery, report all tried analyses or a multiverse/sensitivity view, and validate the selected signal independently.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: multiplicity / multiple",
+          "match_any": [
+            "multiplicity",
+            "multiple"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: exploratory",
+          "match_any": [
+            "exploratory"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: independent validation / sensitivity",
+          "match_any": [
+            "independent validation",
+            "sensitivity"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "NIH-RIGOR",
+        "FAIR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "skilled",
+      "review_status": "draft",
+      "tags": [
+        "level_3",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L3_08",
+      "benchmark_id": "L3_real_world_scenarios",
+      "level": 3,
+      "category": "Real-world scientific problem solving",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A differential-expression hit has a tiny adjusted p value but a negligible fold change. Explain it to a biologist.",
+      "reference_answer": "Strong statistical evidence can coexist with a small effect, especially with high information. Discuss effect magnitude, uncertainty, biological relevance, assay artifacts and validation rather than equating significance with importance.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: effect size / fold change",
+          "match_any": [
+            "effect size",
+            "fold change"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: statistical significance",
+          "match_any": [
+            "statistical significance"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: biological relevance / validation",
+          "match_any": [
+            "biological relevance",
+            "validation"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "DESEQ2",
+        "NIH-RIGOR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "skilled",
+      "review_status": "draft",
+      "tags": [
+        "level_3",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L3_09",
+      "benchmark_id": "L3_real_world_scenarios",
+      "level": 3,
+      "category": "Real-world scientific problem solving",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A classifier fails mostly on samples from one sequencing instrument. What is your response plan?",
+      "reference_answer": "Stratify errors and QC by instrument, test whether instrument is a shortcut/confounder, reproduce preprocessing, collect balanced data, validate across instruments, and consider recalibration only after root-cause analysis.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: instrument / device",
+          "match_any": [
+            "instrument",
+            "device"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: confounder / shortcut",
+          "match_any": [
+            "confounder",
+            "shortcut"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: validate across / balanced",
+          "match_any": [
+            "validate across",
+            "balanced"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "FDA-GMLP",
+        "PROBAST-AI"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "skilled",
+      "review_status": "draft",
+      "tags": [
+        "level_3",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L3_10",
+      "benchmark_id": "L3_real_world_scenarios",
+      "level": 3,
+      "category": "Real-world scientific problem solving",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A collaborator asks you to remove an outlier because it weakens the hypothesis. Respond as project analyst.",
+      "reference_answer": "Require a prespecified, measurement-based exclusion rationale independent of outcome; investigate identity/QC, retain an audit trail, show analyses with and without it, and refuse hypothesis-driven deletion.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: prespecified / exclusion criteria",
+          "match_any": [
+            "prespecified",
+            "exclusion criteria"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: audit trail / document",
+          "match_any": [
+            "audit trail",
+            "document"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: with and without / sensitivity",
+          "match_any": [
+            "with and without",
+            "sensitivity"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "NIH-RIGOR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "skilled",
+      "review_status": "draft",
+      "tags": [
+        "level_3",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L3_11",
+      "benchmark_id": "L3_real_world_scenarios",
+      "level": 3,
+      "category": "Real-world scientific problem solving",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "Half the cohort lacks a key laboratory predictor. Plan analysis rather than simply dropping those patients.",
+      "reference_answer": "Characterize missingness by outcome/site/time/group, assess plausible mechanisms, use appropriate imputation within resampling without leakage, include missingness sensitivity analyses, and report applicability limits.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: missingness mechanism / missing data",
+          "match_any": [
+            "missingness mechanism",
+            "missing data"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: imputation within / resampling",
+          "match_any": [
+            "imputation within",
+            "resampling"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: sensitivity / applicability",
+          "match_any": [
+            "sensitivity",
+            "applicability"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "TRIPOD-AI",
+        "PROBAST-AI"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "skilled",
+      "review_status": "draft",
+      "tags": [
+        "level_3",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L3_12",
+      "benchmark_id": "L3_real_world_scenarios",
+      "level": 3,
+      "category": "Real-world scientific problem solving",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A rare-disease model has only 22 outcome events and 120 candidate features. Advise the team.",
+      "reference_answer": "The effective sample is too small for unconstrained feature search. Reduce/prespecify predictors, use penalization with nested validation, quantify optimism and uncertainty, and seek more data/external validation.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: events / sample size",
+          "match_any": [
+            "events",
+            "sample size"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: reduce predictors / penalization",
+          "match_any": [
+            "reduce predictors",
+            "penalization"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: optimism / external validation",
+          "match_any": [
+            "optimism",
+            "external validation"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "PROBAST-AI",
+        "TRIPOD-AI"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "skilled",
+      "review_status": "draft",
+      "tags": [
+        "level_3",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L3_13",
+      "benchmark_id": "L3_real_world_scenarios",
+      "level": 3,
+      "category": "Real-world scientific problem solving",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A VCF annotation changed after a database update. How do you preserve interpretability of the earlier report?",
+      "reference_answer": "Retain original annotation database/version/date and evidence, distinguish reinterpretation from raw call changes, rerun under a documented policy, and issue a traceable amended result if clinically required.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: version / date",
+          "match_any": [
+            "version",
+            "date"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: reinterpretation / reanalysis",
+          "match_any": [
+            "reinterpretation",
+            "reanalysis"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: traceable / provenance",
+          "match_any": [
+            "traceable",
+            "provenance"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "AMP-SOMATIC",
+        "ACMG-AMP",
+        "FAIR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "skilled",
+      "review_status": "draft",
+      "tags": [
+        "level_3",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L3_14",
+      "benchmark_id": "L3_real_world_scenarios",
+      "level": 3,
+      "category": "Real-world scientific problem solving",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A patient-level model looks excellent using random cross-validation but poor using temporal validation. Which result matters and why?",
+      "reference_answer": "Temporal performance is more relevant to prospective use and reveals drift or leakage hidden by random folds. Investigate time-related changes and use the evaluation matching intended deployment.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: temporal validation",
+          "match_any": [
+            "temporal validation"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: drift / time",
+          "match_any": [
+            "drift",
+            "time"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: intended use / deployment",
+          "match_any": [
+            "intended use",
+            "deployment"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "TRIPOD-AI",
+        "PROBAST-AI"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "skilled",
+      "review_status": "draft",
+      "tags": [
+        "level_3",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L3_15",
+      "benchmark_id": "L3_real_world_scenarios",
+      "level": 3,
+      "category": "Real-world scientific problem solving",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A clinical stakeholder asks for one accuracy number. Give a concise but responsible answer plan.",
+      "reference_answer": "Start with intended use and prevalence, then report confusion-matrix metrics, discrimination, calibration, uncertainty, subgroup performance and decision consequences at the operating threshold.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: intended use / prevalence",
+          "match_any": [
+            "intended use",
+            "prevalence"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: calibration / discrimination",
+          "match_any": [
+            "calibration",
+            "discrimination"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: subgroup / uncertainty",
+          "match_any": [
+            "subgroup",
+            "uncertainty"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "TRIPOD-AI",
+        "FDA-TRANSPARENCY"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "skilled",
+      "review_status": "draft",
+      "tags": [
+        "level_3",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L3_16",
+      "benchmark_id": "L3_real_world_scenarios",
+      "level": 3,
+      "category": "Real-world scientific problem solving",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A multi-site study has site-specific outcome definitions. Can pooling fix it?",
+      "reference_answer": "No. Harmonize or explicitly model outcome definitions, quantify site heterogeneity and label reliability, consider site-stratified evaluation, and limit the target claim if a common outcome cannot be established.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: harmonize / outcome definition",
+          "match_any": [
+            "harmonize",
+            "outcome definition"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: site heterogeneity",
+          "match_any": [
+            "site heterogeneity"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: cannot / limit claim",
+          "match_any": [
+            "cannot",
+            "limit claim"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "TRIPOD-AI",
+        "PROBAST-AI"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "skilled",
+      "review_status": "draft",
+      "tags": [
+        "level_3",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L3_17",
+      "benchmark_id": "L3_real_world_scenarios",
+      "level": 3,
+      "category": "Real-world scientific problem solving",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "You inherit an analysis notebook that runs only on the original laptop. Turn it into a reviewable workflow.",
+      "reference_answer": "Separate code/config/data, pin environment and references, add workflow orchestration and tests, capture seeds/logs/checksums, create a small reproducible example, and document access/provenance.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: pin environment / container",
+          "match_any": [
+            "pin environment",
+            "container"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: workflow / test",
+          "match_any": [
+            "workflow",
+            "test"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: seed / checksum",
+          "match_any": [
+            "seed",
+            "checksum"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "FAIR",
+        "NIH-RIGOR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "skilled",
+      "review_status": "draft",
+      "tags": [
+        "level_3",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L3_18",
+      "benchmark_id": "L3_real_world_scenarios",
+      "level": 3,
+      "category": "Real-world scientific problem solving",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A model returns a treatment suggestion unsupported by the supplied tumor type. How should the system handle it?",
+      "reference_answer": "Block or flag the suggestion, require indication-specific evidence and current regulatory/guideline review, communicate uncertainty, route to a qualified clinician, and log the failure for monitoring.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: indication specific / tumor type",
+          "match_any": [
+            "indication specific",
+            "tumor type"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: clinician review / qualified",
+          "match_any": [
+            "clinician review",
+            "qualified"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: block / flag",
+          "match_any": [
+            "block",
+            "flag"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "AMP-SOMATIC",
+        "FDA-TRANSPARENCY"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "skilled",
+      "review_status": "draft",
+      "tags": [
+        "level_3",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L3_19",
+      "benchmark_id": "L3_real_world_scenarios",
+      "level": 3,
+      "category": "Real-world scientific problem solving",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A sample swaps sex chromosomes relative to recorded sex. What do you say and do?",
+      "reference_answer": "Treat it as an identity/QC alert, not a diagnosis or assumption about gender. Verify metadata, genotype concordance and technical explanations under privacy rules; quarantine affected results until resolved.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: identity / sample swap",
+          "match_any": [
+            "identity",
+            "sample swap"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: not diagnosis / gender",
+          "match_any": [
+            "not diagnosis",
+            "gender"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: verify metadata / quarantine",
+          "match_any": [
+            "verify metadata",
+            "quarantine"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "NIH-RIGOR",
+        "FDA-TRANSPARENCY"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "skilled",
+      "review_status": "draft",
+      "tags": [
+        "level_3",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L3_20",
+      "benchmark_id": "L3_real_world_scenarios",
+      "level": 3,
+      "category": "Real-world scientific problem solving",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "An external collaborator cannot access raw data. How can the analysis remain FAIR and auditable?",
+      "reference_answer": "FAIR does not mean unrestricted access. Provide rich metadata, identifiers, controlled-access procedures, code/workflows, synthetic/test data, provenance and result artifacts while honoring consent and governance.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "scientific_reasoning",
+          "description": "Addresses: not unrestricted / controlled access",
+          "match_any": [
+            "not unrestricted",
+            "controlled access"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "workflow_planning",
+          "description": "Addresses: metadata / identifier",
+          "match_any": [
+            "metadata",
+            "identifier"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: code / provenance",
+          "match_any": [
+            "code",
+            "provenance"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "FAIR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "skilled",
+      "review_status": "draft",
+      "tags": [
+        "level_3",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    }
+  ]
+}

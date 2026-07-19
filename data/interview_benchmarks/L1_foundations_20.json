@@ -1,0 +1,1305 @@
+{
+  "benchmark": "L1_foundations",
+  "items": [
+    {
+      "id": "VI_L1_01",
+      "benchmark_id": "L1_foundations",
+      "level": 1,
+      "category": "Biomedical and bioinformatics foundations",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A FASTQ file arrives from a sequencer. Explain what each four-line record contains and what the quality string means.",
+      "reference_answer": "A record contains an identifier, nucleotide sequence, separator, and encoded per-base quality scores; the scores express uncertainty in base calls, not biological expression.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: identifier / read name",
+          "match_any": [
+            "identifier",
+            "read name"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: nucleotide sequence / base sequence",
+          "match_any": [
+            "nucleotide sequence",
+            "base sequence"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: quality score / phred",
+          "match_any": [
+            "quality score",
+            "phred"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "HTS-SPECS",
+        "FASTQC"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "basic",
+      "review_status": "draft",
+      "tags": [
+        "level_1",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L1_02",
+      "benchmark_id": "L1_foundations",
+      "level": 1,
+      "category": "Biomedical and bioinformatics foundations",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A student says a green FastQC summary proves the sample is biologically valid. Correct the statement.",
+      "reference_answer": "FastQC flags technical patterns relative to expectations; a pass is not proof of biological validity, and assay-specific expectations and metadata still require review.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: technical quality / quality control",
+          "match_any": [
+            "technical quality",
+            "quality control"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: assay context / library type",
+          "match_any": [
+            "assay context",
+            "library type"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: not proof / does not prove",
+          "match_any": [
+            "not proof",
+            "does not prove"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "FASTQC"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "basic",
+      "review_status": "draft",
+      "tags": [
+        "level_1",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L1_03",
+      "benchmark_id": "L1_foundations",
+      "level": 1,
+      "category": "Biomedical and bioinformatics foundations",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "Distinguish SAM, BAM, and CRAM in a way that would guide a new analyst choosing storage and exchange formats.",
+      "reference_answer": "SAM is textual alignment data, BAM is its binary equivalent, and CRAM is a reference-oriented compressed format; interoperability, reference identity, tooling, and archival needs matter.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: SAM textual / SAM text",
+          "match_any": [
+            "SAM textual",
+            "SAM text"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: BAM binary",
+          "match_any": [
+            "BAM binary"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: CRAM compressed / reference based",
+          "match_any": [
+            "CRAM compressed",
+            "reference based"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "HTS-SPECS"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "basic",
+      "review_status": "draft",
+      "tags": [
+        "level_1",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L1_04",
+      "benchmark_id": "L1_foundations",
+      "level": 1,
+      "category": "Biomedical and bioinformatics foundations",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "What is a VCF record intended to represent, and why must the header and reference build travel with the file?",
+      "reference_answer": "VCF represents variant sites and annotations/genotypes. Header definitions and the exact reference assembly are required to interpret coordinates, alleles, FILTER/INFO/FORMAT fields, and samples.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: variant site / variant record",
+          "match_any": [
+            "variant site",
+            "variant record"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: reference assembly / genome build",
+          "match_any": [
+            "reference assembly",
+            "genome build"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: header definition / INFO FORMAT",
+          "match_any": [
+            "header definition",
+            "INFO FORMAT"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "HTS-SPECS"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "basic",
+      "review_status": "draft",
+      "tags": [
+        "level_1",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L1_05",
+      "benchmark_id": "L1_foundations",
+      "level": 1,
+      "category": "Biomedical and bioinformatics foundations",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "Explain germline versus somatic variation and name the specimen comparison usually needed to distinguish them in cancer sequencing.",
+      "reference_answer": "Germline variants are inherited/present constitutionally; somatic variants arise in the tumor. A tumor-normal comparison helps distinguish them, subject to purity and assay limitations.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: germline inherited / constitutional",
+          "match_any": [
+            "germline inherited",
+            "constitutional"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: somatic tumor / acquired",
+          "match_any": [
+            "somatic tumor",
+            "acquired"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: matched normal / tumor normal",
+          "match_any": [
+            "matched normal",
+            "tumor normal"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "AMP-SOMATIC",
+        "ACMG-AMP"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "basic",
+      "review_status": "draft",
+      "tags": [
+        "level_1",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L1_06",
+      "benchmark_id": "L1_foundations",
+      "level": 1,
+      "category": "Biomedical and bioinformatics foundations",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "What is the difference between a gene-disease relationship and a variant classification?",
+      "reference_answer": "Gene-disease validity asks whether variation in a gene causes a defined disease; variant classification asks how a specific variant affects that relationship. Strong evidence for one does not automatically establish the other.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: gene disease validity / gene disease relationship",
+          "match_any": [
+            "gene disease validity",
+            "gene disease relationship"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: specific variant / variant classification",
+          "match_any": [
+            "specific variant",
+            "variant classification"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: not automatically / separate",
+          "match_any": [
+            "not automatically",
+            "separate"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "CLINGEN-GDV",
+        "ACMG-AMP"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "basic",
+      "review_status": "draft",
+      "tags": [
+        "level_1",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L1_07",
+      "benchmark_id": "L1_foundations",
+      "level": 1,
+      "category": "Biomedical and bioinformatics foundations",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "Name the five ACMG/AMP germline sequence-variant categories and explain why a VUS is not a positive result.",
+      "reference_answer": "The categories are pathogenic, likely pathogenic, uncertain significance, likely benign, and benign. A VUS lacks sufficient evidence and should not be treated as disease-causing.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: pathogenic",
+          "match_any": [
+            "pathogenic"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: uncertain significance / VUS",
+          "match_any": [
+            "uncertain significance",
+            "VUS"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: not actionable / not disease causing",
+          "match_any": [
+            "not actionable",
+            "not disease causing"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "ACMG-AMP"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "basic",
+      "review_status": "draft",
+      "tags": [
+        "level_1",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L1_08",
+      "benchmark_id": "L1_foundations",
+      "level": 1,
+      "category": "Biomedical and bioinformatics foundations",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A colleague treats biological and technical replicates as interchangeable. Explain the difference.",
+      "reference_answer": "Biological replicates sample independent biological units and support inference about biological variability; technical replicates assess measurement/process variability and are not independent biological evidence.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: independent biological / biological units",
+          "match_any": [
+            "independent biological",
+            "biological units"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: measurement variability / technical variation",
+          "match_any": [
+            "measurement variability",
+            "technical variation"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: not independent / pseudoreplication",
+          "match_any": [
+            "not independent",
+            "pseudoreplication"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "NIH-RIGOR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "basic",
+      "review_status": "draft",
+      "tags": [
+        "level_1",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L1_09",
+      "benchmark_id": "L1_foundations",
+      "level": 1,
+      "category": "Biomedical and bioinformatics foundations",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "What does normalization try to accomplish in RNA-seq, and what can it not repair?",
+      "reference_answer": "Normalization adjusts systematic scale/composition differences so counts are comparable under model assumptions. It cannot repair confounded design, mislabeled samples, severe degradation, or missing biology.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: library size / composition",
+          "match_any": [
+            "library size",
+            "composition"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: comparable counts / systematic differences",
+          "match_any": [
+            "comparable counts",
+            "systematic differences"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: cannot repair / confounding",
+          "match_any": [
+            "cannot repair",
+            "confounding"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "DESEQ2"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "basic",
+      "review_status": "draft",
+      "tags": [
+        "level_1",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L1_10",
+      "benchmark_id": "L1_foundations",
+      "level": 1,
+      "category": "Biomedical and bioinformatics foundations",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "Why does DESeq2 model raw counts with a negative binomial distribution rather than run a t test on normalized counts?",
+      "reference_answer": "DESeq2 models count mean-variance behavior and biological dispersion with a negative binomial GLM; its inference and normalization are built for count data, unlike a simple t test.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: negative binomial",
+          "match_any": [
+            "negative binomial"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: dispersion / mean variance",
+          "match_any": [
+            "dispersion",
+            "mean variance"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: count data / raw counts",
+          "match_any": [
+            "count data",
+            "raw counts"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "DESEQ2"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "basic",
+      "review_status": "draft",
+      "tags": [
+        "level_1",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L1_11",
+      "benchmark_id": "L1_foundations",
+      "level": 1,
+      "category": "Biomedical and bioinformatics foundations",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "What do sensitivity and specificity measure, and why are they insufficient without prevalence or predictive values for deployment?",
+      "reference_answer": "Sensitivity is the true-positive rate and specificity the true-negative rate. Predictive values and clinical consequences depend on prevalence and the intended population.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: true positive / sensitivity",
+          "match_any": [
+            "true positive",
+            "sensitivity"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: true negative / specificity",
+          "match_any": [
+            "true negative",
+            "specificity"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: prevalence / predictive value",
+          "match_any": [
+            "prevalence",
+            "predictive value"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "TRIPOD-AI",
+        "PROBAST-AI"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "basic",
+      "review_status": "draft",
+      "tags": [
+        "level_1",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L1_12",
+      "benchmark_id": "L1_foundations",
+      "level": 1,
+      "category": "Biomedical and bioinformatics foundations",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "Distinguish discrimination from calibration in a clinical prediction model.",
+      "reference_answer": "Discrimination separates people with and without the outcome; calibration measures agreement between predicted probabilities and observed frequencies. A model can discriminate well yet be poorly calibrated.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: separate / rank",
+          "match_any": [
+            "separate",
+            "rank"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: predicted probabilities / observed",
+          "match_any": [
+            "predicted probabilities",
+            "observed"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: both / not same",
+          "match_any": [
+            "both",
+            "not same"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "TRIPOD-AI",
+        "PROBAST-AI"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "basic",
+      "review_status": "draft",
+      "tags": [
+        "level_1",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L1_13",
+      "benchmark_id": "L1_foundations",
+      "level": 1,
+      "category": "Biomedical and bioinformatics foundations",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "What does FAIR mean for a biomedical dataset?",
+      "reference_answer": "FAIR means Findable, Accessible, Interoperable, and Reusable, supported by persistent identifiers, metadata, standard protocols/vocabularies, provenance, licensing, and community standards.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: findable",
+          "match_any": [
+            "findable"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: interoperable",
+          "match_any": [
+            "interoperable"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: reusable",
+          "match_any": [
+            "reusable"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "FAIR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "basic",
+      "review_status": "draft",
+      "tags": [
+        "level_1",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L1_14",
+      "benchmark_id": "L1_foundations",
+      "level": 1,
+      "category": "Biomedical and bioinformatics foundations",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "What is tumor purity, and how can low purity affect a somatic variant allele fraction?",
+      "reference_answer": "Tumor purity is the fraction of tumor cells/DNA in a specimen. Normal-cell admixture can dilute somatic alleles, lowering observed VAF and sensitivity; copy number and clonality also matter.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: tumor fraction / tumor cellularity",
+          "match_any": [
+            "tumor fraction",
+            "tumor cellularity"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: normal admixture / normal cells",
+          "match_any": [
+            "normal admixture",
+            "normal cells"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: lower allele fraction / dilute",
+          "match_any": [
+            "lower allele fraction",
+            "dilute"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "AMP-SOMATIC"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "basic",
+      "review_status": "draft",
+      "tags": [
+        "level_1",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L1_15",
+      "benchmark_id": "L1_foundations",
+      "level": 1,
+      "category": "Biomedical and bioinformatics foundations",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "Why is a reference genome assembly identifier part of a reproducible variant result?",
+      "reference_answer": "Coordinates and reference alleles are assembly-specific. Recording the exact assembly and sequence identifiers prevents ambiguous or wrong locus interpretation.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: assembly specific / genome build",
+          "match_any": [
+            "assembly specific",
+            "genome build"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: coordinate",
+          "match_any": [
+            "coordinate"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: reference allele / sequence identifier",
+          "match_any": [
+            "reference allele",
+            "sequence identifier"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "HTS-SPECS",
+        "FAIR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "basic",
+      "review_status": "draft",
+      "tags": [
+        "level_1",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L1_16",
+      "benchmark_id": "L1_foundations",
+      "level": 1,
+      "category": "Biomedical and bioinformatics foundations",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "Explain what joint genotyping adds after per-sample gVCF generation in a germline cohort.",
+      "reference_answer": "Joint genotyping evaluates sites coherently across samples, leveraging cohort-wide information for consistent genotypes and scalable incremental analysis; it is distinct from pooling raw reads.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: cohort / multiple samples",
+          "match_any": [
+            "cohort",
+            "multiple samples"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: consistent genotype / joint analysis",
+          "match_any": [
+            "consistent genotype",
+            "joint analysis"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: gVCF / genomic VCF",
+          "match_any": [
+            "gVCF",
+            "genomic VCF"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "GATK-BP"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "basic",
+      "review_status": "draft",
+      "tags": [
+        "level_1",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L1_17",
+      "benchmark_id": "L1_foundations",
+      "level": 1,
+      "category": "Biomedical and bioinformatics foundations",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "What is the clinical distinction between inherited cancer risk and a tumor biomarker used to select therapy?",
+      "reference_answer": "Inherited risk concerns constitutional variants and family implications; a tumor biomarker can be somatic or germline and may predict treatment response. Specimen, indication, evidence, and confirmatory testing must be clear.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: inherited / germline",
+          "match_any": [
+            "inherited",
+            "germline"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: treatment response / therapy",
+          "match_any": [
+            "treatment response",
+            "therapy"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: specimen / tumor",
+          "match_any": [
+            "specimen",
+            "tumor"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "NCI-BRCA",
+        "AMP-SOMATIC"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "basic",
+      "review_status": "draft",
+      "tags": [
+        "level_1",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L1_18",
+      "benchmark_id": "L1_foundations",
+      "level": 1,
+      "category": "Biomedical and bioinformatics foundations",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "Why can BRCA1/2 dysfunction make a tumor sensitive to platinum or PARP inhibition?",
+      "reference_answer": "BRCA1/2 participate in homologous-recombination DNA repair. Loss can create repair deficiency and vulnerability to DNA damage or PARP inhibition, but indication and response are not guaranteed by a vague BRCA mention.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: homologous recombination / DNA repair",
+          "match_any": [
+            "homologous recombination",
+            "DNA repair"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: PARP",
+          "match_any": [
+            "PARP"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: not guaranteed / indication",
+          "match_any": [
+            "not guaranteed",
+            "indication"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "NCI-BRCA",
+        "NCI-OVARIAN"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "basic",
+      "review_status": "draft",
+      "tags": [
+        "level_1",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L1_19",
+      "benchmark_id": "L1_foundations",
+      "level": 1,
+      "category": "Biomedical and bioinformatics foundations",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "What is the difference between analytical validity, clinical validity, and clinical utility?",
+      "reference_answer": "Analytical validity is accurate/reliable measurement; clinical validity is the association with a phenotype or outcome; clinical utility is whether use improves decisions or outcomes in context.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: accurate measurement / analytical",
+          "match_any": [
+            "accurate measurement",
+            "analytical"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: association / clinical validity",
+          "match_any": [
+            "association",
+            "clinical validity"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: improves outcome / clinical utility",
+          "match_any": [
+            "improves outcome",
+            "clinical utility"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "CLINGEN-GDV",
+        "FDA-GMLP"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "basic",
+      "review_status": "draft",
+      "tags": [
+        "level_1",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    },
+    {
+      "id": "VI_L1_20",
+      "benchmark_id": "L1_foundations",
+      "level": 1,
+      "category": "Biomedical and bioinformatics foundations",
+      "domain": "biomedical_bioinformatics",
+      "prompt": "A paper reports p=0.03. What can and cannot be concluded from that number alone?",
+      "reference_answer": "It indicates incompatibility with a specified null under assumptions; it does not give effect size, clinical importance, posterior truth, freedom from multiplicity, or study validity.",
+      "rubric": [
+        {
+          "id": "C1",
+          "dimension": "biomedical_knowledge",
+          "description": "Addresses: null hypothesis / null",
+          "match_any": [
+            "null hypothesis",
+            "null"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C2",
+          "dimension": "bioinformatics_fundamentals",
+          "description": "Addresses: effect size",
+          "match_any": [
+            "effect size"
+          ],
+          "weight": 1.0
+        },
+        {
+          "id": "C3",
+          "dimension": "uncertainty_calibration",
+          "description": "Addresses: multiple testing / multiplicity",
+          "match_any": [
+            "multiple testing",
+            "multiplicity"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "source_ids": [
+        "NIH-RIGOR"
+      ],
+      "source_rationale": "The expected reasoning is bounded by the listed authoritative standards, official documentation, regulatory material, or primary guideline.",
+      "follow_up_prompt": null,
+      "red_flags": [
+        {
+          "description": "Claims certainty or universal validity without qualification",
+          "match_any": [
+            "guaranteed",
+            "always correct",
+            "zero risk",
+            "proves all"
+          ],
+          "penalty": 0.2
+        }
+      ],
+      "difficulty": "basic",
+      "review_status": "draft",
+      "tags": [
+        "level_1",
+        "virtual_interview",
+        "source_grounded"
+      ]
+    }
+  ]
+}
